@@ -2,9 +2,6 @@ package com.restsiqs.Resources;
 
 import java.util.List;
 
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.alibaba.fastjson.JSONObject;
-import com.restsiqs.Entities.Academy;
-import com.restsiqs.Services.AcademyService;
+import com.restsiqs.Entities.Student;
+import com.restsiqs.Services.StudentService;
 import com.restsiqs.Utils.JsonUtils;
 
 /*
@@ -25,45 +22,33 @@ import com.restsiqs.Utils.JsonUtils;
  * API:
  * HOST: http://hostname:<port>/RESTSIQS/
  * FUNCTIONS:
- * 		Add:                  |POST /academy/academy
- * 		Delete:               |DELETE /academy/{id}
- * 		Update:               |PUT /academy/academy
- * 		FindAll:              |GET /academy/academylist
- * 		Find by primary key:  |GET /academy/{id}
+ * 		Add:                  |POST /student/student
+ * 		Delete:               |DELETE /student/{id}
+ * 		Update:               |PUT /student/student
+ * 		FindAll:              |GET /student/studentlist
+ * 		Find by primary key:  |GET /student/{id}
  * 		
  * Created by devouty on 2015/10/13.
  * 
  */
 
-@RequestMapping("academy")
+@RequestMapping("student")
 @Controller
-public class AcademyResource {
+public class StudentResource {
 	@Autowired
-	private AcademyService academyService;
+	private StudentService studentService;
 	private static final Logger log = LoggerFactory
-			.getLogger(AcademyResource.class);
-
-	// Test for connection
-	@RequestMapping(value = "/test")
-	@ResponseBody
-	@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
-	public String test() {
-		String s = "111111111111111111111111111111111111111111111";
-		System.out.println(s);
-		JSONObject obj = new JsonUtils(academyService.findAll())
-				.getJsonObject();
-		return obj.toJSONString();
-	}
+			.getLogger(StudentResource.class);
 
 	// Add
-	@RequestMapping(value = "/academy", method = RequestMethod.POST)
+	@RequestMapping(value = "/student", method = RequestMethod.POST)
 	@ResponseBody
-	public String add(@RequestParam("academy") Academy academy) {
-		log.debug("Starting add academy:" + academy.getAcademyId());
+	public String add(@RequestParam("student") Student student) {
+		log.debug("Starting add student:" + student.getStudentId());
 		JSONObject obj = null;
 		try {
-			academyService.save(academy);
-			obj = new JsonUtils(academy).getJsonObject();
+			studentService.save(student);
+			obj = new JsonUtils(student).getJsonObject();
 			log.debug("Add successful");
 			return obj.toJSONString();
 		} catch (Exception e) {
@@ -77,19 +62,19 @@ public class AcademyResource {
 	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
 	@ResponseBody
 	public String delete(@PathVariable final String id) {
-		academyService.delete(id);
+		studentService.delete(id);
 		log.debug("Delete " + id + " successful");
 		return "Delete " + id + " successful";
 	}
 
 	// Update
-	@RequestMapping(value = "/academy", method = RequestMethod.PUT)
+	@RequestMapping(value = "/student", method = RequestMethod.PUT)
 	@ResponseBody
-	public String update(@RequestParam("academy") Academy academy) {
-		log.debug("Starting update academy:" + academy.getAcademyId());
+	public String update(@RequestParam("student") Student student) {
+		log.debug("Starting update student:" + student.getStudentId());
 		try {
-			academyService.save(academy);
-			JSONObject obj = new JsonUtils(academy).getJsonObject();
+			studentService.save(student);
+			JSONObject obj = new JsonUtils(student).getJsonObject();
 			log.debug("Update successful");
 			return obj.toJSONString();
 		} catch (Exception e) {
@@ -100,10 +85,10 @@ public class AcademyResource {
 	}
 
 	// Find all
-	@RequestMapping(value = "/academylist", method = RequestMethod.GET)
+	@RequestMapping(value = "/studentlist", method = RequestMethod.GET)
 	@ResponseBody
 	public String getAll() {
-		List<Academy> list = academyService.findAll();
+		List<Student> list = studentService.findAll();
 		return new JsonUtils(list).getJsonObject().toJSONString();
 
 		// test block
@@ -119,7 +104,7 @@ public class AcademyResource {
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
 	@ResponseBody
 	public String findById(@PathVariable final String id) {
-		JSONObject obj = new JsonUtils(academyService.findById(id))
+		JSONObject obj = new JsonUtils(studentService.findById(id))
 				.getJsonObject();
 		return obj.toJSONString();
 	}

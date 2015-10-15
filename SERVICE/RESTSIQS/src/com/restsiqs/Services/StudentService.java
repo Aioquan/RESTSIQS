@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.restsiqs.DAO.AcademyDAO;
-import com.restsiqs.Entities.Academy;
+import com.restsiqs.DAO.StudentDAO;
+import com.restsiqs.Entities.Student;
 
 /*
  * Created by devouty on 2015/10/13.
@@ -16,29 +16,29 @@ import com.restsiqs.Entities.Academy;
  */
 @Transactional
 @Service
-public class AcademyService {
+public class StudentService {
 	@Autowired
-	private AcademyDAO academyDAO;
+	private StudentDAO studentDAO;
 
-	public void save(Academy a) {
-		academyDAO.save(a);
+	public void save(Student s) {
+		studentDAO.save(s);
 	}
 
-	public void update(Academy a) {
-		academyDAO.save(a);
+	public void update(Student s) {
+		studentDAO.save(s);
 	}
 
 	public void delete(String id) {
-		academyDAO.delete(findById(id));
+		studentDAO.delete(findById(id));
 	}
 
-	public Academy findById(String id) {
-		return academyDAO.findById(id);
+	public Student findById(String id) {
+		return studentDAO.findById(id);
 	}
 
 	@SuppressWarnings("unchecked")
-	public List<Academy> findAll() {
-		return (List<Academy>) academyDAO.findAll();
+	public List<Student> findAll() {
+		return (List<Student>) studentDAO.findAll();
 	}
 
 }

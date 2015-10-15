@@ -1,0 +1,20 @@
+#MyEclipse Hibernate Properties
+#Tue Oct 13 10:21:46 CST 2015
+genBasicCompId=false
+sessionFactoryName=com.restsiqs.Utils.HibernateSessionFactory
+profile=
+daoSFId=sessionFactory
+jndiPath=
+detectM2M=false
+reStrategyClass=
+detectO2O=false
+springDaoFile=src/applicationContext.xml
+useJavaTypes=true
+keyGenerator=
+genVersionTag=false
+sessionFactoryId=
+basePersistenceClass=
+genAnnotations=false
+reSettingsFile=
+configFile=/RESTSIQS/src/hibernate.cfg.xml
+createConfigFile=true

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RESTSIQS</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_course">CourseActivity</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="title_activity_notice">NoticeActivity</string>
+    <string name="title_activity_notice_detail">NoticeDetailActivity</string>
+</resources>

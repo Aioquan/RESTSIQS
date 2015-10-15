@@ -1,0 +1,1 @@
+insert into academy(academyId,academyName, academyAddress) values("se","se","scau");

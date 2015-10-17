@@ -89,7 +89,6 @@ create table Teacher
    teacherName          varchar(255) default "无",
    teacherDepartment    varchar(255) default "无",
    teacherStatus        varchar(255) default "无",
-   academyId		varchar(255) default "无",
    primary key (teacherId)
 )engine=InnoDB default charset=utf8;
 
@@ -102,6 +101,5 @@ create table TechnologicalExam
    tName                varchar(255) default "无",
    tDate                varchar(255) default "无",
    tSorce               double default -1,
-   studentId		varchar(255) default "无",
    primary key (tId)
 )engine=InnoDB default charset=utf8;

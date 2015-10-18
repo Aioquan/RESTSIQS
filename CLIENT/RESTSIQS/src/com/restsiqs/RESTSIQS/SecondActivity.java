@@ -5,13 +5,13 @@ import android.os.Bundle;
 import org.androidannotations.annotations.EActivity;
 
 /**
- * Created by devouty on 2015/10/17.
+ * Created by devouty on 2015/10/18.
  */
-@EActivity(R.layout.layout_second)
+@EActivity(R.layout.second)
 public class SecondActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.layout_second);
+//        setContentView(R.layout.second);
     }
 }

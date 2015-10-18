@@ -4,10 +4,18 @@
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
         >
-    <TextView
+    <FrameLayout
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Hello World, MainActivity"
-            />
+            android:layout_height="fill_parent" android:layout_gravity="center_horizontal"
+            android:background="#ffffff">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESTSIQS"
+                android:id="@+id/helloText" android:layout_gravity="center"
+                android:textSize="40sp"
+                android:textColor="#000000"/>
+    </FrameLayout>
 </LinearLayout>
 

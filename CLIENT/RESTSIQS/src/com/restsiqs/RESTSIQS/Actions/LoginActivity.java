@@ -5,13 +5,14 @@ import android.os.Bundle;
 import com.restsiqs.RESTSIQS.R;
 import org.androidannotations.annotations.EActivity;
 
-@EActivity(R.layout.notice_detail)
-public class NoticeDetailActivity extends Activity {
-
+/**
+ * Created by devouty on 2015/10/20.
+ */
+@EActivity(R.layout.login)
+public class LoginActivity extends Activity {
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
     }
-
-
 }

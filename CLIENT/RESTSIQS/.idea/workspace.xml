@@ -773,7 +773,7 @@
       <workItem from="1445347563444" duration="4655000" />
       <workItem from="1445356614683" duration="1055000" />
       <workItem from="1445393642498" duration="14272000" />
-      <workItem from="1445425060353" duration="5336000" />
+      <workItem from="1445425060353" duration="5361000" />
     </task>
     <task id="LOCAL-00001" summary="Finish welcome page interface.After 2.5s the activity will jump to next Activity.">
       <created>1445158577390</created>
@@ -791,7 +791,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47622000" />
+    <option name="totallyTimeSpent" value="47647000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

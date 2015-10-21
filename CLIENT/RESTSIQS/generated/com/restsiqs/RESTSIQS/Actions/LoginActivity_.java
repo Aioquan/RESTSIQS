@@ -11,14 +11,19 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.Button;
+import android.widget.EditText;
+import com.restsiqs.RESTSIQS.R.id;
 import com.restsiqs.RESTSIQS.R.layout;
 import org.androidannotations.api.view.HasViews;
+import org.androidannotations.api.view.OnViewChangedListener;
 import org.androidannotations.api.view.OnViewChangedNotifier;
 
 public final class LoginActivity_
     extends LoginActivity
-    implements HasViews
+    implements HasViews, OnViewChangedListener
 {
 
     private final OnViewChangedNotifier onViewChangedNotifier_ = new OnViewChangedNotifier();
@@ -33,6 +38,7 @@ public final class LoginActivity_
     }
 
     private void init_(Bundle savedInstanceState) {
+        OnViewChangedNotifier.registerOnViewChangedListener(this);
     }
 
     @Override
@@ -59,6 +65,28 @@ public final class LoginActivity_
 
     public static LoginActivity_.IntentBuilder_ intent(Fragment fragment) {
         return new LoginActivity_.IntentBuilder_(fragment);
+    }
+
+    @Override
+    public void onViewChanged(HasViews hasViews) {
+        etAccount = ((EditText) hasViews.findViewById(id.account));
+        btnLogin = ((Button) hasViews.findViewById(id.btnLogin));
+        etPassword = ((EditText) hasViews.findViewById(id.password));
+        {
+            View view = hasViews.findViewById(id.btnLogin);
+            if (view!= null) {
+                view.setOnClickListener(new OnClickListener() {
+
+
+                    @Override
+                    public void onClick(View view) {
+                        LoginActivity_.this.login();
+                    }
+
+                }
+                );
+            }
+        }
     }
 
     public static class IntentBuilder_ {

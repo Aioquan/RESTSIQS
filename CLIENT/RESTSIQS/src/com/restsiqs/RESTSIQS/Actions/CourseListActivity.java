@@ -2,6 +2,7 @@ package com.restsiqs.RESTSIQS.Actions;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.widget.Toast;
 import com.restsiqs.RESTSIQS.R;
 import org.androidannotations.annotations.EActivity;
 
@@ -13,5 +14,7 @@ public class CourseListActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Toast.makeText(this,
+                getIntent().getStringExtra("entity"),Toast.LENGTH_LONG);
     }
 }

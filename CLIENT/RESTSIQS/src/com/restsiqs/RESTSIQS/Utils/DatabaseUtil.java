@@ -18,7 +18,7 @@ public class DatabaseUtil extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String sql = "create table if not exists account(account varchar(255) not null , password varchar(255) not null ,flag int not null );";
+        String sql = "create table if not exists account(account varchar(255) not null , password varchar(255) not null ,flag int default 0);";
         db.execSQL(sql);
     }
 

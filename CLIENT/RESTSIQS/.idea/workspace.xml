@@ -37,36 +37,70 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd5ce455-f0da-47bd-bab7-ad1bccb17a2c" name="Default" comment="Finish welcome page interface.After 2.5s the activity will jump to next Activity.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/fastjson-1.2.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/Constant.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/HTTPJSONGetter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/fastjson_1_2_6.xml" />
+      <change type="DELETED" beforePath="E:\workspace\RESTSIQS\CLIENT\RESTSIQS\generated\com\restsiqs\RESTSIQS\SecondActivity_.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\RESTSIQS\CLIENT\RESTSIQS\out\production\RESTSIQS\com\restsiqs\RESTSIQS\SecondActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\RESTSIQS\CLIENT\RESTSIQS\src\com\restsiqs\RESTSIQS\SecondActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\RESTSIQS\SERVICE\RESTSIQS\src\com\restsiqs\DAO\AcademyDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\RESTSIQS\SERVICE\RESTSIQS\src\com\restsiqs\DAO\CourseDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\RESTSIQS\SERVICE\RESTSIQS\src\com\restsiqs\DAO\NoticeDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\RESTSIQS\SERVICE\RESTSIQS\src\com\restsiqs\DAO\StudentDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\RESTSIQS\SERVICE\RESTSIQS\src\com\restsiqs\DAO\TeacherDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\RESTSIQS\SERVICE\RESTSIQS\src\com\restsiqs\DAO\TechnologicalexamDAO.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/Entities/Academy.class" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/Entities/Academy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/DAO/AcademyDAO.class" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/DAO/AcademyDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/Entities/Course.class" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/Entities/Course.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/DAO/CourseDAO.class" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/DAO/CourseDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseListActivity.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseListActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseListActivity_$IntentBuilder_.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseListActivity_$IntentBuilder_.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseListActivity_.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseListActivity_.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Utils/DatabaseUtil.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Utils/DatabaseUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/LoginActivity$1.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/LoginActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/LoginActivity.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/LoginActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/LoginActivity_$IntentBuilder_.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/LoginActivity_$IntentBuilder_.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/LoginActivity_.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/LoginActivity_.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/MainActivity$1.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/MainActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/MainActivity.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/R$id.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/Entities/Notice.class" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/Entities/Notice.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/DAO/NoticeDAO.class" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/DAO/NoticeDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/RESTSIQS.apk" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/RESTSIQS.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/RESTSIQS.unaligned.apk" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/RESTSIQS.unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/Entities/Academy.hbm.xml" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/Entities/Academy.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Entities/Academy.hbm.xml" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Entities/Academy.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/Entities/Student.class" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/Entities/Student.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/DAO/StudentDAO.class" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/DAO/StudentDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/Entities/Teacher.class" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/Entities/Teacher.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/DAO/TeacherDAO.class" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/DAO/TeacherDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/Entities/Technologicalexam.class" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/Entities/Technologicalexam.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/DAO/TechnologicalexamDAO.class" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/DAO/TechnologicalexamDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/.myhibernatedata" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/.myhibernatedata" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Entities/Academy.java" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Entities/Academy.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/Entities/Course.hbm.xml" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/Entities/Course.hbm.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Entities/Course.hbm.xml" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Entities/Course.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Entities/Course.java" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Entities/Course.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseListActivity.java" afterPath="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseListActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/Actions/CourseListActivity_.java" afterPath="$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/Actions/CourseListActivity_.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Resources/CourseResource.java" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Resources/CourseResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Services/CourseService.java" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Services/CourseService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/DatabaseUtil.java" afterPath="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/DatabaseUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/LoginActivity.java" afterPath="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/LoginActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/Actions/LoginActivity_.java" afterPath="$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/Actions/LoginActivity_.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/Entities/Notice.hbm.xml" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/Entities/Notice.hbm.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Entities/Notice.hbm.xml" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Entities/Notice.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Entities/Notice.java" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Entities/Notice.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../README.md" afterPath="$PROJECT_DIR$/../../README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RESTSIQS.iml" afterPath="$PROJECT_DIR$/RESTSIQS.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/Entities/Student.hbm.xml" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/Entities/Student.hbm.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Entities/Student.hbm.xml" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Entities/Student.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Entities/Student.java" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Entities/Student.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/Entities/Teacher.hbm.xml" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/Entities/Teacher.hbm.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Entities/Teacher.hbm.xml" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Entities/Teacher.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Entities/Teacher.java" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Entities/Teacher.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/Entities/Technologicalexam.hbm.xml" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/com/restsiqs/Entities/Technologicalexam.hbm.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Entities/Technologicalexam.hbm.xml" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Entities/Technologicalexam.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Entities/Technologicalexam.java" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Entities/Technologicalexam.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/androidannotations.log" afterPath="$PROJECT_DIR$/bin/androidannotations.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/course_list.xml" afterPath="$PROJECT_DIR$/res/layout/course_list.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../DOC/sql.txt" afterPath="$PROJECT_DIR$/../../DOC/sql.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -95,103 +129,55 @@
         <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+              <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DatabaseUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/DatabaseUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.82807016">
-              <caret line="94" column="5" selection-start-line="91" selection-start-column="4" selection-end-line="94" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="100" column="9" selection-start-line="100" selection-start-column="9" selection-end-line="100" selection-end-column="9" />
               <folding>
-                <element signature="e#1234#1235#0" expanded="true" />
-                <element signature="e#1284#1285#0" expanded="true" />
-                <element signature="e#3503#3504#0" expanded="true" />
-                <element signature="e#3550#3551#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity_.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/MainActivity_.java">
+      <file leaf-file-name="HTTPJSONGetter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/HTTPJSONGetter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-              <folding />
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginActivity_.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/Actions/LoginActivity_.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="82" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="82" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="my_item.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/my_item.xml">
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detail_item.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/detail_item.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CourseListActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CourseListActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseListActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.8530259">
+              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1501#1502#0" expanded="true" />
+                <element signature="e#1548#1549#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -203,8 +189,31 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.181818">
+              <caret line="31" column="45" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NoticeDetailActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/NoticeDetailActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="47" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="47" />
+              <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+              <folding>
+                <element signature="e#339#340#0" expanded="true" />
+                <element signature="e#389#390#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -255,13 +264,15 @@
         <option value="$PROJECT_DIR$/res/layout/notice_list.xml" />
         <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/NoticeListActivity.java" />
         <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/NoticeDetailActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/DatabaseUtil.java" />
         <option value="$PROJECT_DIR$/res/layout/course_list.xml" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
+        <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/Constant.java" />
+        <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/DatabaseUtil.java" />
         <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/MainActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseListActivity.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/HTTPJSONGetter.java" />
         <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseListActivity.java" />
       </list>
     </option>
   </component>
@@ -311,8 +322,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -439,9 +448,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RESTSIQS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RESTSIQS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generated" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RESTSIQS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -450,24 +479,24 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/androidannotations-api-3.0.1.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/jackson-mapper-lgpl-1.9.7.jar!/" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="6&amp;19dc2983&amp;0&amp;0002" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="192.168.56.101:5555" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="321" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.WIDTH" value="226" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workspace\RESTSIQS\CLIENT\RESTSIQS\libs" />
       <recent name="E:\workspace\RESTSIQS\CLIENT\RESTSIQS\src\com\restsiqs\RESTSIQS\Actions" />
       <recent name="E:\workspace\RESTSIQS\CLIENT\RESTSIQS\res\layout" />
       <recent name="E:\workspace\RESTSIQS\CLIENT\RESTSIQS" />
-      <recent name="E:\workspace\RESTSIQS\CLIENT\RESTSIQS\libs" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.restsiqs.RESTSIQS" />
@@ -774,6 +803,13 @@
       <workItem from="1445356614683" duration="1055000" />
       <workItem from="1445393642498" duration="14272000" />
       <workItem from="1445425060353" duration="5361000" />
+      <workItem from="1445480117269" duration="1518000" />
+      <workItem from="1445481693331" duration="2681000" />
+      <workItem from="1445507332482" duration="1137000" />
+      <workItem from="1445563658778" duration="4870000" />
+      <workItem from="1445578345336" duration="1857000" />
+      <workItem from="1445600459824" duration="35000" />
+      <workItem from="1445602877327" duration="688000" />
     </task>
     <task id="LOCAL-00001" summary="Finish welcome page interface.After 2.5s the activity will jump to next Activity.">
       <created>1445158577390</created>
@@ -791,7 +827,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47647000" />
+    <option name="totallyTimeSpent" value="60433000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -804,22 +840,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49668875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2866242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39900663" sideWeight="0.5030349" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21083455" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47516558" sideWeight="0.11836115" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3964968" sideWeight="0.11836115" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19802731" sideWeight="0.4920635" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1830161" sideWeight="0.4920635" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39900663" sideWeight="0.8816388" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -833,7 +870,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21092564" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24503312" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -867,21 +903,21 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/layout/login.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/NoticeDetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="41" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="41" />
-          <folding />
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+          <folding>
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -891,10 +927,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1234#1235#0" expanded="true" />
-            <element signature="e#1284#1285#0" expanded="true" />
-            <element signature="e#3503#3504#0" expanded="true" />
-            <element signature="e#3550#3551#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -906,7 +939,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="52" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -923,10 +955,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="e#1234#1235#0" expanded="true" />
-            <element signature="e#1284#1285#0" expanded="true" />
-            <element signature="e#3503#3504#0" expanded="true" />
-            <element signature="e#3550#3551#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -938,7 +967,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -964,7 +992,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="14" selection-start-line="6" selection-start-column="4" selection-end-line="10" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -998,7 +1025,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="14" selection-start-line="6" selection-start-column="4" selection-end-line="10" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1032,7 +1058,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="14" selection-start-line="6" selection-start-column="4" selection-end-line="10" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1059,7 +1084,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="14" selection-start-line="6" selection-start-column="4" selection-end-line="10" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1078,7 +1102,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="14" selection-start-line="6" selection-start-column="4" selection-end-line="10" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1097,7 +1120,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="14" selection-start-line="6" selection-start-column="4" selection-end-line="10" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1116,7 +1138,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="14" selection-start-line="6" selection-start-column="4" selection-end-line="10" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1133,13 +1154,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/SecondActivity_.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1150,7 +1164,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1161,7 +1174,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="53" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1172,7 +1184,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1190,7 +1201,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1201,28 +1211,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/NoticeDetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/SecondActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/DatabaseUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/login.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -1230,18 +1218,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="46" column="41" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/course_list.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="47" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1252,7 +1228,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1263,7 +1238,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1274,7 +1248,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1285,21 +1258,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseListActivity.java">
+    <entry file="file://$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/MainActivity_.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
-          <folding />
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1307,14 +1269,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/DatabaseUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/MainActivity_.java">
+    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/HTTPJSONGetter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -1322,20 +1308,51 @@
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="82" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="82" />
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/NoticeDetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+          <folding>
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82807016">
-          <caret line="94" column="5" selection-start-line="91" selection-start-column="4" selection-end-line="94" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="100" column="9" selection-start-line="100" selection-start-column="9" selection-end-line="100" selection-end-column="9" />
           <folding>
-            <element signature="e#1234#1235#0" expanded="true" />
-            <element signature="e#1284#1285#0" expanded="true" />
-            <element signature="e#3503#3504#0" expanded="true" />
-            <element signature="e#3550#3551#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/course_list.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.181818">
+          <caret line="31" column="45" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8530259">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1501#1502#0" expanded="true" />
+            <element signature="e#1548#1549#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1405,6 +1422,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>fastjson-1.2.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

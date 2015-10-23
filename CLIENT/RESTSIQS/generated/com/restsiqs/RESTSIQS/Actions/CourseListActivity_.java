@@ -11,14 +11,18 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.Button;
+import com.restsiqs.RESTSIQS.R.id;
 import com.restsiqs.RESTSIQS.R.layout;
 import org.androidannotations.api.view.HasViews;
+import org.androidannotations.api.view.OnViewChangedListener;
 import org.androidannotations.api.view.OnViewChangedNotifier;
 
 public final class CourseListActivity_
     extends CourseListActivity
-    implements HasViews
+    implements HasViews, OnViewChangedListener
 {
 
     private final OnViewChangedNotifier onViewChangedNotifier_ = new OnViewChangedNotifier();
@@ -33,6 +37,7 @@ public final class CourseListActivity_
     }
 
     private void init_(Bundle savedInstanceState) {
+        OnViewChangedNotifier.registerOnViewChangedListener(this);
     }
 
     @Override
@@ -59,6 +64,26 @@ public final class CourseListActivity_
 
     public static CourseListActivity_.IntentBuilder_ intent(Fragment fragment) {
         return new CourseListActivity_.IntentBuilder_(fragment);
+    }
+
+    @Override
+    public void onViewChanged(HasViews hasViews) {
+        btnGetNotice = ((Button) hasViews.findViewById(id.btnGetNotice));
+        {
+            View view = hasViews.findViewById(id.btnGetNotice);
+            if (view!= null) {
+                view.setOnClickListener(new OnClickListener() {
+
+
+                    @Override
+                    public void onClick(View view) {
+                        CourseListActivity_.this.getNotice();
+                    }
+
+                }
+                );
+            }
+        }
     }
 
     public static class IntentBuilder_ {

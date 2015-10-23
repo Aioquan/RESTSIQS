@@ -20,6 +20,26 @@ public class DatabaseUtil extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         String sql = "create table if not exists account(account varchar(255) not null , password varchar(255) not null ,flag int default 0);";
         db.execSQL(sql);
+        sql = "create table if not exists course(courseId             varchar(255) not null," +
+                "   credit               double default -1," +
+                "   teacherId varchar(255) default '无'," +
+                "   studentId varchar(255) default '无'," +
+                "   courseName           varchar(255) default '无'," +
+                "   courseTime           varchar(255) default '无'," +
+                "   courseDate           varchar(255) default '无'," +
+                "   test1                double default -1," +
+                "   test2                double default -1," +
+                "   test3                double default -1," +
+                "   exercises1           double default -1," +
+                "   exercises2           double default -1," +
+                "   exercises3           double default -1," +
+                "   exercises4           double default -1," +
+                "   exercises5           double default -1," +
+                "   finalTest            double default -1," +
+                "   dailyMark            double default -1," +
+                "   sum                  double default -1," +
+                "   primary key (courseId));";
+        db.execSQL(sql);
     }
 
     @Override

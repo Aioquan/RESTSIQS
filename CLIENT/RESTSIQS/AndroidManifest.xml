@@ -13,7 +13,6 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivity_"/>
         <activity android:name=".Actions.CourseDetailActivity_"></activity>
         <activity android:name=".Actions.CourseListActivity_"></activity>
         <activity android:name=".Actions.NoticeDetailActivity_"></activity>

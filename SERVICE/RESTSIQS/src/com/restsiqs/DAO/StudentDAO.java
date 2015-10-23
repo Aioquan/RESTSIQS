@@ -1,7 +1,6 @@
 package com.restsiqs.DAO;
 
 import java.util.List;
-import java.util.Set;
 
 import org.hibernate.LockOptions;
 import org.hibernate.Query;
@@ -34,6 +33,7 @@ public class StudentDAO {
 	public static final String SEX = "sex";
 	public static final String IDENTITY_CARD = "identityCard";
 	public static final String BANK_CARD = "bankCard";
+	public static final String ACADEMY_ID = "academyId";
 
 	private SessionFactory sessionFactory;
 
@@ -127,6 +127,10 @@ public class StudentDAO {
 
 	public List findByBankCard(Object bankCard) {
 		return findByProperty(BANK_CARD, bankCard);
+	}
+
+	public List findByAcademyId(Object academyId) {
+		return findByProperty(ACADEMY_ID, academyId);
 	}
 
 	public List findAll() {

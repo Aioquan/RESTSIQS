@@ -108,4 +108,13 @@ public class CourseResource {
 				.getJsonObject();
 		return obj.toJSONString();
 	}
+
+	// Find by id
+	@RequestMapping(value = "/student/{id}", method = RequestMethod.GET)
+	@ResponseBody
+	public String findByStudentId(@PathVariable final String id) {
+		JSONObject obj = new JsonUtils(courseService.findById(id))
+				.getJsonObject();
+		return obj.toJSONString();
+	}
 }

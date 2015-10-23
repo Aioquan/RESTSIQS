@@ -29,10 +29,10 @@ import com.restsiqs.Entities.Notice;
 public class NoticeDAO {
 	private static final Logger log = LoggerFactory.getLogger(NoticeDAO.class);
 	// property constants
-	public static final String ACADEMY_ID = "academyId";
 	public static final String NOTICE_TITLE = "noticeTitle";
 	public static final String NOTICE_CONTEXT = "noticeContext";
 	public static final String NOTICE_OPERATOR = "noticeOperator";
+	public static final String ACADEMY_ID = "academyId";
 
 	private SessionFactory sessionFactory;
 
@@ -112,10 +112,6 @@ public class NoticeDAO {
 		}
 	}
 
-	public List findByAcademyId(Object academyId) {
-		return findByProperty(ACADEMY_ID, academyId);
-	}
-
 	public List findByNoticeTitle(Object noticeTitle) {
 		return findByProperty(NOTICE_TITLE, noticeTitle);
 	}
@@ -126,6 +122,10 @@ public class NoticeDAO {
 
 	public List findByNoticeOperator(Object noticeOperator) {
 		return findByProperty(NOTICE_OPERATOR, noticeOperator);
+	}
+
+	public List findByAcademyId(Object academyId) {
+		return findByProperty(ACADEMY_ID, academyId);
 	}
 
 	public List findAll() {

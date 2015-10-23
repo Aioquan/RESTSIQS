@@ -36,6 +36,10 @@ public class CourseService {
 		return courseDAO.findById(id);
 	}
 
+	public List<Course> findByStudentId(String id) {
+		return courseDAO.findByStudentId(id);
+	}
+
 	@SuppressWarnings("unchecked")
 	public List<Course> findAll() {
 		return (List<Course>) courseDAO.findAll();

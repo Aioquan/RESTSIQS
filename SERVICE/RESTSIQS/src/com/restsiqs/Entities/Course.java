@@ -9,10 +9,9 @@ public class Course implements java.io.Serializable {
 	// Fields
 
 	private String courseId;
-	private Student student;
-	private Teacher teacher;
 	private Double credit;
-	private String teacher_1;
+	private String teacherId;
+	private String studentId;
 	private String courseName;
 	private String courseTime;
 	private String courseDate;
@@ -40,17 +39,16 @@ public class Course implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Course(String courseId, Student student, Teacher teacher,
-			Double credit, String teacher_1, String courseName,
-			String courseTime, String courseDate, Double test1, Double test2,
-			Double test3, Double exercises1, Double exercises2,
-			Double exercises3, Double exercises4, Double exercises5,
-			Double finalTest, Double dailyMark, Double sum) {
+	public Course(String courseId, Double credit, String teacherId,
+			String studentId, String courseName, String courseTime,
+			String courseDate, Double test1, Double test2, Double test3,
+			Double exercises1, Double exercises2, Double exercises3,
+			Double exercises4, Double exercises5, Double finalTest,
+			Double dailyMark, Double sum) {
 		this.courseId = courseId;
-		this.student = student;
-		this.teacher = teacher;
 		this.credit = credit;
-		this.teacher_1 = teacher_1;
+		this.teacherId = teacherId;
+		this.studentId = studentId;
 		this.courseName = courseName;
 		this.courseTime = courseTime;
 		this.courseDate = courseDate;
@@ -77,22 +75,6 @@ public class Course implements java.io.Serializable {
 		this.courseId = courseId;
 	}
 
-	public Student getStudent() {
-		return this.student;
-	}
-
-	public void setStudent(Student student) {
-		this.student = student;
-	}
-
-	public Teacher getTeacher() {
-		return this.teacher;
-	}
-
-	public void setTeacher(Teacher teacher) {
-		this.teacher = teacher;
-	}
-
 	public Double getCredit() {
 		return this.credit;
 	}
@@ -101,12 +83,20 @@ public class Course implements java.io.Serializable {
 		this.credit = credit;
 	}
 
-	public String getTeacher_1() {
-		return this.teacher_1;
+	public String getTeacherId() {
+		return this.teacherId;
 	}
 
-	public void setTeacher_1(String teacher_1) {
-		this.teacher_1 = teacher_1;
+	public void setTeacherId(String teacherId) {
+		this.teacherId = teacherId;
+	}
+
+	public String getStudentId() {
+		return this.studentId;
+	}
+
+	public void setStudentId(String studentId) {
+		this.studentId = studentId;
 	}
 
 	public String getCourseName() {

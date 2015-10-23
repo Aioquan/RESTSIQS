@@ -33,6 +33,7 @@ public class TechnologicalexamDAO {
 	public static final String TNAME = "tname";
 	public static final String TDATE = "tdate";
 	public static final String TSORCE = "tsorce";
+	public static final String STUDENT_ID = "studentId";
 
 	private SessionFactory sessionFactory;
 
@@ -122,6 +123,10 @@ public class TechnologicalexamDAO {
 
 	public List findByTsorce(Object tsorce) {
 		return findByProperty(TSORCE, tsorce);
+	}
+
+	public List findByStudentId(Object studentId) {
+		return findByProperty(STUDENT_ID, studentId);
 	}
 
 	public List findAll() {

@@ -9,10 +9,10 @@ public class Technologicalexam implements java.io.Serializable {
 	// Fields
 
 	private String tid;
-	private Student student;
 	private String tname;
 	private String tdate;
 	private Double tsorce;
+	private String studentId;
 
 	// Constructors
 
@@ -26,13 +26,13 @@ public class Technologicalexam implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Technologicalexam(String tid, Student student, String tname,
-			String tdate, Double tsorce) {
+	public Technologicalexam(String tid, String tname, String tdate,
+			Double tsorce, String studentId) {
 		this.tid = tid;
-		this.student = student;
 		this.tname = tname;
 		this.tdate = tdate;
 		this.tsorce = tsorce;
+		this.studentId = studentId;
 	}
 
 	// Property accessors
@@ -43,14 +43,6 @@ public class Technologicalexam implements java.io.Serializable {
 
 	public void setTid(String tid) {
 		this.tid = tid;
-	}
-
-	public Student getStudent() {
-		return this.student;
-	}
-
-	public void setStudent(Student student) {
-		this.student = student;
 	}
 
 	public String getTname() {
@@ -75,6 +67,14 @@ public class Technologicalexam implements java.io.Serializable {
 
 	public void setTsorce(Double tsorce) {
 		this.tsorce = tsorce;
+	}
+
+	public String getStudentId() {
+		return this.studentId;
+	}
+
+	public void setStudentId(String studentId) {
+		this.studentId = studentId;
 	}
 
 }

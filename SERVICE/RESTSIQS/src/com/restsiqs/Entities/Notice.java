@@ -9,10 +9,10 @@ public class Notice implements java.io.Serializable {
 	// Fields
 
 	private String noticeId;
-	private String academyId;
 	private String noticeTitle;
 	private String noticeContext;
 	private String noticeOperator;
+	private String academyId;
 
 	// Constructors
 
@@ -26,13 +26,13 @@ public class Notice implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Notice(String noticeId, String academyId, String noticeTitle,
-			String noticeContext, String noticeOperator) {
+	public Notice(String noticeId, String noticeTitle, String noticeContext,
+			String noticeOperator, String academyId) {
 		this.noticeId = noticeId;
-		this.academyId = academyId;
 		this.noticeTitle = noticeTitle;
 		this.noticeContext = noticeContext;
 		this.noticeOperator = noticeOperator;
+		this.academyId = academyId;
 	}
 
 	// Property accessors
@@ -43,14 +43,6 @@ public class Notice implements java.io.Serializable {
 
 	public void setNoticeId(String noticeId) {
 		this.noticeId = noticeId;
-	}
-
-	public String getAcademyId() {
-		return this.academyId;
-	}
-
-	public void setAcademyId(String academyId) {
-		this.academyId = academyId;
 	}
 
 	public String getNoticeTitle() {
@@ -75,6 +67,14 @@ public class Notice implements java.io.Serializable {
 
 	public void setNoticeOperator(String noticeOperator) {
 		this.noticeOperator = noticeOperator;
+	}
+
+	public String getAcademyId() {
+		return this.academyId;
+	}
+
+	public void setAcademyId(String academyId) {
+		this.academyId = academyId;
 	}
 
 }

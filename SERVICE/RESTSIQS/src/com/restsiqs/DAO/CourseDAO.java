@@ -30,7 +30,8 @@ public class CourseDAO {
 	private static final Logger log = LoggerFactory.getLogger(CourseDAO.class);
 	// property constants
 	public static final String CREDIT = "credit";
-	public static final String TEACHER_1 = "teacher_1";
+	public static final String TEACHER_ID = "teacherId";
+	public static final String STUDENT_ID = "studentId";
 	public static final String COURSE_NAME = "courseName";
 	public static final String COURSE_TIME = "courseTime";
 	public static final String COURSE_DATE = "courseDate";
@@ -128,8 +129,12 @@ public class CourseDAO {
 		return findByProperty(CREDIT, credit);
 	}
 
-	public List findByTeacher_1(Object teacher_1) {
-		return findByProperty(TEACHER_1, teacher_1);
+	public List findByTeacherId(Object teacherId) {
+		return findByProperty(TEACHER_ID, teacherId);
+	}
+
+	public List findByStudentId(Object studentId) {
+		return findByProperty(STUDENT_ID, studentId);
 	}
 
 	public List findByCourseName(Object courseName) {

@@ -10,9 +10,6 @@
             <column name="teacherId" />
             <generator class="assigned" />
         </id>
-        <many-to-one name="academy" class="com.restsiqs.Entities.Academy" fetch="select">
-            <column name="academyId" />
-        </many-to-one>
         <property name="teacherName" type="java.lang.String">
             <column name="teacherName" />
         </property>
@@ -22,6 +19,8 @@
         <property name="teacherStatus" type="java.lang.String">
             <column name="teacherStatus" />
         </property>
-        
+        <property name="academyId" type="java.lang.String">
+            <column name="academyId" />
+        </property>
     </class>
 </hibernate-mapping>

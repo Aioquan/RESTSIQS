@@ -1,7 +1,6 @@
 package com.restsiqs.DAO;
 
 import java.util.List;
-import java.util.Set;
 
 import org.hibernate.LockOptions;
 import org.hibernate.Query;
@@ -33,6 +32,7 @@ public class TeacherDAO {
 	public static final String TEACHER_NAME = "teacherName";
 	public static final String TEACHER_DEPARTMENT = "teacherDepartment";
 	public static final String TEACHER_STATUS = "teacherStatus";
+	public static final String ACADEMY_ID = "academyId";
 
 	private SessionFactory sessionFactory;
 
@@ -122,6 +122,10 @@ public class TeacherDAO {
 
 	public List findByTeacherStatus(Object teacherStatus) {
 		return findByProperty(TEACHER_STATUS, teacherStatus);
+	}
+
+	public List findByAcademyId(Object academyId) {
+		return findByProperty(ACADEMY_ID, academyId);
 	}
 
 	public List findAll() {

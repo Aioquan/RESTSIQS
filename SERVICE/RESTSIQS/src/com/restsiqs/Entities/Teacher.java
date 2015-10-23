@@ -1,8 +1,5 @@
 package com.restsiqs.Entities;
 
-import java.util.HashSet;
-import java.util.Set;
-
 /**
  * Teacher entity. @author MyEclipse Persistence Tools
  */
@@ -12,11 +9,10 @@ public class Teacher implements java.io.Serializable {
 	// Fields
 
 	private String teacherId;
-	private Academy academy;
 	private String teacherName;
 	private String teacherDepartment;
 	private String teacherStatus;
-//	private Set courses = new HashSet(0);
+	private String academyId;
 
 	// Constructors
 
@@ -30,14 +26,13 @@ public class Teacher implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Teacher(String teacherId, Academy academy, String teacherName,
-			String teacherDepartment, String teacherStatus) {
+	public Teacher(String teacherId, String teacherName,
+			String teacherDepartment, String teacherStatus, String academyId) {
 		this.teacherId = teacherId;
-		this.academy = academy;
 		this.teacherName = teacherName;
 		this.teacherDepartment = teacherDepartment;
 		this.teacherStatus = teacherStatus;
-//		this.courses = courses;
+		this.academyId = academyId;
 	}
 
 	// Property accessors
@@ -48,14 +43,6 @@ public class Teacher implements java.io.Serializable {
 
 	public void setTeacherId(String teacherId) {
 		this.teacherId = teacherId;
-	}
-
-	public Academy getAcademy() {
-		return this.academy;
-	}
-
-	public void setAcademy(Academy academy) {
-		this.academy = academy;
 	}
 
 	public String getTeacherName() {
@@ -82,12 +69,12 @@ public class Teacher implements java.io.Serializable {
 		this.teacherStatus = teacherStatus;
 	}
 
-//	public Set getCourses() {
-//		return this.courses;
-//	}
-//
-//	public void setCourses(Set courses) {
-//		this.courses = courses;
-//	}
+	public String getAcademyId() {
+		return this.academyId;
+	}
+
+	public void setAcademyId(String academyId) {
+		this.academyId = academyId;
+	}
 
 }

@@ -10,9 +10,6 @@
             <column name="noticeId" />
             <generator class="assigned" />
         </id>
-        <property name="academyId" type="java.lang.String">
-            <column name="academyId" />
-        </property>
         <property name="noticeTitle" type="java.lang.String">
             <column name="noticeTitle" />
         </property>
@@ -21,6 +18,9 @@
         </property>
         <property name="noticeOperator" type="java.lang.String">
             <column name="noticeOperator" />
+        </property>
+        <property name="academyId" type="java.lang.String">
+            <column name="academyId" />
         </property>
     </class>
 </hibernate-mapping>

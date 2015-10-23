@@ -1,8 +1,5 @@
 package com.restsiqs.Entities;
 
-import java.util.HashSet;
-import java.util.Set;
-
 /**
  * Academy entity. @author MyEclipse Persistence Tools
  */
@@ -14,8 +11,6 @@ public class Academy implements java.io.Serializable {
 	private String academyId;
 	private String academyName;
 	private String academyAddress;
-//	private Set students = new HashSet(0);
-//	private Set teachers = new HashSet(0);
 
 	// Constructors
 
@@ -33,8 +28,6 @@ public class Academy implements java.io.Serializable {
 		this.academyId = academyId;
 		this.academyName = academyName;
 		this.academyAddress = academyAddress;
-//		this.students = students;
-//		this.teachers = teachers;
 	}
 
 	// Property accessors
@@ -62,21 +55,5 @@ public class Academy implements java.io.Serializable {
 	public void setAcademyAddress(String academyAddress) {
 		this.academyAddress = academyAddress;
 	}
-
-//	public Set getStudents() {
-//		return this.students;
-//	}
-//
-//	public void setStudents(Set students) {
-//		this.students = students;
-//	}
-//
-//	public Set getTeachers() {
-//		return this.teachers;
-//	}
-//
-//	public void setTeachers(Set teachers) {
-//		this.teachers = teachers;
-//	}
 
 }

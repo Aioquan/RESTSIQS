@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -55,8 +56,7 @@ public class LoginActivity extends Activity {
                 if (jsonObject.getJSONArray("result").toJSONString().equals("[null]")) {
 //                    Toast.makeText(LoginActivity.this, "Account|password error!", Toast.LENGTH_LONG).show();
 
-                }
-                else if (((JSONObject) jsonObject.getJSONArray("result").get(0)).getString("studentPassword").equals(password)) {
+                } else if (((JSONObject) jsonObject.getJSONArray("result").get(0)).getString("studentPassword").equals(password)) {
 //                  get account & password into database
 
                     DatabaseUtil databaseUtil = new DatabaseUtil(LoginActivity.this);
@@ -82,7 +82,7 @@ public class LoginActivity extends Activity {
                 }
 
 
-            }catch (Exception e) {
+            } catch (Exception e) {
                 throw e;
 //                Log.i("devouty_exception", e.getMessage());
 //                Toast.makeText(LoginActivity.this, "Account|password error!", Toast.LENGTH_LONG).show();
@@ -99,14 +99,55 @@ public class LoginActivity extends Activity {
         } else if (password.length() == 0) {
             Toast.makeText(LoginActivity.this, "Password is null!", Toast.LENGTH_LONG).show();
         } else {
-            try
-            {
+            try {
                 new Thread(networkTask).start();
-            }catch (Exception e)
-            {
+            } catch (Exception e) {
                 Toast.makeText(LoginActivity.this, "Account|password error!", Toast.LENGTH_LONG).show();
                 etPassword.setText("");
             }
+        }
+    }
+
+    //    private static boolean isExit = false;
+//    private void exit() {
+//        if (!isExit) {
+//            isExit = true;
+//            Toast.makeText(getApplicationContext(), "再按一次退出程序",
+//                    Toast.LENGTH_SHORT).show();
+//            // 利用handler延迟发送更改状态信息
+//            handler.sendEmptyMessageDelayed(0, 2000);
+//        } else {
+//            finish();
+//            System.exit(0);
+//        }
+//    }
+//    Handler handler = new Handler() {
+//
+//        @Override
+//        public void handleMessage(Message msg) {
+//            super.handleMessage(msg);
+//            isExit = false;
+//        }
+//    };
+    private long exitTime = 0;
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            exit();
+            return false;
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
+    public void exit() {
+        if ((System.currentTimeMillis() - exitTime) > 2000) {
+            Toast.makeText(getApplicationContext(), "再按一次退出程序",
+                    Toast.LENGTH_SHORT).show();
+            exitTime = System.currentTimeMillis();
+        } else {
+            finish();
+            System.exit(0);
         }
     }
 }

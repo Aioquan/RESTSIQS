@@ -113,7 +113,7 @@ public class CourseResource {
 	@RequestMapping(value = "/student/{id}", method = RequestMethod.GET)
 	@ResponseBody
 	public String findByStudentId(@PathVariable final String id) {
-		JSONObject obj = new JsonUtils(courseService.findById(id))
+		JSONObject obj = new JsonUtils(courseService.findByStudentId(id))
 				.getJsonObject();
 		return obj.toJSONString();
 	}

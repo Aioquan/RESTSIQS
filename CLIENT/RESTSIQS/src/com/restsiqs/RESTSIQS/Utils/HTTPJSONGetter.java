@@ -27,8 +27,8 @@ public class HTTPJSONGetter {
 //                Log.i("devouty", "response:" + response.getStatusLine());
             entity = response.getEntity();
             String result = EntityUtils.toString(entity);
-            Log.i("devouty_connection", "test:" + response.getStatusLine() + "----------" + URL);
-            Log.i("devouty_connection", "test:" + result);
+            Log.i("devouty_connection", "connecting:" + response.getStatusLine() + "----------" + URL);
+//            Log.i("devouty_connection", "test:" + result);
             jsonObject = (com.alibaba.fastjson.JSONObject) JSON.parse(result);
         }catch (IOException e)
         {

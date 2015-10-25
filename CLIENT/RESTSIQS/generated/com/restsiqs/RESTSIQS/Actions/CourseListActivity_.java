@@ -13,8 +13,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Button;
-import com.restsiqs.RESTSIQS.R.id;
+import android.widget.ListView;
 import com.restsiqs.RESTSIQS.R.layout;
 import org.androidannotations.api.view.HasViews;
 import org.androidannotations.api.view.OnViewChangedListener;
@@ -68,9 +70,10 @@ public final class CourseListActivity_
 
     @Override
     public void onViewChanged(HasViews hasViews) {
-        btnGetNotice = ((Button) hasViews.findViewById(id.btnGetNotice));
+        btnGetNotice = ((Button) hasViews.findViewById(com.restsiqs.RESTSIQS.R.id.btnGetNotice));
+        listView = ((ListView) hasViews.findViewById(com.restsiqs.RESTSIQS.R.id.courseList));
         {
-            View view = hasViews.findViewById(id.btnGetNotice);
+            View view = hasViews.findViewById(com.restsiqs.RESTSIQS.R.id.btnGetNotice);
             if (view!= null) {
                 view.setOnClickListener(new OnClickListener() {
 
@@ -78,6 +81,21 @@ public final class CourseListActivity_
                     @Override
                     public void onClick(View view) {
                         CourseListActivity_.this.getNotice();
+                    }
+
+                }
+                );
+            }
+        }
+        {
+            AdapterView<?> view = ((AdapterView<?> ) hasViews.findViewById(com.restsiqs.RESTSIQS.R.id.courseList));
+            if (view!= null) {
+                view.setOnItemClickListener(new OnItemClickListener() {
+
+
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        CourseListActivity_.this.getCourseDetail();
                     }
 
                 }

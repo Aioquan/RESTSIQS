@@ -7,3 +7,5 @@ insert into teacher(teacherId,teacherName,teacherDepartment,teacherStatus,academ
 insert into course(courseId,credit,teacherId,studentId,courseName,courseTime,courseDate) values("1",2,"20121204","1","哲学","3","20151");
 
 insert into course(courseId,credit,teacherId,studentId,courseName,courseTime,courseDate) values("2",2,"20121204","1","哲学实验","4","20151");
+
+insert into course(courseId,credit,teacherId,studentId,courseName,courseTime,courseDate) values("3",2,"20121204","1","哲学实验2","5","20151");

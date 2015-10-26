@@ -19,7 +19,8 @@ public class HTTPJSONGetter {
     public static JSONObject get(String URL) {
         JSONObject jsonObject = null;
         try {
-            HttpEntity entity = null;
+            HttpEntity entity;
+            entity = null;
             HttpClient httpclient = new DefaultHttpClient();
             HttpGet request = new HttpGet(URL);
 //            Log.i("devouty", "test:" + request.getURI());

@@ -8,10 +8,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.view.KeyEvent;
-import android.widget.Button;
-import android.widget.ListView;
-import android.widget.SimpleCursorAdapter;
-import android.widget.Toast;
+import android.view.View;
+import android.widget.*;
 import com.alibaba.fastjson.JSONObject;
 import com.restsiqs.RESTSIQS.R;
 import com.restsiqs.RESTSIQS.Utils.Constant;
@@ -19,7 +17,6 @@ import com.restsiqs.RESTSIQS.Utils.DatabaseUtil;
 import com.restsiqs.RESTSIQS.Utils.HTTPJSONGetter;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
-import org.androidannotations.annotations.ItemClick;
 import org.androidannotations.annotations.ViewById;
 
 /**
@@ -49,7 +46,7 @@ public class CourseListActivity extends Activity {
         databaseUtil = new DatabaseUtil(CourseListActivity.this);
         SQLiteDatabase readableDatabase = databaseUtil.getReadableDatabase();
         cursor = readableDatabase.query("course", null, null, null, null, null, null);
-        startManagingCursor(cursor);
+//        startManagingCursor(cursor);
 //        Log.i("devouty_cl_cur","cursor's count:"+cursor.getCount());
         if (cursor.getCount() == 0) {
             new Thread(networkTask).start();
@@ -59,8 +56,37 @@ public class CourseListActivity extends Activity {
 //                    Log.i("devouty_cl_cur_f","cursor's count:"+cursor.getCount());
                     simpleCursorAdapter = new SimpleCursorAdapter(CourseListActivity.this, R.layout.course_item, cursor, new String[]{"courseName"}, new int[]{R.id.course_item_title});
                     listView.setAdapter(simpleCursorAdapter);
+                    listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                        @Override
+                        public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                            Cursor cursor = databaseUtil.getReadableDatabase().query("course", null, null, null, null, null, null);
+                            Intent intent = new Intent(CourseListActivity.this, CourseDetailActivity_.class);
+                            cursor.moveToPosition(i);
+
+                            intent.putExtra("courseId", cursor.getString(1));
+                            intent.putExtra("credit", Double.toString(cursor.getDouble(2)));
+                            intent.putExtra("teacherId", cursor.getString(3));
+                            intent.putExtra("studentId", cursor.getString(4));
+                            intent.putExtra("courseName", cursor.getString(5));
+                            intent.putExtra("courseTime", cursor.getString(6));
+                            intent.putExtra("courseDate", cursor.getString(7));
+                            intent.putExtra("test1", Double.toString(cursor.getDouble(8)));
+                            intent.putExtra("test2", Double.toString(cursor.getDouble(9)));
+                            intent.putExtra("test3", Double.toString(cursor.getDouble(10)));
+                            intent.putExtra("exercises1", Double.toString(cursor.getDouble(11)));
+                            intent.putExtra("exercises2", Double.toString(cursor.getDouble(12)));
+                            intent.putExtra("exercises3", Double.toString(cursor.getDouble(13)));
+                            intent.putExtra("exercises4", Double.toString(cursor.getDouble(14)));
+                            intent.putExtra("exercises5", Double.toString(cursor.getDouble(15)));
+                            intent.putExtra("finalTest", Double.toString(cursor.getDouble(16)));
+                            intent.putExtra("dailyMark", Double.toString(cursor.getDouble(17)));
+                            intent.putExtra("sum", Double.toString(cursor.getDouble(18)));
+                            cursor.close();
+                            startActivity(intent);
+                        }
+                    });
                 }
-            }, 1000);
+            }, 500);
         } else {
             new Handler().postDelayed(new Runnable() {
                 @Override
@@ -68,8 +94,37 @@ public class CourseListActivity extends Activity {
 //                    Log.i("devouty_cl_cur_f","cursor's count:"+cursor.getCount());
                     simpleCursorAdapter = new SimpleCursorAdapter(CourseListActivity.this, R.layout.course_item, cursor, new String[]{"courseName"}, new int[]{R.id.course_item_title});
                     listView.setAdapter(simpleCursorAdapter);
+                    listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                        @Override
+                        public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                            Cursor cursor = databaseUtil.getReadableDatabase().query("course", null, null, null, null, null, null);
+                            Intent intent = new Intent(CourseListActivity.this, CourseDetailActivity_.class);
+                            cursor.moveToPosition(i);
+
+                            intent.putExtra("courseId", cursor.getString(1));
+                            intent.putExtra("credit", Double.toString(cursor.getDouble(2)));
+                            intent.putExtra("teacherId", cursor.getString(3));
+                            intent.putExtra("studentId", cursor.getString(4));
+                            intent.putExtra("courseName", cursor.getString(5));
+                            intent.putExtra("courseTime", cursor.getString(6));
+                            intent.putExtra("courseDate", cursor.getString(7));
+                            intent.putExtra("test1", Double.toString(cursor.getDouble(8)));
+                            intent.putExtra("test2", Double.toString(cursor.getDouble(9)));
+                            intent.putExtra("test3", Double.toString(cursor.getDouble(10)));
+                            intent.putExtra("exercises1", Double.toString(cursor.getDouble(11)));
+                            intent.putExtra("exercises2", Double.toString(cursor.getDouble(12)));
+                            intent.putExtra("exercises3", Double.toString(cursor.getDouble(13)));
+                            intent.putExtra("exercises4", Double.toString(cursor.getDouble(14)));
+                            intent.putExtra("exercises5", Double.toString(cursor.getDouble(15)));
+                            intent.putExtra("finalTest", Double.toString(cursor.getDouble(16)));
+                            intent.putExtra("dailyMark", Double.toString(cursor.getDouble(17)));
+                            intent.putExtra("sum", Double.toString(cursor.getDouble(18)));
+                            cursor.close();
+                            startActivity(intent);
+                        }
+                    });
                 }
-            }, 1000);
+            }, 500);
         }
 //        readableDatabase.close();
 //        SimpleCursorAdapter simpleCursorAdapter = new SimpleCursorAdapter(CourseListActivity.this, R.layout.course_item, cursor, new String[]{"courseName"}, new int[]{R.id.course_item_title});
@@ -90,7 +145,7 @@ public class CourseListActivity extends Activity {
 //                Log.i("devouty_course_list",jsonObject.toJSONString());
 //                Log.i("devouty_course_array",jsonObject.getJSONArray("result").toJSONString());
 //                new DatabaseUtil(CourseListActivity.this).saveCourse(CourseListActivity.this, jsonObject);
-                databaseUtil.saveCourse(CourseListActivity.this, jsonObject);
+                databaseUtil.saveCourse(jsonObject);
 
                 cursor = databaseUtil.getReadableDatabase().query("course", null, null, null, null, null, null);
 //                simpleCursorAdapter.changeCursorAndColumns(cursor,new String[]{"courseName"},new int[]{R.id.course_item_title});
@@ -104,33 +159,11 @@ public class CourseListActivity extends Activity {
         }
     };
 
-    @ItemClick(R.id.courseList)
-    public void getCourseDetail() {
-        int i = listView.getSelectedItemPosition();
-        Cursor cursor = databaseUtil.getReadableDatabase().query("course", null, null, null, null, null, null);
-        Intent intent = new Intent(CourseListActivity.this, CourseDetailActivity_.class);
-        cursor.moveToPosition(i);
 
-        intent.putExtra("courseId", cursor.getString(1));
-        intent.putExtra("credit", cursor.getDouble(2));
-        intent.putExtra("teacherId", cursor.getString(3));
-        intent.putExtra("studentId", cursor.getString(4));
-        intent.putExtra("courseName", cursor.getString(5));
-        intent.putExtra("courseTime", cursor.getString(6));
-        intent.putExtra("courseDate", cursor.getString(7));
-        intent.putExtra("test1", cursor.getDouble(8));
-        intent.putExtra("test2", cursor.getDouble(9));
-        intent.putExtra("test3", cursor.getDouble(10));
-        intent.putExtra("exercises1", cursor.getDouble(11));
-        intent.putExtra("exercises2", cursor.getDouble(12));
-        intent.putExtra("exercises3", cursor.getDouble(13));
-        intent.putExtra("exercises4", cursor.getDouble(14));
-        intent.putExtra("exercises5", cursor.getDouble(15));
-        intent.putExtra("finalTest", cursor.getDouble(16));
-        intent.putExtra("dailyMark", cursor.getDouble(17));
-        intent.putExtra("sum", cursor.getDouble(18));
-        startActivity(intent);
-    }
+//    public void getCourseDetail() {
+//        int i = (int)listView.getSelectedItemId();
+//
+//    }
 
     @Click(R.id.btnGetNotice)
     public void getNotice() {
@@ -138,6 +171,7 @@ public class CourseListActivity extends Activity {
         Cursor cursor = databaseUtil.getReadableDatabase().query("course", null, null, null, null, null, null);
         simpleCursorAdapter.changeCursorAndColumns(cursor, new String[]{"courseName"}, new int[]{R.id.course_item_title});
         simpleCursorAdapter.notifyDataSetChanged();
+        cursor.close();
     }
 
     //    private static boolean isExit = false;
@@ -174,7 +208,7 @@ public class CourseListActivity extends Activity {
 
     public void exit() {
         if ((System.currentTimeMillis() - exitTime) > 2000) {
-            Toast.makeText(getApplicationContext(), "再按一次退出程序",
+            Toast.makeText(getApplicationContext(), "Exit with double click!",
                     Toast.LENGTH_SHORT).show();
             exitTime = System.currentTimeMillis();
         } else {

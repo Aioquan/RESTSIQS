@@ -12,13 +12,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.TextView;
+import com.restsiqs.RESTSIQS.R.id;
 import com.restsiqs.RESTSIQS.R.layout;
 import org.androidannotations.api.view.HasViews;
+import org.androidannotations.api.view.OnViewChangedListener;
 import org.androidannotations.api.view.OnViewChangedNotifier;
 
 public final class CourseDetailActivity_
     extends CourseDetailActivity
-    implements HasViews
+    implements HasViews, OnViewChangedListener
 {
 
     private final OnViewChangedNotifier onViewChangedNotifier_ = new OnViewChangedNotifier();
@@ -33,6 +36,7 @@ public final class CourseDetailActivity_
     }
 
     private void init_(Bundle savedInstanceState) {
+        OnViewChangedNotifier.registerOnViewChangedListener(this);
     }
 
     @Override
@@ -59,6 +63,25 @@ public final class CourseDetailActivity_
 
     public static CourseDetailActivity_.IntentBuilder_ intent(Fragment fragment) {
         return new CourseDetailActivity_.IntentBuilder_(fragment);
+    }
+
+    @Override
+    public void onViewChanged(HasViews hasViews) {
+        test1 = ((TextView) hasViews.findViewById(id.test1));
+        exercises1 = ((TextView) hasViews.findViewById(id.exercises1));
+        sum = ((TextView) hasViews.findViewById(id.sum));
+        courseTime = ((TextView) hasViews.findViewById(id.courseTime));
+        exercises3 = ((TextView) hasViews.findViewById(id.exercises3));
+        test3 = ((TextView) hasViews.findViewById(id.test3));
+        exercises2 = ((TextView) hasViews.findViewById(id.exercises2));
+        courseCredit = ((TextView) hasViews.findViewById(id.courseCredit));
+        courseDate = ((TextView) hasViews.findViewById(id.courseDate));
+        courseName = ((TextView) hasViews.findViewById(id.courseName));
+        exercises5 = ((TextView) hasViews.findViewById(id.exercises5));
+        test2 = ((TextView) hasViews.findViewById(id.test2));
+        finalTest = ((TextView) hasViews.findViewById(id.finalTest));
+        exercises4 = ((TextView) hasViews.findViewById(id.exercises4));
+        dailyMark = ((TextView) hasViews.findViewById(id.dailyMark));
     }
 
     public static class IntentBuilder_ {

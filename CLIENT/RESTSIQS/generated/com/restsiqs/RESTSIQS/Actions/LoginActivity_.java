@@ -69,9 +69,9 @@ public final class LoginActivity_
 
     @Override
     public void onViewChanged(HasViews hasViews) {
+        btnLogin = ((Button) hasViews.findViewById(id.btnLogin));
         etPassword = ((EditText) hasViews.findViewById(id.password));
         etAccount = ((EditText) hasViews.findViewById(id.account));
-        btnLogin = ((Button) hasViews.findViewById(id.btnLogin));
         {
             View view = hasViews.findViewById(id.btnLogin);
             if (view!= null) {

@@ -2,7 +2,6 @@ package com.restsiqs.RESTSIQS.Utils;
 
 import android.content.ContentValues;
 import android.content.Context;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
@@ -37,8 +36,8 @@ public class DatabaseUtil extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
     }
 
-    public void saveCourse(Context context, JSONObject jsonObject) {
-        Cursor cursor = null;
+    public void saveCourse(JSONObject jsonObject) {
+//        Cursor cursor = null;
         String sql = "delete from course;";
 
         JSONArray jsonArray = jsonObject.getJSONArray("result");

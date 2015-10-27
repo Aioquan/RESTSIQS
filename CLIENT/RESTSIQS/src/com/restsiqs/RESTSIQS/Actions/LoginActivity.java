@@ -5,8 +5,11 @@ import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.KeyEvent;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -30,9 +33,11 @@ public class LoginActivity extends Activity {
 
     @ViewById(R.id.password)
     EditText etPassword;
-
+    private View loginLoading;
+    private AnimationDrawable loadingAnimation;
     private String account;
     private String password;
+    private JSONObject jsonObject;
 
     @ViewById
     Button btnLogin;
@@ -40,6 +45,12 @@ public class LoginActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        DatabaseUtil databaseUtil = new DatabaseUtil(LoginActivity.this);
+        SQLiteDatabase writableDatabase;
+        writableDatabase = databaseUtil.getWritableDatabase();
+        writableDatabase.delete("account", null, null);
+        writableDatabase.close();
+        databaseUtil.close();
     }
 
     Runnable networkTask = new Runnable() {
@@ -49,36 +60,8 @@ public class LoginActivity extends Activity {
             String restURL;
             String processURL = "http://" + Constant.IP + ":8080/RESTSIQS/student/";
             restURL = processURL + account;
-            JSONObject jsonObject = HTTPJSONGetter.get(restURL);
-//            if (jsonObject.getJSONArray("result").toJSONString().equals("[null]")) {
-//                    Toast.makeText(LoginActivity.this, "Account|password error!", Toast.LENGTH_LONG).show();
-//
-//            } else
-            if (((JSONObject) jsonObject.getJSONArray("result").get(0)).getString("studentPassword").equals(password)) {
-//                  get account & password into database
+            jsonObject = HTTPJSONGetter.get(restURL);
 
-                DatabaseUtil databaseUtil = new DatabaseUtil(LoginActivity.this);
-                SQLiteDatabase writableDatabase;
-                writableDatabase = databaseUtil.getWritableDatabase();
-                ContentValues cv = new ContentValues();
-                cv.put("account", account);
-                cv.put("password", password);
-                cv.put("flag", 1);
-                writableDatabase.insert("account", null, cv);
-                Cursor cursor = writableDatabase.query("account", null, null, null, null, null, null);
-//                  jump to course list
-                Intent intent = new Intent(LoginActivity.this, CourseListActivity_.class);
-                intent.putExtra("account", account);
-//                    Log.i("devouty","finish account insert now its' count is:"+writableDatabase.query("account",null,null,null,null,null,null).getCount());
-                writableDatabase.close();
-                databaseUtil.close();
-                cursor.close();
-                startActivity(intent);
-                LoginActivity.this.finish();
-            } else {
-                Toast.makeText(LoginActivity.this, "Account|password error!", Toast.LENGTH_LONG).show();
-                etPassword.setText("");
-            }
         }
     };
 
@@ -92,9 +75,50 @@ public class LoginActivity extends Activity {
             Toast.makeText(LoginActivity.this, "Password is null!", Toast.LENGTH_LONG).show();
         } else {
             try {
+                btnLogin.setClickable(false);
+                Toast toast = new Toast(LoginActivity.this);
+
+                toast.makeText(LoginActivity.this,"Loading",Toast.LENGTH_SHORT).show();
+
                 new Thread(networkTask).start();
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        if (jsonObject.getJSONArray("result").toJSONString().equals("[null]")) {
+//                            toast.setText("Account|password error!");
+                            toast.cancel();
+                            Toast.makeText(LoginActivity.this,"Account|password error!",Toast.LENGTH_SHORT).show();
+                            etAccount.setText("");
+                            etPassword.setText("");
+                            btnLogin.setClickable(true);
+                        } else if (((JSONObject) jsonObject.getJSONArray("result").get(0)).getString("studentPassword").equals(password)) {
+//                  get account & password into database
+
+                            DatabaseUtil databaseUtil = new DatabaseUtil(LoginActivity.this);
+                            SQLiteDatabase writableDatabase;
+                            writableDatabase = databaseUtil.getWritableDatabase();
+                            ContentValues cv = new ContentValues();
+                            cv.put("account", account);
+                            cv.put("password", password);
+                            cv.put("flag", 1);
+                            writableDatabase.insert("account", null, cv);
+                            Cursor cursor = writableDatabase.query("account", null, null, null, null, null, null);
+//                  jump to course list
+                            Intent intent = new Intent(LoginActivity.this, CourseListActivity_.class);
+                            intent.putExtra("account", account);
+//                    Log.i("devouty","finish account insert now its' count is:"+writableDatabase.query("account",null,null,null,null,null,null).getCount());
+                            writableDatabase.close();
+                            databaseUtil.close();
+                            cursor.close();
+                            startActivity(intent);
+                            LoginActivity.this.finish();
+                        }
+                    }
+                },2000);
+
             } catch (Exception e) {
-                Toast.makeText(LoginActivity.this, "Account|password error!", Toast.LENGTH_LONG).show();
+                Toast.makeText(LoginActivity.this, "Account|password error!", Toast.LENGTH_SHORT).show();
+                etAccount.setText("");
                 etPassword.setText("");
             }
         }

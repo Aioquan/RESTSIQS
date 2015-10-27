@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.*;
 import com.alibaba.fastjson.JSONObject;
@@ -167,11 +169,7 @@ public class CourseListActivity extends Activity {
 
     @Click(R.id.btnGetNotice)
     public void getNotice() {
-        new Thread(networkTask).start();
-        Cursor cursor = databaseUtil.getReadableDatabase().query("course", null, null, null, null, null, null);
-        simpleCursorAdapter.changeCursorAndColumns(cursor, new String[]{"courseName"}, new int[]{R.id.course_item_title});
-        simpleCursorAdapter.notifyDataSetChanged();
-        cursor.close();
+
     }
 
     //    private static boolean isExit = false;
@@ -215,5 +213,35 @@ public class CourseListActivity extends Activity {
             finish();
             System.exit(0);
         }
+    }
+    private static final int ITEM_1 = Menu.FIRST;
+    private static final int ITEM_2 = Menu.FIRST+1;
+    private static final int ITEM_3 = Menu.FIRST+2;
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        menu.add(0, ITEM_1, 0, "Logout");
+        menu.add(0, ITEM_1, 0, "Update lessons");
+        menu.add(0, ITEM_1, 0, "Exit");
+        return super.onCreateOptionsMenu(menu);
+    }
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case ITEM_1:
+                Intent intent = new Intent(CourseListActivity.this,LoginActivity_.class);
+                startActivity(intent);
+                CourseListActivity.this.finish();
+                break;
+            case ITEM_2:
+                new Thread(networkTask).start();
+                Cursor cursor = databaseUtil.getReadableDatabase().query("course", null, null, null, null, null, null);
+                simpleCursorAdapter.changeCursorAndColumns(cursor, new String[]{"courseName"}, new int[]{R.id.course_item_title});
+                simpleCursorAdapter.notifyDataSetChanged();
+                cursor.close();
+                break;
+            case ITEM_3:
+                System.exit(0);
+                break;
+        }
+        return true;
     }
 }

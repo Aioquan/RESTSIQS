@@ -69,8 +69,8 @@ public final class CourseListActivity_
 
     @Override
     public void onViewChanged(HasViews hasViews) {
-        listView = ((ListView) hasViews.findViewById(id.courseList));
         btnGetNotice = ((Button) hasViews.findViewById(id.btnGetNotice));
+        listView = ((ListView) hasViews.findViewById(id.courseList));
         {
             View view = hasViews.findViewById(id.btnGetNotice);
             if (view!= null) {

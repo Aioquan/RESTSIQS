@@ -68,20 +68,20 @@ public final class CourseDetailActivity_
     @Override
     public void onViewChanged(HasViews hasViews) {
         exercises2 = ((TextView) hasViews.findViewById(id.exercises2));
-        test2 = ((TextView) hasViews.findViewById(id.test2));
-        test1 = ((TextView) hasViews.findViewById(id.test1));
-        sum = ((TextView) hasViews.findViewById(id.sum));
-        exercises5 = ((TextView) hasViews.findViewById(id.exercises5));
-        courseCredit = ((TextView) hasViews.findViewById(id.courseCredit));
-        test3 = ((TextView) hasViews.findViewById(id.test3));
-        courseTime = ((TextView) hasViews.findViewById(id.courseTime));
-        exercises4 = ((TextView) hasViews.findViewById(id.exercises4));
-        exercises1 = ((TextView) hasViews.findViewById(id.exercises1));
-        courseDate = ((TextView) hasViews.findViewById(id.courseDate));
-        exercises3 = ((TextView) hasViews.findViewById(id.exercises3));
-        finalTest = ((TextView) hasViews.findViewById(id.finalTest));
         courseName = ((TextView) hasViews.findViewById(id.courseName));
+        sum = ((TextView) hasViews.findViewById(id.sum));
+        test3 = ((TextView) hasViews.findViewById(id.test3));
+        exercises5 = ((TextView) hasViews.findViewById(id.exercises5));
+        exercises1 = ((TextView) hasViews.findViewById(id.exercises1));
+        finalTest = ((TextView) hasViews.findViewById(id.finalTest));
+        courseTime = ((TextView) hasViews.findViewById(id.courseTime));
+        courseDate = ((TextView) hasViews.findViewById(id.courseDate));
+        courseCredit = ((TextView) hasViews.findViewById(id.courseCredit));
+        exercises4 = ((TextView) hasViews.findViewById(id.exercises4));
+        test2 = ((TextView) hasViews.findViewById(id.test2));
         dailyMark = ((TextView) hasViews.findViewById(id.dailyMark));
+        test1 = ((TextView) hasViews.findViewById(id.test1));
+        exercises3 = ((TextView) hasViews.findViewById(id.exercises3));
     }
 
     public static class IntentBuilder_ {

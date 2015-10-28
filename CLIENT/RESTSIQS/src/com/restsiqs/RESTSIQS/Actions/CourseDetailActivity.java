@@ -68,8 +68,6 @@ public class CourseDetailActivity extends Activity {
                 exercises5.setText(intent.getStringExtra("exercises5"));
                 finalTest.setText(intent.getStringExtra("finalTest"));
                 dailyMark.setText(intent.getStringExtra("dailyMark"));
-
-
             }
         }, 500);
     }

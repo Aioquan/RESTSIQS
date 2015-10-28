@@ -56,12 +56,10 @@ public class LoginActivity extends Activity {
     Runnable networkTask = new Runnable() {
         @Override
         public void run() {
-
             String restURL;
             String processURL = "http://" + Constant.IP + ":8080/RESTSIQS/student/";
             restURL = processURL + account;
             jsonObject = HTTPJSONGetter.get(restURL);
-
         }
     };
 
@@ -74,6 +72,7 @@ public class LoginActivity extends Activity {
         } else if (password.length() == 0) {
             Toast.makeText(LoginActivity.this, "Password is null!", Toast.LENGTH_LONG).show();
         } else {
+            btnLogin.setFocusable(false);
             try {
                 btnLogin.setClickable(false);
                 Toast toast = new Toast(LoginActivity.this);
@@ -121,6 +120,7 @@ public class LoginActivity extends Activity {
                 etAccount.setText("");
                 etPassword.setText("");
             }
+            btnLogin.setFocusable(true);
         }
     }
 

@@ -38,6 +38,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bd5ce455-f0da-47bd-bab7-ad1bccb17a2c" name="Default" comment="Finish welcome page interface.After 2.5s the activity will jump to next Activity.">
       <change type="DELETED" beforePath="E:\workspace\RESTSIQS\README.md.bak" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity$1.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity_.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity_.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseListActivity$1$1.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseListActivity$1$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseListActivity$1.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseListActivity$1.class" />
@@ -45,20 +47,40 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseListActivity$2.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseListActivity$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseListActivity$3.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseListActivity$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseListActivity.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseListActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseListActivity_.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseListActivity_.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Utils/DatabaseUtil.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Utils/DatabaseUtil.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/LoginActivity$1.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/LoginActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/LoginActivity$2.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/LoginActivity$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/LoginActivity.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/LoginActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/LoginActivity_.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/LoginActivity_.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/MainActivity$1.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/MainActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/MainActivity.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/MainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/NoticeDetailActivity.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/NoticeDetailActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/NoticeDetailActivity_$IntentBuilder_.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/NoticeDetailActivity_$IntentBuilder_.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/NoticeDetailActivity_.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/NoticeDetailActivity_.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/NoticeListActivity.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/NoticeListActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/NoticeListActivity_$IntentBuilder_.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/NoticeListActivity_$IntentBuilder_.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/NoticeListActivity_.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/NoticeListActivity_.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/R$id.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/RESTSIQS.apk" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/RESTSIQS.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/RESTSIQS.unaligned.apk" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/RESTSIQS.unaligned.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity.java" afterPath="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity_.java" afterPath="$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity_.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseListActivity.java" afterPath="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseListActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/Actions/CourseListActivity_.java" afterPath="$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/Actions/CourseListActivity_.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/DatabaseUtil.java" afterPath="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/DatabaseUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/LoginActivity.java" afterPath="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/LoginActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/Actions/LoginActivity_.java" afterPath="$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/Actions/LoginActivity_.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/NoticeDetailActivity.java" afterPath="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/NoticeDetailActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/Actions/NoticeDetailActivity_.java" afterPath="$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/Actions/NoticeDetailActivity_.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/NoticeListActivity.java" afterPath="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/NoticeListActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/Actions/NoticeListActivity_.java" afterPath="$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/Actions/NoticeListActivity_.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/androidannotations.log" afterPath="$PROJECT_DIR$/bin/androidannotations.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/login.xml" afterPath="$PROJECT_DIR$/res/layout/login.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/course_item.xml" afterPath="$PROJECT_DIR$/res/layout/course_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/notice_detail.xml" afterPath="$PROJECT_DIR$/res/layout/notice_detail.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/notice_item.xml" afterPath="$PROJECT_DIR$/res/layout/notice_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../DOC/sql.txt" afterPath="$PROJECT_DIR$/../../DOC/sql.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RESTSIQS.iws" />
@@ -82,11 +104,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/LoginActivity.java">
+      <file leaf-file-name="DatabaseUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/DatabaseUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.68421054">
-              <caret line="89" column="86" selection-start-line="89" selection-start-column="86" selection-end-line="89" selection-end-column="86" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="102" column="9" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NoticeDetailActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/NoticeDetailActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notice_detail.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/layout/notice_detail.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.4754099">
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NoticeListActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/NoticeListActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="103" column="48" selection-start-line="103" selection-start-column="48" selection-end-line="103" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notice_list.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/notice_list.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.69697">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -96,20 +164,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseListActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="239" column="22" selection-start-line="239" selection-start-column="22" selection-end-line="239" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/login.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.074627">
-              <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+              <caret line="257" column="5" selection-start-line="219" selection-start-column="4" selection-end-line="257" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -159,25 +214,26 @@
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/res/layout/my_item.xml" />
         <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/CourseDatabaseUtil.java" />
-        <option value="$PROJECT_DIR$/res/layout/notice_item.xml" />
         <option value="$PROJECT_DIR$/res/layout/course_list.xml" />
         <option value="$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/Actions/CourseListActivity_.java" />
         <option value="$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/Actions/LoginActivity_.java" />
-        <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/NoticeDetailActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/NoticeListActivity.java" />
         <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/Constant.java" />
-        <option value="$PROJECT_DIR$/res/layout/course_item.xml" />
-        <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/DatabaseUtil.java" />
-        <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/HTTPJSONGetter.java" />
         <option value="$PROJECT_DIR$/res/layout/course_detail.xml" />
-        <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseListActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/MainActivity.java" />
         <option value="$PROJECT_DIR$/res/drawable/login_loading.xml" />
         <option value="$PROJECT_DIR$/res/anim/round_loading.xml" />
         <option value="$PROJECT_DIR$/res/drawable/loading_progress_run.xml" />
         <option value="$PROJECT_DIR$/res/layout/login.xml" />
+        <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/HTTPJSONGetter.java" />
         <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/NoticeDetailActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseListActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/NoticeListActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/notice_item.xml" />
+        <option value="$PROJECT_DIR$/res/layout/course_item.xml" />
+        <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/DatabaseUtil.java" />
+        <option value="$PROJECT_DIR$/res/layout/notice_detail.xml" />
       </list>
     </option>
   </component>
@@ -249,7 +305,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -305,6 +360,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RESTSIQS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RESTSIQS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RESTSIQS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Actions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -333,12 +410,31 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RESTSIQS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RESTSIQS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="AndroidView" />
     </panes>
@@ -702,7 +798,9 @@
       <workItem from="1445909744232" duration="3531000" />
       <workItem from="1445919110789" duration="565000" />
       <workItem from="1445921213803" duration="3993000" />
-      <workItem from="1445939527405" duration="3101000" />
+      <workItem from="1445939527405" duration="8628000" />
+      <workItem from="1445962138724" duration="2992000" />
+      <workItem from="1445994462113" duration="2972000" />
     </task>
     <task id="LOCAL-00001" summary="Finish welcome page interface.After 2.5s the activity will jump to next Activity.">
       <created>1445158577390</created>
@@ -720,7 +818,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114390000" />
+    <option name="totallyTimeSpent" value="125881000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -743,11 +841,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39900663" sideWeight="0.5030349" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21016692" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21016692" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32615894" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3178808" sideWeight="0.11836115" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.08443709" sideWeight="0.11836115" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20182094" sideWeight="0.4920635" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39900663" sideWeight="0.8816388" order="7" side_tool="true" content_ui="tabs" />
@@ -789,51 +887,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity.java</url>
-          <line>49</line>
-          <properties />
-          <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity.java</url>
-          <line>55</line>
-          <properties />
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity.java</url>
-          <line>56</line>
-          <properties />
-          <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity.java</url>
-          <line>57</line>
-          <properties />
-          <option name="timeStamp" value="81" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity.java</url>
-          <line>52</line>
-          <properties />
-          <option name="timeStamp" value="82" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity.java</url>
-          <line>51</line>
-          <properties />
-          <option name="timeStamp" value="83" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/LoginActivity.java</url>
-          <line>119</line>
-          <properties />
-          <option name="timeStamp" value="93" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="97" />
+      <option name="time" value="115" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -842,6 +896,22 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/NoticeListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -1044,26 +1114,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/notice_item.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3939395">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/notice_list.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.242424">
-          <caret line="13" column="44" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/course_list.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -1105,51 +1155,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/course_item.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.909091">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/DatabaseUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/HTTPJSONGetter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/NoticeListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/NoticeDetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable-mdpi/ic_launcher.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1158,16 +1163,6 @@
     <entry file="file://$PROJECT_DIR$/res/drawable-xhdpi/ic_launcher.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/notice_detail.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3030303">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/course_detail.xml">
@@ -1184,22 +1179,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -1219,18 +1198,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseListActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/Constant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="239" column="22" selection-start-line="239" selection-start-column="22" selection-end-line="239" selection-end-column="22" />
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8">
+          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/HTTPJSONGetter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68421054">
-          <caret line="89" column="86" selection-start-line="89" selection-start-column="86" selection-end-line="89" selection-end-column="86" />
+        <state vertical-scroll-proportion="0.5280528">
+          <caret line="61" column="53" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="257" column="5" selection-start-line="219" selection-start-column="4" selection-end-line="257" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/course_item.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.333333">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/notice_item.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.333333">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/DatabaseUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="102" column="9" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/NoticeDetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/NoticeListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="103" column="48" selection-start-line="103" selection-start-column="48" selection-end-line="103" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/notice_list.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.69697">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/notice_detail.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4754099">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
         </state>
       </provider>

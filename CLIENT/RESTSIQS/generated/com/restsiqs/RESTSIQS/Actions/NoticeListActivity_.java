@@ -12,13 +12,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.ListView;
+import com.restsiqs.RESTSIQS.R.id;
 import com.restsiqs.RESTSIQS.R.layout;
 import org.androidannotations.api.view.HasViews;
+import org.androidannotations.api.view.OnViewChangedListener;
 import org.androidannotations.api.view.OnViewChangedNotifier;
 
 public final class NoticeListActivity_
     extends NoticeListActivity
-    implements HasViews
+    implements HasViews, OnViewChangedListener
 {
 
     private final OnViewChangedNotifier onViewChangedNotifier_ = new OnViewChangedNotifier();
@@ -33,6 +36,7 @@ public final class NoticeListActivity_
     }
 
     private void init_(Bundle savedInstanceState) {
+        OnViewChangedNotifier.registerOnViewChangedListener(this);
     }
 
     @Override
@@ -59,6 +63,11 @@ public final class NoticeListActivity_
 
     public static NoticeListActivity_.IntentBuilder_ intent(Fragment fragment) {
         return new NoticeListActivity_.IntentBuilder_(fragment);
+    }
+
+    @Override
+    public void onViewChanged(HasViews hasViews) {
+        listView = ((ListView) hasViews.findViewById(id.notice_list));
     }
 
     public static class IntentBuilder_ {

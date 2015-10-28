@@ -26,13 +26,14 @@ import org.androidannotations.annotations.ViewById;
  */
 @EActivity(R.layout.course_list)
 public class CourseListActivity extends Activity {
-    String account;
-    private String processURL;
+
     @ViewById(R.id.btnGetNotice)
     Button btnGetNotice;
-
     @ViewById(R.id.courseList)
     ListView listView;
+
+    private String account;
+    private String processURL;
     private Cursor cursor;
     private SimpleCursorAdapter simpleCursorAdapter;
     private DatabaseUtil databaseUtil;
@@ -128,6 +129,7 @@ public class CourseListActivity extends Activity {
                 }
             }, 500);
         }
+
 //        readableDatabase.close();
 //        SimpleCursorAdapter simpleCursorAdapter = new SimpleCursorAdapter(CourseListActivity.this, R.layout.course_item, cursor, new String[]{"courseName"}, new int[]{R.id.course_item_title});
 //        listView.setAdapter(simpleCursorAdapter);
@@ -142,13 +144,11 @@ public class CourseListActivity extends Activity {
         @Override
         public void run() {
             try {
-
                 JSONObject jsonObject = HTTPJSONGetter.get(processURL);
 //                Log.i("devouty_course_list",jsonObject.toJSONString());
 //                Log.i("devouty_course_array",jsonObject.getJSONArray("result").toJSONString());
 //                new DatabaseUtil(CourseListActivity.this).saveCourse(CourseListActivity.this, jsonObject);
                 databaseUtil.saveCourse(jsonObject);
-
                 cursor = databaseUtil.getReadableDatabase().query("course", null, null, null, null, null, null);
 //                simpleCursorAdapter.changeCursorAndColumns(cursor,new String[]{"courseName"},new int[]{R.id.course_item_title});
 //                databaseUtil.close();
@@ -169,7 +169,8 @@ public class CourseListActivity extends Activity {
 
     @Click(R.id.btnGetNotice)
     public void getNotice() {
-
+        Intent intent = new Intent(CourseListActivity.this,NoticeListActivity_.class);
+        startActivity(intent);
     }
 
     //    private static boolean isExit = false;
@@ -193,8 +194,9 @@ public class CourseListActivity extends Activity {
 //            isExit = false;
 //        }
 //    };
-    private long exitTime = 0;
 
+    //double click
+    private long exitTime = 0;
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
@@ -214,29 +216,39 @@ public class CourseListActivity extends Activity {
             System.exit(0);
         }
     }
+
+    //menu
     private static final int ITEM_1 = Menu.FIRST;
-    private static final int ITEM_2 = Menu.FIRST+1;
-    private static final int ITEM_3 = Menu.FIRST+2;
+    private static final int ITEM_2 = Menu.FIRST + 1;
+    private static final int ITEM_3 = Menu.FIRST + 2;
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         menu.add(0, ITEM_1, 0, "Logout");
-        menu.add(0, ITEM_1, 0, "Update lessons");
-        menu.add(0, ITEM_1, 0, "Exit");
+        menu.add(0, ITEM_2, 0, "Update lessons");
+        menu.add(0, ITEM_3, 0, "Exit");
         return super.onCreateOptionsMenu(menu);
     }
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case ITEM_1:
-                Intent intent = new Intent(CourseListActivity.this,LoginActivity_.class);
+                Intent intent = new Intent(CourseListActivity.this, LoginActivity_.class);
                 startActivity(intent);
                 CourseListActivity.this.finish();
                 break;
             case ITEM_2:
                 new Thread(networkTask).start();
-                Cursor cursor = databaseUtil.getReadableDatabase().query("course", null, null, null, null, null, null);
-                simpleCursorAdapter.changeCursorAndColumns(cursor, new String[]{"courseName"}, new int[]{R.id.course_item_title});
-                simpleCursorAdapter.notifyDataSetChanged();
-                cursor.close();
+                new Handler().postDelayed(new Runnable() {
+
+                    @Override
+                    public void run() {
+                        Cursor cursor = databaseUtil.getReadableDatabase().query("course", null, null, null, null, null, null);
+//                        Log.i("devouty_refrash",cursor.getCount()+"");
+//                        simpleCursorAdapter.changeCursorAndColumns(cursor, new String[]{"courseName"}, new int[]{R.id.course_item_title});
+                        simpleCursorAdapter.changeCursor(cursor);
+                        simpleCursorAdapter.notifyDataSetChanged();
+//                        cursor.close();
+                    }
+                }, 500);
                 break;
             case ITEM_3:
                 System.exit(0);

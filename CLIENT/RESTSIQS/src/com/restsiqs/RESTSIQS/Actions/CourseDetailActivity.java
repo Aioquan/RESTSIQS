@@ -53,21 +53,21 @@ public class CourseDetailActivity extends Activity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                courseName.setText(intent.getStringExtra("courseName"));
-                sum.setText(intent.getStringExtra("sum"));
-                courseCredit.setText(intent.getStringExtra("courseCredit"));
-                courseTime.setText(intent.getStringExtra("courseTime"));
-                courseDate.setText(intent.getStringExtra("courseDate"));
-                test1.setText(intent.getStringExtra("test1"));
-                test2.setText(intent.getStringExtra("test2"));
-                test3.setText(intent.getStringExtra("test3"));
-                exercises1.setText(intent.getStringExtra("exercises1"));
-                exercises2.setText(intent.getStringExtra("exercises2"));
-                exercises3.setText(intent.getStringExtra("exercises3"));
-                exercises4.setText(intent.getStringExtra("exercises4"));
-                exercises5.setText(intent.getStringExtra("exercises5"));
-                finalTest.setText(intent.getStringExtra("finalTest"));
-                dailyMark.setText(intent.getStringExtra("dailyMark"));
+                courseName.setText(courseName.getText()+intent.getStringExtra("courseName"));
+                sum.setText(sum.getText()+intent.getStringExtra("sum"));
+                courseCredit.setText(courseCredit.getText()+intent.getStringExtra("courseCredit"));
+                courseTime.setText(courseTime.getText()+intent.getStringExtra("courseTime"));
+                courseDate.setText(courseDate.getText()+intent.getStringExtra("courseDate"));
+                test1.setText(test1.getText()+intent.getStringExtra("test1"));
+                test2.setText(test2.getText()+intent.getStringExtra("test2"));
+                test3.setText(test3.getText()+intent.getStringExtra("test3"));
+                exercises1.setText(exercises1.getText()+intent.getStringExtra("exercises1"));
+                exercises2.setText(exercises2.getText()+intent.getStringExtra("exercises2"));
+                exercises3.setText(exercises3.getText()+intent.getStringExtra("exercises3"));
+                exercises4.setText(exercises4.getText()+intent.getStringExtra("exercises4"));
+                exercises5.setText(exercises5.getText()+intent.getStringExtra("exercises5"));
+                finalTest.setText(finalTest.getText()+intent.getStringExtra("finalTest"));
+                dailyMark.setText(dailyMark.getText()+intent.getStringExtra("dailyMark"));
             }
         }, 500);
     }

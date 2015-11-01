@@ -17,7 +17,7 @@
         <properties/>
         <border type="none"/>
         <children>
-          <grid id="f7b22" binding="coursePanel" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="98aa" binding="coursePanel" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <tabbedpane title="Course"/>
@@ -25,13 +25,13 @@
             <properties/>
             <border type="none"/>
             <children>
-              <component id="56c47" class="javax.swing.JSpinner" binding="courseSpinner">
+              <component id="dbb7a" class="javax.swing.JSpinner" binding="courseSpinner">
                 <constraints>
                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties/>
               </component>
-              <component id="e5fbb" class="javax.swing.JLabel" binding="courseDate">
+              <component id="b6053" class="javax.swing.JLabel" binding="courseDate">
                 <constraints>
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -39,7 +39,7 @@
                   <text value="Course Date:"/>
                 </properties>
               </component>
-              <component id="cc9bd" class="javax.swing.JButton" binding="courseButtonSearch">
+              <component id="3b6a9" class="javax.swing.JButton" binding="courseButtonSearch">
                 <constraints>
                   <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -47,15 +47,7 @@
                   <text value="Search"/>
                 </properties>
               </component>
-              <component id="7477a" class="javax.swing.JTable" binding="courseTable">
-                <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-                    <preferred-size width="150" height="50"/>
-                  </grid>
-                </constraints>
-                <properties/>
-              </component>
-              <component id="ed16" class="javax.swing.JLabel" binding="courseStatus">
+              <component id="9da28" class="javax.swing.JLabel" binding="courseStatus">
                 <constraints>
                   <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -63,7 +55,7 @@
                   <text value="Status:"/>
                 </properties>
               </component>
-              <component id="3fe3d" class="javax.swing.JButton" binding="courseButtonAdd">
+              <component id="1d9c5" class="javax.swing.JButton" binding="courseButtonAdd">
                 <constraints>
                   <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -71,6 +63,19 @@
                   <text value="Add Course"/>
                 </properties>
               </component>
+              <scrollpane id="f6120">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="61ded" class="javax.swing.JTable" binding="courseTable">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                </children>
+              </scrollpane>
             </children>
           </grid>
           <grid id="f3af4" binding="noticePanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">

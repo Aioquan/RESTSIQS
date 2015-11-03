@@ -2,8 +2,7 @@ package View;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
+import java.awt.event.*;
 
 /**
  * Created by devouty on 2015/10/28.
@@ -27,8 +26,13 @@ public class MainView {
             }
         });
 
+
         new CoursePanel(MainView.this);
+
+
+
     }
+
     int width;
     int height;
     private JTabbedPane tabbedPane1;
@@ -39,12 +43,13 @@ public class MainView {
     private JPanel teacherPanel;
     private JPanel technologicalExamPanel;
     private JPanel academyPanel;
-    private JSpinner courseSpinner;
+//    private JSpinner courseSpinner;
     private JLabel courseDate;
     private JButton courseButtonSearch;
     private JLabel courseStatus;
     private JButton courseButtonAdd;
     private JTable courseTable;
+    private JComboBox courseComboBox;
 
     //    private String processURL;
     public JTabbedPane getTabbedPane1() {
@@ -79,12 +84,13 @@ public class MainView {
         return academyPanel;
     }
 
-    public JSpinner getCourseSpinner() {
-        return courseSpinner;
+    public JComboBox getCourseComboBox() {
+        return courseComboBox;
     }
 
     public JLabel getCourseDate() {
         return courseDate;
+
     }
 
     public JButton getCourseButtonSearch() {

@@ -6,6 +6,7 @@ import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPut;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 
@@ -34,5 +35,23 @@ public class HTTPJSONHelper {
             e.printStackTrace();
         }
         return jsonObject;
+    }
+
+    public static void put(String URL, String jsonObject) throws ConnectException {
+        try {
+            HttpEntity entity;
+            entity = null;
+            jsonObject = URLAccepter.encrypt(jsonObject);
+            System.out.println(jsonObject);
+            HttpClient httpclient = new DefaultHttpClient();
+            HttpPut request = new HttpPut(URL+jsonObject);
+            HttpResponse response = httpclient.execute(request);
+            entity = response.getEntity();
+            String result = EntityUtils.toString(entity);
+
+            System.out.println("connecting:" + response.getStatusLine() + "----------" + URL);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

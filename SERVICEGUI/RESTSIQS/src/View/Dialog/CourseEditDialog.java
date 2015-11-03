@@ -1,7 +1,14 @@
 package View.Dialog;
 
+import Beans.HTTPEntities.Course;
+import Utils.Constant;
+import Utils.HTTPJSONHelper;
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
+
 import javax.swing.*;
 import java.awt.event.*;
+import java.util.HashMap;
 
 public class CourseEditDialog extends JDialog {
     private JPanel contentPane;
@@ -16,7 +23,7 @@ public class CourseEditDialog extends JDialog {
     private JLabel lblStudentId;
     private JTextField tfStudentId;
     private JLabel lblTeacherId;
-    private JTextField textField1;
+    private JTextField tfTeacherId;
     private JLabel lblSum;
     private JTextField tfSum;
     private JTextField tfFinalTest;
@@ -40,6 +47,8 @@ public class CourseEditDialog extends JDialog {
     private JLabel lblE3;
     private JLabel lblE4;
     private JLabel lblE5;
+    private Object[][] data;
+    private HashMap<String, Object> map;
 
     public CourseEditDialog() {
         setContentPane(contentPane);
@@ -76,18 +85,88 @@ public class CourseEditDialog extends JDialog {
 
     private void onOK() {
 // add your code here
+        updateCourse();
+        this.setVisible(false);
         dispose();
     }
 
     private void onCancel() {
 // add your code here if necessary
+        this.setVisible(false);
         dispose();
     }
 
     public static void main(String[] args) {
         CourseEditDialog dialog = new CourseEditDialog();
-        dialog.pack();
-        dialog.setVisible(true);
+
         System.exit(0);
+    }
+
+    public void show(Object[][] data, HashMap<String, Object> map) {
+        this.data = data;
+        this.map = map;
+        tfCourseName.setText((String) map.get("courseName"));
+        tfCredit.setText((Double) map.get("credit") + "");
+        tfDailyMark.setText((Double) map.get("dailyMark") + "");
+
+        tfE1.setText((Double) map.get("exercises1") + "");
+        tfE2.setText((Double) map.get("exercises2") + "");
+        tfE3.setText((Double) map.get("exercises3") + "");
+        tfE4.setText((Double) map.get("exercises4") + "");
+        tfE5.setText((Double) map.get("exercises5") + "");
+
+        tfTest1.setText((Double) map.get("test1") + "");
+        tfTest2.setText((Double) map.get("test2") + "");
+        tfTest3.setText((Double) map.get("test3") + "");
+        tfFinalTest.setText((Double) map.get("finalTest") + "");
+
+        tfStudentId.setText((String) map.get("studentId"));
+        tfTeacherId.setText((String) map.get("teacherId"));
+        tfSum.setText((Double) map.get("sum") + "");
+        this.pack();
+        this.setLocation(130, 150);
+        this.setVisible(true);
+    }
+
+    private void updateCourse() {
+        Integer dataRow = (Integer) map.get("dataRow");
+        String id = (String) (data[dataRow][16]);
+        System.out.println(map.get("dataRow"));
+
+        try {
+            JSONObject jsonObject = HTTPJSONHelper.get(Constant.COURSE_URL  + id);
+            JSONObject requestObj = (JSONObject) ((JSONArray) (jsonObject.get("result"))).get(0);
+            Course course = new Course();
+
+            course.setCourseDate(requestObj.getString("courseDate"));
+            course.setCourseId(id);
+            course.setCourseName(tfCourseName.getText());
+            course.setCourseTime(requestObj.getString("courseTime"));
+            course.setCredit(Double.parseDouble(tfCredit.getText()));
+
+            course.setDailyMark(Double.parseDouble(tfDailyMark.getText()));
+            course.setStudentId(tfStudentId.getText());
+            course.setSum(Double.parseDouble(tfSum.getText()));
+            course.setFinalTest(Double.parseDouble(tfFinalTest.getText()));
+            course.setTeacherId(tfTeacherId.getText());
+
+            course.setExercises1(Double.parseDouble(tfE1.getText()));
+            course.setExercises2(Double.parseDouble(tfE2.getText()));
+            course.setExercises3(Double.parseDouble(tfE3.getText()));
+            course.setExercises4(Double.parseDouble(tfE4.getText()));
+            course.setExercises5(Double.parseDouble(tfE5.getText()));
+
+            course.setTest1(Double.parseDouble(tfTest1.getText()));
+            course.setTest2(Double.parseDouble(tfTest2.getText()));
+            course.setTest3(Double.parseDouble(tfTest3.getText()));
+
+            String pojo2json = JSONObject.toJSONString(course);
+            HTTPJSONHelper.put(Constant.COURSE_URL + "course/", pojo2json);
+
+//            System.out.println(jsonObject.toJSONString());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 }

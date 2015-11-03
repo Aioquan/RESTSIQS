@@ -6,5 +6,5 @@ package Utils;
 public class Constant {
     public static final String IP = "192.16.137.1";
     public static final String PROSESS_URL = "http://" + Constant.IP + ":8080/RESTSIQS/";
-
+    public static final String COURSE_URL = PROSESS_URL+"course/";
 }

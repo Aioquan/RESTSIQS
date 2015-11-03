@@ -25,6 +25,7 @@ public class TechnologicalexamService {
 	}
 
 	public void update(Technologicalexam t) {
+		technologicalexamDAO.delete(t);
 		technologicalexamDAO.save(t);
 	}
 

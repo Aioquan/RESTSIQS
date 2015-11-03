@@ -10,7 +10,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.alibaba.fastjson.JSONObject;
@@ -44,21 +43,18 @@ public class CourseResource {
 			.getLogger(CourseResource.class);
 
 	// Add
-	@RequestMapping(value = "/course", method = RequestMethod.POST)
+	@RequestMapping(value = "/course/{pojo}", method = RequestMethod.POST)
 	@ResponseBody
-	public String add(@RequestParam("course") Course course) {
-		log.debug("Starting add course:" + course.getCourseId());
-		JSONObject obj = null;
+	public String add(@PathVariable String pojo) {
+		log.debug("Starting add course");
 		try {
+			pojo = URLAccepter.decrpt(pojo);
+			Course course = new Gson().fromJson(pojo, Course.class);
 			courseService.save(course);
-			obj = new JsonUtils(course).getJsonObject();
-			log.debug("Add successful");
-			return obj.toJSONString();
-		} catch (Exception e) {
-			log.debug("Add failed");
+		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();
-			return null;
 		}
+		return pojo;
 	}
 
 	// Delete

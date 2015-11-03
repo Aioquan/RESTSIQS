@@ -12,13 +12,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.alibaba.fastjson.JSONObject;
+import com.google.gson.Gson;
 import com.restsiqs.Entities.Academy;
 import com.restsiqs.Services.AcademyService;
 import com.restsiqs.Utils.JsonUtils;
+import com.restsiqs.Utils.URLAccepter;
 
 /*
  * This class is the public interface for this system.It mainly deal with academy table's work.
@@ -56,21 +57,25 @@ public class AcademyResource {
 	}
 
 	// Add
-	@RequestMapping(value = "/academy", method = RequestMethod.POST)
+	@RequestMapping(value = "/academy/{pojo}", method = RequestMethod.POST)
 	@ResponseBody
-	public String add(@RequestParam("academy") Academy academy) {
-		log.debug("Starting add academy:" + academy.getAcademyId());
-		JSONObject obj = null;
+	public String add(@PathVariable String pojo) {
+		log.debug("Starting add academy");
+
 		try {
+			pojo = URLAccepter.decrpt(pojo);
+			Academy academy = new Gson().fromJson(pojo, Academy.class);
 			academyService.save(academy);
-			obj = new JsonUtils(academy).getJsonObject();
+			// obj = new JsonUtils(academy).getJsonObject();
 			log.debug("Add successful");
-			return obj.toJSONString();
+			// return obj.toJSONString();
+
 		} catch (Exception e) {
 			log.debug("Add failed");
 			e.printStackTrace();
-			return null;
+			// return null;
 		}
+		return pojo;
 	}
 
 	// Delete
@@ -83,20 +88,23 @@ public class AcademyResource {
 	}
 
 	// Update
-	@RequestMapping(value = "/academy", method = RequestMethod.PUT)
+	@RequestMapping(value = "/academy/{pojo}", method = RequestMethod.PUT)
 	@ResponseBody
-	public String update(@RequestParam("academy") Academy academy) {
-		log.debug("Starting update academy:" + academy.getAcademyId());
+	public String update(@PathVariable String pojo) {
+		log.debug("Starting update academy");
 		try {
-			academyService.save(academy);
-			JSONObject obj = new JsonUtils(academy).getJsonObject();
+			pojo = URLAccepter.decrpt(pojo);
+			Academy academy = new Gson().fromJson(pojo, Academy.class);
+			academyService.update(academy);
+			// JSONObject obj = new JsonUtils(academy).getJsonObject();
 			log.debug("Update successful");
-			return obj.toJSONString();
+
 		} catch (Exception e) {
 			log.debug("Update failed");
 			e.printStackTrace();
-			return null;
+			// return null;
 		}
+		return pojo;
 	}
 
 	// Find all

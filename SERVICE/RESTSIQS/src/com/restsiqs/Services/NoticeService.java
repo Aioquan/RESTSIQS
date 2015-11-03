@@ -25,6 +25,7 @@ public class NoticeService {
 	}
 
 	public void update(Notice n) {
+		noticeDAO.delete(n);
 		noticeDAO.save(n);
 	}
 

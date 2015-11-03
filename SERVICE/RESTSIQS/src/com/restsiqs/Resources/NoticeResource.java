@@ -9,13 +9,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.alibaba.fastjson.JSONObject;
+import com.google.gson.Gson;
 import com.restsiqs.Entities.Notice;
 import com.restsiqs.Services.NoticeService;
 import com.restsiqs.Utils.JsonUtils;
+import com.restsiqs.Utils.URLAccepter;
 
 /*
  * This class is the public interface for this system.It mainly deal with academy table's work.
@@ -41,21 +42,24 @@ public class NoticeResource {
 			.getLogger(NoticeResource.class);
 
 	// Add
-	@RequestMapping(value = "/notice", method = RequestMethod.POST)
+	@RequestMapping(value = "/notice/{pojo}", method = RequestMethod.POST)
 	@ResponseBody
-	public String add(@RequestParam("notice") Notice notice) {
-		log.debug("Starting add notice:" + notice.getNoticeId());
-		JSONObject obj = null;
+	public String add(@PathVariable String pojo) {
+		log.debug("Starting add notice");
+		// JSONObject obj = null;
 		try {
+			pojo = URLAccepter.decrpt(pojo);
+			Notice notice = new Gson().fromJson(pojo, Notice.class);
 			noticeService.save(notice);
-			obj = new JsonUtils(notice).getJsonObject();
+			// obj = new JsonUtils(notice).getJsonObject();
 			log.debug("Add successful");
-			return obj.toJSONString();
+			// return obj.toJSONString();
 		} catch (Exception e) {
 			log.debug("Add failed");
 			e.printStackTrace();
-			return null;
+			// return null;
 		}
+		return pojo;
 	}
 
 	// Delete
@@ -68,20 +72,23 @@ public class NoticeResource {
 	}
 
 	// Update
-	@RequestMapping(value = "/notice", method = RequestMethod.PUT)
+	@RequestMapping(value = "/notice/{pojo}", method = RequestMethod.PUT)
 	@ResponseBody
-	public String update(@RequestParam("notice") Notice notice) {
-		log.debug("Starting update notice:" + notice.getNoticeId());
+	public String update(@PathVariable String pojo) {
+		log.debug("Starting update notice");
 		try {
-			noticeService.save(notice);
-			JSONObject obj = new JsonUtils(notice).getJsonObject();
+			pojo = URLAccepter.decrpt(pojo);
+			Notice notice = new Gson().fromJson(pojo, Notice.class);
+			noticeService.update(notice);
+			// JSONObject obj = new JsonUtils(notice).getJsonObject();
 			log.debug("Update successful");
-			return obj.toJSONString();
+			// return obj.toJSONString();
 		} catch (Exception e) {
 			log.debug("Update failed");
 			e.printStackTrace();
-			return null;
+			// return null;
 		}
+		return pojo;
 	}
 
 	// Find all

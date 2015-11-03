@@ -49,7 +49,7 @@ public class HTTPJSONHelper {
             entity = response.getEntity();
             String result = EntityUtils.toString(entity);
 
-            System.out.println("connecting:" + response.getStatusLine() + "----------" + URL);
+//            System.out.println("connecting:" + response.getStatusLine() + "----------" + URL);
         } catch (Exception e) {
             e.printStackTrace();
         }

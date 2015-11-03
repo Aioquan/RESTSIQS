@@ -25,6 +25,7 @@ public class StudentService {
 	}
 
 	public void update(Student s) {
+		studentDAO.delete(s);
 		studentDAO.save(s);
 	}
 

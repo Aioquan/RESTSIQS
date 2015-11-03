@@ -25,6 +25,7 @@ public class AcademyService {
 	}
 
 	public void update(Academy a) {
+		academyDAO.delete(a);
 		academyDAO.save(a);
 	}
 

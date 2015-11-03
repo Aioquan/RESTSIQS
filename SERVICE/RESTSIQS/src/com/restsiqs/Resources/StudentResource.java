@@ -9,13 +9,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.alibaba.fastjson.JSONObject;
+import com.google.gson.Gson;
 import com.restsiqs.Entities.Student;
 import com.restsiqs.Services.StudentService;
 import com.restsiqs.Utils.JsonUtils;
+import com.restsiqs.Utils.URLAccepter;
 
 /*
  * This class is the public interface for this system.It mainly deal with academy table's work.
@@ -41,21 +42,25 @@ public class StudentResource {
 			.getLogger(StudentResource.class);
 
 	// Add
-	@RequestMapping(value = "/student", method = RequestMethod.POST)
+	@RequestMapping(value = "/student/{pojo}", method = RequestMethod.POST)
 	@ResponseBody
-	public String add(@RequestParam("student") Student student) {
-		log.debug("Starting add student:" + student.getStudentId());
-		JSONObject obj = null;
+	public String add(@PathVariable String pojo) {
+		log.debug("Starting add student");
+		// JSONObject obj = null;
 		try {
+			pojo = URLAccepter.decrpt(pojo);
+			Student student = new Gson().fromJson(pojo, Student.class);
+
 			studentService.save(student);
-			obj = new JsonUtils(student).getJsonObject();
+			// obj = new JsonUtils(student).getJsonObject();
 			log.debug("Add successful");
-			return obj.toJSONString();
+			// return obj.toJSONString();
 		} catch (Exception e) {
 			log.debug("Add failed");
 			e.printStackTrace();
-			return null;
+			// return null;
 		}
+		return pojo;
 	}
 
 	// Delete
@@ -68,20 +73,24 @@ public class StudentResource {
 	}
 
 	// Update
-	@RequestMapping(value = "/student", method = RequestMethod.PUT)
+	@RequestMapping(value = "/student/{pojo}", method = RequestMethod.PUT)
 	@ResponseBody
-	public String update(@RequestParam("student") Student student) {
-		log.debug("Starting update student:" + student.getStudentId());
+	public String update(@PathVariable String pojo) {
+		log.debug("Starting update student");
 		try {
-			studentService.save(student);
-			JSONObject obj = new JsonUtils(student).getJsonObject();
+			pojo = URLAccepter.decrpt(pojo);
+			Student student = new Gson().fromJson(pojo, Student.class);
+
+			studentService.update(student);
+			// JSONObject obj = new JsonUtils(student).getJsonObject();
 			log.debug("Update successful");
-			return obj.toJSONString();
+			// return obj.toJSONString();
 		} catch (Exception e) {
 			log.debug("Update failed");
 			e.printStackTrace();
-			return null;
+			// return null;
 		}
+		return pojo;
 	}
 
 	// Find all

@@ -9,13 +9,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.alibaba.fastjson.JSONObject;
+import com.google.gson.Gson;
 import com.restsiqs.Entities.Technologicalexam;
 import com.restsiqs.Services.TechnologicalexamService;
 import com.restsiqs.Utils.JsonUtils;
+import com.restsiqs.Utils.URLAccepter;
 
 /*
  * This class is the public interface for this system.It mainly deal with academy table's work.
@@ -41,23 +42,26 @@ public class TechnologicalexamResource {
 			.getLogger(TechnologicalexamResource.class);
 
 	// Add
-	@RequestMapping(value = "/technologicalexam", method = RequestMethod.POST)
+	@RequestMapping(value = "/technologicalexam/{pojo}", method = RequestMethod.POST)
 	@ResponseBody
-	public String add(
-			@RequestParam("technologicalexam") Technologicalexam technologicalexam) {
-		log.debug("Starting add technologicalexam:"
-				+ technologicalexam.getTid());
-		JSONObject obj = null;
+	public String add(@PathVariable String pojo) {
+		log.debug("Starting add technologicalexam");
+		// JSONObject obj = null;
 		try {
+			pojo = URLAccepter.decrpt(pojo);
+			Technologicalexam technologicalexam = new Gson().fromJson(pojo,
+					Technologicalexam.class);
+
 			TechnologicalexamService.save(technologicalexam);
-			obj = new JsonUtils(technologicalexam).getJsonObject();
+			// obj = new JsonUtils(technologicalexam).getJsonObject();
 			log.debug("Add successful");
-			return obj.toJSONString();
+			// return obj.toJSONString();
 		} catch (Exception e) {
 			log.debug("Add failed");
 			e.printStackTrace();
-			return null;
+			// return null;
 		}
+		return pojo;
 	}
 
 	// Delete
@@ -70,22 +74,26 @@ public class TechnologicalexamResource {
 	}
 
 	// Update
-	@RequestMapping(value = "/technologicalexam", method = RequestMethod.PUT)
+	@RequestMapping(value = "/technologicalexam/{pojo}", method = RequestMethod.PUT)
 	@ResponseBody
-	public String update(
-			@RequestParam("technologicalexam") Technologicalexam technologicalexam) {
-		log.debug("Starting update technologicalexam:"
-				+ technologicalexam.getTid());
+	public String update(@PathVariable String pojo) {
+		log.debug("Starting update technologicalexam");
 		try {
-			TechnologicalexamService.save(technologicalexam);
-			JSONObject obj = new JsonUtils(technologicalexam).getJsonObject();
+			pojo = URLAccepter.decrpt(pojo);
+			Technologicalexam technologicalexam = new Gson().fromJson(pojo,
+					Technologicalexam.class);
+
+			TechnologicalexamService.update(technologicalexam);
+			// JSONObject obj = new
+			// JsonUtils(technologicalexam).getJsonObject();
 			log.debug("Update successful");
-			return obj.toJSONString();
+			// return obj.toJSONString();
 		} catch (Exception e) {
 			log.debug("Update failed");
 			e.printStackTrace();
-			return null;
+			// return null;
 		}
+		return pojo;
 	}
 
 	// Find all

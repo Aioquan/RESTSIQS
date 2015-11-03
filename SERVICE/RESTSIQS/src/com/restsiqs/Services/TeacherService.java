@@ -25,6 +25,7 @@ public class TeacherService {
 	}
 
 	public void update(Teacher t) {
+		teacherDAO.delete(t);
 		teacherDAO.save(t);
 	}
 

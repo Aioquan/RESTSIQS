@@ -10,13 +10,13 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 
 import java.io.IOException;
-import java.lang.System;
+import java.net.ConnectException;
 
 /**
  * Created by devouty on 2015/10/28.
  */
-public class HTTPJSONGetter {
-    public static JSONObject get(String URL) {
+public class HTTPJSONHelper {
+    public static JSONObject get(String URL) throws ConnectException {
         JSONObject jsonObject = null;
         try {
             HttpEntity entity;
@@ -28,6 +28,8 @@ public class HTTPJSONGetter {
             String result = EntityUtils.toString(entity);
             System.out.println("connecting:" + response.getStatusLine() + "----------" + URL);
             jsonObject = (com.alibaba.fastjson.JSONObject) JSON.parse(result);
+        } catch (ConnectException ce) {
+            throw ce;
         } catch (IOException e) {
             e.printStackTrace();
         }

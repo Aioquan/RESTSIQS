@@ -25,7 +25,9 @@ public class CourseService {
 	}
 
 	public void update(Course c) {
+		courseDAO.delete(c);
 		courseDAO.save(c);
+		// courseDAO.save(c);
 	}
 
 	public void delete(String id) {

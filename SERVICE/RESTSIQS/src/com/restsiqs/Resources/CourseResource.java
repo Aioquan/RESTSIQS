@@ -1,5 +1,6 @@
 package com.restsiqs.Resources;
 
+import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -13,9 +14,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.alibaba.fastjson.JSONObject;
+import com.google.gson.Gson;
 import com.restsiqs.Entities.Course;
 import com.restsiqs.Services.CourseService;
 import com.restsiqs.Utils.JsonUtils;
+import com.restsiqs.Utils.URLAccepter;
 
 /*
  * This class is the public interface for this system.It mainly deal with academy table's work.
@@ -68,20 +71,48 @@ public class CourseResource {
 	}
 
 	// Update
-	@RequestMapping(value = "/course", method = RequestMethod.PUT)
+	@RequestMapping(value = "/course/{pojo}", method = RequestMethod.PUT)
 	@ResponseBody
-	public String update(@RequestParam("course") Course course) {
-		log.debug("Starting update course:" + course.getCourseId());
+	public String update(@PathVariable String pojo) {
+		log.debug("Starting update course");
+		// try {
+		// courseService.save(course);
+		// JSONObject obj = new JsonUtils(course).getJsonObject();
+		// log.debug("Update successful");
+		// return obj.toJSONString();
+		// } catch (Exception e) {
+		// log.debug("Update failed");
+		// e.printStackTrace();
+		// return null;
+		// }
 		try {
-			courseService.save(course);
-			JSONObject obj = new JsonUtils(course).getJsonObject();
-			log.debug("Update successful");
-			return obj.toJSONString();
-		} catch (Exception e) {
-			log.debug("Update failed");
+			pojo = URLAccepter.decrpt(pojo);
+			Course course = new Gson().fromJson(pojo, Course.class);
+			courseService.update(course);
+			// Course c2 = courseService.findById(course.getCourseId());
+			// c2.setCourseDate(course.getCourseDate());
+			// c2.setCourseName(course.getCourseName());
+			// c2.setCourseTime(course.getCourseTime());
+			// c2.setCredit(course.getCredit());
+			// c2.setDailyMark(course.getDailyMark());
+			// c2.setExercises1(course.getExercises1());
+			// c2.setExercises2(course.getExercises2());
+			// c2.setExercises3(course.getExercises3());
+			// c2.setExercises4(course.getExercises4());
+			// c2.setExercises5(course.getExercises5());
+			// c2.setFinalTest(course.getFinalTest());
+			// c2.setStudentId(course.getStudentId());
+			// c2.setSum(course.getSum());
+			// c2.setTeacherId(course.getTeacherId());
+			// c2.setTest1(course.getTest1());
+			// c2.setTest2(course.getTest2());
+			// c2.setTest3(course.getTest3());
+			// courseService.save(c2);
+		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();
-			return null;
 		}
+		// System.out.println(pojo);
+		return pojo;
 	}
 
 	// Find all

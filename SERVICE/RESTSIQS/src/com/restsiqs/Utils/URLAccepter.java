@@ -10,12 +10,12 @@ import java.net.URLEncoder;
 public class URLAccepter {
 	public static String encrypt(String str)
 			throws UnsupportedEncodingException {
-		str = URLEncoder.encode(str, "UTF-8");
+		str = URLEncoder.encode(str, "GBK");
 		return str;
 	}
 
 	public static String decrpt(String str) throws UnsupportedEncodingException {
-		str = URLDecoder.decode(str, "UTF-8");
+		str = URLDecoder.decode(str, "GBK");
 		return str;
 	}
 }

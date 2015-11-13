@@ -1,4 +1,4 @@
-package View.Dialog;
+package View.Dialog.Course;
 
 import Beans.HTTPEntities.Course;
 import Utils.Constant;
@@ -8,6 +8,7 @@ import com.alibaba.fastjson.JSONObject;
 
 import javax.swing.*;
 import java.awt.event.*;
+import java.net.ConnectException;
 import java.util.HashMap;
 
 public class CourseEditDialog extends JDialog {
@@ -47,6 +48,7 @@ public class CourseEditDialog extends JDialog {
     private JLabel lblE3;
     private JLabel lblE4;
     private JLabel lblE5;
+    private JPanel dPanel;
     private Object[][] data;
     private HashMap<String, Object> map;
 
@@ -81,13 +83,32 @@ public class CourseEditDialog extends JDialog {
                 onCancel();
             }
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+
+        //number limit
+        tfTest1.addKeyListener(NumLimitListener);
+        tfTest2.addKeyListener(NumLimitListener);
+        tfTest3.addKeyListener(NumLimitListener);
+        tfE1.addKeyListener(NumLimitListener);
+        tfE2.addKeyListener(NumLimitListener);
+        tfE3.addKeyListener(NumLimitListener);
+        tfE4.addKeyListener(NumLimitListener);
+        tfE5.addKeyListener(NumLimitListener);
+        tfFinalTest.addKeyListener(NumLimitListener);
+        tfDailyMark.addKeyListener(NumLimitListener);
+        tfCredit.addKeyListener(NumLimitListener);
+        tfSum.addKeyListener(NumLimitListener);
+
     }
 
     private void onOK() {
 // add your code here
-        updateCourse();
-        this.setVisible(false);
-        dispose();
+        if (hasEmpty()) {
+            this.setTitle("Input is not legal(has empty textfield)");
+        } else {
+            updateCourse();
+            this.setVisible(false);
+            dispose();
+        }
     }
 
     private void onCancel() {
@@ -130,11 +151,11 @@ public class CourseEditDialog extends JDialog {
 
     private void updateCourse() {
         Integer dataRow = (Integer) map.get("dataRow");
-        String id = (String) (data[dataRow][16]);
-        System.out.println(map.get("dataRow"));
+        String id = (data[dataRow][17]) + "";
+//        System.out.println(map.get("dataRow"));
 
         try {
-            JSONObject jsonObject = HTTPJSONHelper.get(Constant.COURSE_URL  + id);
+            JSONObject jsonObject = HTTPJSONHelper.get(Constant.COURSE_URL + id);
             JSONObject requestObj = (JSONObject) ((JSONArray) (jsonObject.get("result"))).get(0);
             Course course = new Course();
 
@@ -164,9 +185,63 @@ public class CourseEditDialog extends JDialog {
             HTTPJSONHelper.put(Constant.COURSE_URL + "course/", pojo2json);
 
 //            System.out.println(jsonObject.toJSONString());
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (ArrayIndexOutOfBoundsException e) {
+//            e.printStackTrace();
+        } catch (ConnectException connectException) {
+            connectException.printStackTrace();
+        }
+    }
+
+    //number input limitation
+    KeyListener NumLimitListener = new KeyListener() {
+        public void keyTyped(KeyEvent e) {
+            if (e.getKeyChar() < '0' ||
+                    e.getKeyChar() > '9') {
+                e.consume();
+                return;
+            }
         }
 
+        public void keyPressed(KeyEvent e) {
+
+        }
+
+        public void keyReleased(KeyEvent e) {
+        }
+    };
+
+    public boolean hasEmpty() {
+        boolean flag = false;
+
+        if (tfCourseName.getText().isEmpty())
+            flag = true;
+        if (tfCredit.getText().isEmpty())
+            flag = true;
+        if (tfDailyMark.getText().isEmpty())
+            flag = true;
+        if (tfE1.getText().isEmpty())
+            flag = true;
+        if (tfE2.getText().isEmpty())
+            flag = true;
+        if (tfE3.getText().isEmpty())
+            flag = true;
+        if (tfE4.getText().isEmpty())
+            flag = true;
+        if (tfE5.getText().isEmpty())
+            flag = true;
+        if (tfTest1.getText().isEmpty())
+            flag = true;
+        if (tfTest2.getText().isEmpty())
+            flag = true;
+        if (tfTest3.getText().isEmpty())
+            flag = true;
+        if (tfFinalTest.getText().isEmpty())
+            flag = true;
+        if (tfStudentId.getText().isEmpty())
+            flag = true;
+        if (tfTeacherId.getText().isEmpty())
+            flag = true;
+
+        return flag;
     }
 }

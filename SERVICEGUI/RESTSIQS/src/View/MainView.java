@@ -2,7 +2,9 @@ package View;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
+import java.awt.event.KeyAdapter;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 /**
  * Created by devouty on 2015/10/28.
@@ -26,11 +28,15 @@ public class MainView {
             }
         });
 
+        try {
+            new CoursePanel(MainView.this);
+            new NoticePanel(MainView.this);
+        } catch (ArrayIndexOutOfBoundsException e) {
 
-        new CoursePanel(MainView.this);
+        }
 
-
-
+        courseButtonAdd.addKeyListener(new KeyAdapter() {
+        });
     }
 
     int width;
@@ -42,14 +48,50 @@ public class MainView {
     private JPanel studentPanel;
     private JPanel teacherPanel;
     private JPanel technologicalExamPanel;
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public JButton getNoticeButtonAdd() {
+        return noticeButtonAdd;
+    }
+
+    public JTable getNoticeTable() {
+        return noticeTable;
+    }
+
+    public JLabel getNoticeStatus() {
+        return noticeStatus;
+    }
+
     private JPanel academyPanel;
-//    private JSpinner courseSpinner;
-    private JLabel courseDate;
-    private JButton courseButtonSearch;
     private JLabel courseStatus;
     private JButton courseButtonAdd;
     private JTable courseTable;
-    private JComboBox courseComboBox;
+    private JButton noticeButtonAdd;
+    private JTable noticeTable;
+    private JLabel noticeStatus;
+    private JTable studentTable;
+    private JButton studentBtnAdd;
+
+    public JTable getStudentTable() {
+        return studentTable;
+    }
+
+    public JButton getStudentBtnAdd() {
+        return studentBtnAdd;
+    }
+
+    public JLabel getStudentLblStatus() {
+        return studentLblStatus;
+    }
+
+    private JLabel studentLblStatus;
 
     //    private String processURL;
     public JTabbedPane getTabbedPane1() {
@@ -82,19 +124,6 @@ public class MainView {
 
     public JPanel getAcademyPanel() {
         return academyPanel;
-    }
-
-    public JComboBox getCourseComboBox() {
-        return courseComboBox;
-    }
-
-    public JLabel getCourseDate() {
-        return courseDate;
-
-    }
-
-    public JButton getCourseButtonSearch() {
-        return courseButtonSearch;
     }
 
     public JLabel getCourseStatus() {

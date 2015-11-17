@@ -28,8 +28,8 @@ public class NoticePanel {
     private NoticeAddDialog noticeAddDialog;
     private NoticeEditDialog noticeEditDialog;
     private NoticeDeleteDialog noticeDeleteDialog;
-    private EditButtonRenderer courseTableBtnEdit;
-    private EditButtonRenderer courseTableBtnDelete;
+    private EditButtonRenderer noticeTableBtnEdit;
+    private EditButtonRenderer noticeTableBtnDelete;
 
     NoticePanel(MainView mainView) {
         this.noticeButtonAdd = mainView.getNoticeButtonAdd();
@@ -38,8 +38,8 @@ public class NoticePanel {
         noticeAddDialog = new NoticeAddDialog();
         noticeDeleteDialog = new NoticeDeleteDialog();
         noticeEditDialog = new NoticeEditDialog();
-        courseTableBtnEdit = new EditButtonRenderer("edit");
-        courseTableBtnDelete = new EditButtonRenderer("delete");
+        noticeTableBtnEdit = new EditButtonRenderer("edit");
+        noticeTableBtnDelete = new EditButtonRenderer("delete");
         updateData();
 
         noticeTable.getTableHeader().setReorderingAllowed(false);
@@ -71,6 +71,7 @@ public class NoticePanel {
                     map.put("noticeContext",data[y][4]);
                     map.put("noticeOperator",data[y][5]);
                     map.put("academyId",data[y][6]);
+                    map.put("dataRow", noticeTable.getSelectedRow());
                     noticeEditDialog.show(NoticePanel.this.data, map);
                     updateData();
                 }
@@ -156,8 +157,8 @@ public class NoticePanel {
                 }
                 noticeTable.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
                 noticeTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-                noticeTable.getColumn("edit").setCellRenderer(courseTableBtnEdit);
-                noticeTable.getColumn("delete").setCellRenderer(courseTableBtnDelete);
+                noticeTable.getColumn("edit").setCellRenderer(noticeTableBtnEdit);
+                noticeTable.getColumn("delete").setCellRenderer(noticeTableBtnDelete);
                 noticeTable.setDoubleBuffered(false);
 //                courseTable.setCellSelectionEnabled(false);
 

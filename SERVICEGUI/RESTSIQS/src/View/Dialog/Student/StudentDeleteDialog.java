@@ -1,12 +1,17 @@
 package View.Dialog.Student;
 
+import Utils.Constant;
+import Utils.HTTPJSONHelper;
+
 import javax.swing.*;
 import java.awt.event.*;
+import java.net.ConnectException;
 
 public class StudentDeleteDialog extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
+    private JLabel label;
 
     public StudentDeleteDialog() {
         setContentPane(contentPane);
@@ -43,6 +48,12 @@ public class StudentDeleteDialog extends JDialog {
 
     private void onOK() {
 // add your code here
+        try {
+            HTTPJSONHelper.delete(Constant.STUDENT_URL + this.id);
+        }catch (ConnectException e)
+        {
+            e.printStackTrace();
+        }
         dispose();
     }
 
@@ -56,5 +67,14 @@ public class StudentDeleteDialog extends JDialog {
         dialog.pack();
         dialog.setVisible(true);
         System.exit(0);
+    }
+    String id;
+    public void show(String id,String studentName)
+    {
+        this.id = id;
+        this.label.setText("Delete:"+studentName+"?");
+        this.pack();
+        this.setLocation(230,150);
+        this.setVisible(true);
     }
 }

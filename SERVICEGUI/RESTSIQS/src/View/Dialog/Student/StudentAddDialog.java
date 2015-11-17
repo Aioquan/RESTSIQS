@@ -2,6 +2,7 @@ package View.Dialog.Student;
 
 import javax.swing.*;
 import java.awt.event.*;
+import java.util.HashMap;
 
 public class StudentAddDialog extends JDialog {
     private JPanel contentPane;
@@ -56,5 +57,9 @@ public class StudentAddDialog extends JDialog {
         dialog.pack();
         dialog.setVisible(true);
         System.exit(0);
+    }
+    public void show(Object[][] data, HashMap<String ,Object> map)
+    {
+
     }
 }

@@ -8,5 +8,7 @@ public class Constant {
     public static final String PROSESS_URL = "http://" + Constant.IP + ":8080/RESTSIQS/";
     public static final String COURSE_URL = PROSESS_URL+"course/";
     public static final String NOTICE_URL = PROSESS_URL+"notice/";
-
+    public static final String STUDENT_URL = PROSESS_URL+"student/";
+    public static final String TEACHER_URL = PROSESS_URL+"teacher/";
+    public static final String TECNOLOGICALEXAM_URL = PROSESS_URL+"technologicalexam/";
 }

@@ -2,7 +2,6 @@ package View;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.KeyAdapter;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
@@ -28,15 +27,11 @@ public class MainView {
             }
         });
 
-        try {
-            new CoursePanel(MainView.this);
-            new NoticePanel(MainView.this);
-        } catch (ArrayIndexOutOfBoundsException e) {
 
-        }
+        new CoursePanel(MainView.this);
+        new NoticePanel(MainView.this);
+        new StudentPanel(MainView.this);
 
-        courseButtonAdd.addKeyListener(new KeyAdapter() {
-        });
     }
 
     int width;

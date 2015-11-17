@@ -29,6 +29,7 @@ import com.restsiqs.Utils.URLAccepter;
  * 		Update:               |PUT /course/course
  * 		FindAll:              |GET /course/courselist
  * 		Find by primary key:  |GET /course/{id}
+ * 		Find by student's primary key:  |GET /course/student/{id}
  * 		
  * Created by devouty on 2015/10/13.
  * 
@@ -136,7 +137,7 @@ public class CourseResource {
 		return obj.toJSONString();
 	}
 
-	// Find by id
+	// Find by student id
 	@RequestMapping(value = "/student/{id}", method = RequestMethod.GET)
 	@ResponseBody
 	public String findByStudentId(@PathVariable final String id) {

@@ -42,4 +42,9 @@ public class TechnologicalexamService {
 		return (List<Technologicalexam>) technologicalexamDAO.findAll();
 	}
 
+	public List<Technologicalexam> findByStudentId(String id) {
+		return (List<Technologicalexam>) technologicalexamDAO
+				.findByStudentId(id);
+	}
+
 }

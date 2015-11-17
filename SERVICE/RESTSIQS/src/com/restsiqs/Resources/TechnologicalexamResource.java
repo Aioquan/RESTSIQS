@@ -28,6 +28,7 @@ import com.restsiqs.Utils.URLAccepter;
  * 		Update:               |PUT /technologicalexam/technologicalexam
  * 		FindAll:              |GET /technologicalexam/technologicalexamlist
  * 		Find by primary key:  |GET /technologicalexam/{id}
+ *  	Find by student's primary key:  |GET /course/student/{id}
  * 		
  * Created by devouty on 2015/10/13.
  * 
@@ -118,6 +119,15 @@ public class TechnologicalexamResource {
 	public String findById(@PathVariable final String id) {
 		JSONObject obj = new JsonUtils(TechnologicalexamService.findById(id))
 				.getJsonObject();
+		return obj.toJSONString();
+	}
+
+	// Find by student id
+	@RequestMapping(value = "/student/{id}", method = RequestMethod.GET)
+	@ResponseBody
+	public String findByStudentId(@PathVariable final String id) {
+		JSONObject obj = new JsonUtils(
+				TechnologicalexamService.findByStudentId(id)).getJsonObject();
 		return obj.toJSONString();
 	}
 }

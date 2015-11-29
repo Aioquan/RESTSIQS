@@ -40,10 +40,11 @@ public class HTTPJSONHelper {
         return jsonObject;
     }
 
-    public static void put(String URL, String jsonObject) throws ConnectException {
+    public static void put(String URL, Object object) throws ConnectException {
         try {
             HttpEntity entity;
             entity = null;
+            String jsonObject = JSONObject.toJSONString(object);
             jsonObject = URLAccepter.encrypt(jsonObject);
 //            System.out.println(jsonObject);
             HttpClient httpclient = new DefaultHttpClient();
@@ -57,10 +58,11 @@ public class HTTPJSONHelper {
             e.printStackTrace();
         }
     }
-    public static void post(String URL, String jsonObject) throws ConnectException {
+    public static void post(String URL, Object object) throws ConnectException {
         try {
             HttpEntity entity;
             entity = null;
+            String jsonObject = JSONObject.toJSONString(object);
             jsonObject = URLAccepter.encrypt(jsonObject);
             System.out.println(jsonObject);
             HttpClient httpclient = new DefaultHttpClient();

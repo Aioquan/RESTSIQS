@@ -1,6 +1,7 @@
 package View.Dialog.Course;
 
 import Beans.HTTPEntities.Course;
+import Beans.NumLimitListener;
 import Utils.Constant;
 import Utils.HTTPJSONHelper;
 import com.alibaba.fastjson.JSONArray;
@@ -85,18 +86,18 @@ public class CourseEditDialog extends JDialog {
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
 
         //number limit
-        tfTest1.addKeyListener(NumLimitListener);
-        tfTest2.addKeyListener(NumLimitListener);
-        tfTest3.addKeyListener(NumLimitListener);
-        tfE1.addKeyListener(NumLimitListener);
-        tfE2.addKeyListener(NumLimitListener);
-        tfE3.addKeyListener(NumLimitListener);
-        tfE4.addKeyListener(NumLimitListener);
-        tfE5.addKeyListener(NumLimitListener);
-        tfFinalTest.addKeyListener(NumLimitListener);
-        tfDailyMark.addKeyListener(NumLimitListener);
-        tfCredit.addKeyListener(NumLimitListener);
-        tfSum.addKeyListener(NumLimitListener);
+        tfTest1.addKeyListener(numLimitListener);
+        tfTest2.addKeyListener(numLimitListener);
+        tfTest3.addKeyListener(numLimitListener);
+        tfE1.addKeyListener(numLimitListener);
+        tfE2.addKeyListener(numLimitListener);
+        tfE3.addKeyListener(numLimitListener);
+        tfE4.addKeyListener(numLimitListener);
+        tfE5.addKeyListener(numLimitListener);
+        tfFinalTest.addKeyListener(numLimitListener);
+        tfDailyMark.addKeyListener(numLimitListener);
+        tfCredit.addKeyListener(numLimitListener);
+        tfSum.addKeyListener(numLimitListener);
 
     }
 
@@ -181,8 +182,8 @@ public class CourseEditDialog extends JDialog {
             course.setTest2(Double.parseDouble(tfTest2.getText()));
             course.setTest3(Double.parseDouble(tfTest3.getText()));
 
-            String pojo2json = JSONObject.toJSONString(course);
-            HTTPJSONHelper.put(Constant.COURSE_URL + "course/", pojo2json);
+//            String pojo2json = JSONObject.toJSONString(course);
+            HTTPJSONHelper.put(Constant.COURSE_URL + "course/", course);
 
 //            System.out.println(jsonObject.toJSONString());
         } catch (ArrayIndexOutOfBoundsException e) {
@@ -193,22 +194,7 @@ public class CourseEditDialog extends JDialog {
     }
 
     //number input limitation
-    KeyListener NumLimitListener = new KeyListener() {
-        public void keyTyped(KeyEvent e) {
-            if (e.getKeyChar() < '0' ||
-                    e.getKeyChar() > '9') {
-                e.consume();
-                return;
-            }
-        }
-
-        public void keyPressed(KeyEvent e) {
-
-        }
-
-        public void keyReleased(KeyEvent e) {
-        }
-    };
+    KeyListener numLimitListener = new NumLimitListener();
 
     public boolean hasEmpty() {
         boolean flag = false;

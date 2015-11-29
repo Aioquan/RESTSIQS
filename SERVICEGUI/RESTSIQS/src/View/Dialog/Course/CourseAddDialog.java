@@ -3,7 +3,6 @@ package View.Dialog.Course;
 import Beans.HTTPEntities.Course;
 import Utils.Constant;
 import Utils.HTTPJSONHelper;
-import com.alibaba.fastjson.JSONObject;
 
 import javax.swing.*;
 import java.awt.event.*;
@@ -172,8 +171,8 @@ public class CourseAddDialog extends JDialog {
             course.setTest2(Double.parseDouble(tfTest2.getText()));
             course.setTest3(Double.parseDouble(tfTest3.getText()));
 
-            String pojo2json = JSONObject.toJSONString(course);
-            HTTPJSONHelper.post(Constant.COURSE_URL + "course/", pojo2json);
+
+            HTTPJSONHelper.post(Constant.COURSE_URL + "course/", course);
 
 //            System.out.println(jsonObject.toJSONString());
         } catch (ArrayIndexOutOfBoundsException e) {

@@ -1,6 +1,7 @@
-package View.Dialog.Notice;
+package View.Dialog.Tecnologicalexam;
 
-import Beans.HTTPEntities.Notice;
+import Beans.HTTPEntities.Technologicalexam;
+import Beans.NumLimitListener;
 import Utils.Constant;
 import Utils.HTTPJSONHelper;
 
@@ -9,18 +10,17 @@ import java.awt.event.*;
 import java.net.ConnectException;
 import java.util.HashMap;
 
-public class NoticeAddDialog extends JDialog {
+public class TEAddDialog extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
-    private JPanel btnPanel;
-    private JPanel contextPanel;
-    private JTextField tfTitle;
-    private JTextField tfOperator;
-    private JTextField tfAcademyId;
-    private JTextArea tfContext;
+    private JLabel lblTId;
+    private JTextField tfName;
+    private JTextField tfDate;
+    private JTextField tfScore;
+    private JLabel lblSId;
 
-    public NoticeAddDialog() {
+    public TEAddDialog() {
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
@@ -55,16 +55,15 @@ public class NoticeAddDialog extends JDialog {
 
     private void onOK() {
 // add your code here
-        if (hasEmpty()) {
-            NoticeAddDialog.this.setTitle("Input error,something is empty!");
+        if (!hasEmpty()) {
+            saveTE();
+            tfDate.setText("");
+            tfName.setText("");
+            tfScore.setText("");
+            dispose();
         } else {
-            addNotice();
-            tfTitle.setText("");
-            tfOperator.setText("");
-            tfContext.setText("");
-            tfAcademyId.setText("");
+            TEAddDialog.this.setTitle("Input is not legal(has empty textfield)");
         }
-        dispose();
     }
 
     private void onCancel() {
@@ -73,48 +72,50 @@ public class NoticeAddDialog extends JDialog {
     }
 
     public static void main(String[] args) {
-        NoticeAddDialog dialog = new NoticeAddDialog();
+        TEAddDialog dialog = new TEAddDialog();
         dialog.pack();
         dialog.setVisible(true);
         System.exit(0);
     }
 
-    Object[][] data;
     HashMap<String, Object> map;
 
-    public void show(Object[][] data, HashMap<String, Object> map) {
-        this.data = data;
+    public void show(HashMap<String, Object> map) {
         this.map = map;
-        tfContext.setLineWrap(true);
+        //number input limitation
+        KeyListener numLimitListener = new NumLimitListener();
+        tfScore.addKeyListener(numLimitListener);
+
+        lblSId.setText("studentId:"+map.get("studentId"));
+        lblTId.setText("Tid:"+map.get("Tid"));
+        
         this.pack();
-        this.setBounds(130, 150, 650, 450);
         this.setVisible(true);
     }
 
-    private void addNotice() {
+    private void saveTE() {
+        Technologicalexam technologicalexam = new Technologicalexam();
+        technologicalexam.setTid(this.map.get("newId").toString());
+        technologicalexam.setStudentId("" + this.map.get("studentId"));
+        technologicalexam.setTsorce(Double.parseDouble(tfScore.getText()));
+        technologicalexam.setTname(tfName.getText());
+        technologicalexam.setTdate(tfDate.getText());
         try {
-            Notice notice = new Notice();
-            notice.setNoticeTitle(tfTitle.getText());
-            notice.setNoticeOperator(tfOperator.getText());
-            notice.setAcademyId(tfAcademyId.getText());
-            notice.setNoticeContext(tfContext.getText());
-            notice.setNoticeId(this.map.get("newId")+"");
-//            String pojo2json = JSONObject.toJSONString(notice);
-            HTTPJSONHelper.post(Constant.NOTICE_URL + "notice/", notice);
+            HTTPJSONHelper.post(Constant.TECNOLOGICALEXAM_URL + "technologicalexam/", technologicalexam);
         } catch (ConnectException e) {
             e.printStackTrace();
+            TEAddDialog.this.setTitle("Input is not legal");
         }
     }
 
-    private boolean hasEmpty() {
+    public boolean hasEmpty() {
         boolean flag = false;
-        if (tfAcademyId.getText().isEmpty())
+
+        if (tfScore.getText().isEmpty())
             flag = true;
-        if (tfContext.getText().isEmpty())
+        if (tfName.getText().isEmpty())
             flag = true;
-        if (tfOperator.getText().isEmpty())
-            flag = true;
-        if (tfTitle.getText().isEmpty())
+        if (tfDate.getText().isEmpty())
             flag = true;
 
         return flag;

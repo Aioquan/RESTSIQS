@@ -3,7 +3,6 @@ package View.Dialog.Notice;
 import Beans.HTTPEntities.Notice;
 import Utils.Constant;
 import Utils.HTTPJSONHelper;
-import com.alibaba.fastjson.JSONObject;
 
 import javax.swing.*;
 import java.awt.event.*;
@@ -99,8 +98,8 @@ public class NoticeEditDialog extends JDialog {
             notice.setNoticeId(id);
             notice.setNoticeOperator(tfOperator.getText());
             notice.setNoticeTitle(tfTitle.getText());
-            String pojo2json = JSONObject.toJSONString(notice);
-            HTTPJSONHelper.put(Constant.NOTICE_URL + "notice/", pojo2json);
+//            String pojo2json = JSONObject.toJSONString(notice);
+            HTTPJSONHelper.put(Constant.NOTICE_URL + "notice/", notice);
         } catch (ArrayIndexOutOfBoundsException e) {
 //            e.printStackTrace();
         } catch (ConnectException e) {

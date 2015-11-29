@@ -12,6 +12,7 @@ public class DeleteButtonRenderer extends JButton implements TableCellRenderer {
     public DeleteButtonRenderer() {
         setOpaque(true);
     }
+
     public DeleteButtonRenderer(String name) {
 
         this.setText(name);

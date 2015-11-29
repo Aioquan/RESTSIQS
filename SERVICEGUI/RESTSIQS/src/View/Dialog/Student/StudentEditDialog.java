@@ -1,6 +1,8 @@
 package View.Dialog.Student;
 
 import Beans.EditButtonRenderer;
+import Beans.HTTPEntities.Student;
+import Beans.NumLimitListener;
 import Utils.Constant;
 import Utils.HTTPJSONHelper;
 import View.Dialog.Course.CourseDeleteDialog;
@@ -18,6 +20,15 @@ import java.net.ConnectException;
 import java.util.HashMap;
 
 public class StudentEditDialog extends JDialog {
+    Object[][] d;
+    HashMap<String, Object> map;
+    EditButtonRenderer studentTableBtnEdit, studentTableBtnDelete;
+    CourseDeleteDialog courseDeleteDialog;
+    CourseEditDialog courseEditDialog;
+    Object[][] data, data2;
+    TEEditDialog teEditDialog;
+    TEDeleteDialog teDeleteDialog;
+    TEAddDialog teAddDialog;
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
@@ -74,20 +85,25 @@ public class StudentEditDialog extends JDialog {
         btnAddCourse.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 HashMap<String, Object> map = new HashMap<String, Object>();
-                map.put("studentId",StudentEditDialog.this.map.get("studentId"));
+                map.put("studentId", StudentEditDialog.this.map.get("studentId"));
                 int newId = 0;
-                for(int i = 0;i<data2.length;i++)
-                {
-                    if(((Double)data2[i][2])>newId)
-                    {
-                        newId = ((Double)data2[i][2]).intValue();
+                for (int i = 0; i < data2.length; i++) {
+                    if (((Double) data2[i][2]) > newId) {
+                        newId = ((Double) data2[i][2]).intValue();
                     }
                 }
                 newId++;
-                map.put("newId",newId);
+                map.put("newId", newId);
                 teAddDialog.show(map);
             }
         });
+    }
+
+    public static void main(String[] args) {
+        StudentEditDialog dialog = new StudentEditDialog();
+        dialog.pack();
+        dialog.setVisible(true);
+        System.exit(0);
     }
 
     private void onOK() {
@@ -99,17 +115,6 @@ public class StudentEditDialog extends JDialog {
 // add your code here if necessary
         dispose();
     }
-
-    public static void main(String[] args) {
-        StudentEditDialog dialog = new StudentEditDialog();
-        dialog.pack();
-        dialog.setVisible(true);
-        System.exit(0);
-    }
-
-    Object[][] d;
-    HashMap<String, Object> map;
-    EditButtonRenderer studentTableBtnEdit, studentTableBtnDelete;
 
     public void show(Object[][] data, HashMap<String, Object> map) {
         this.d = data;
@@ -131,15 +136,50 @@ public class StudentEditDialog extends JDialog {
         readTable();
         this.setBounds(230, 150, 650, 450);
         this.setVisible(true);
+        NumLimitListener numLimitListener = new NumLimitListener();
+        tfStudentId.addKeyListener(numLimitListener);
+        tfBankCard.addKeyListener(numLimitListener);
+        tfIdentityCard.addKeyListener(numLimitListener);
 
     }
 
-    CourseDeleteDialog courseDeleteDialog;
-    CourseEditDialog courseEditDialog;
-    Object[][] data, data2;
-    TEEditDialog teEditDialog;
-    TEDeleteDialog teDeleteDialog;
-    TEAddDialog teAddDialog;
+    private boolean updateStudent() {
+        Student student = new Student();
+        student.setAcademyId(tfAcademyId.getText());
+        student.setStudentId(tfStudentId.getText());
+        student.setBankCard(tfBankCard.getText());
+        student.setIdentityCard(tfIdentityCard.getText());
+        student.setSex(tfSex.getText());
+        student.setStudentPassword(tfStudentPassword.getText());
+        try {
+            HTTPJSONHelper.put(Constant.STUDENT_URL + "student/", student);
+            return true;
+        } catch (ConnectException e) {
+            e.printStackTrace();
+            StudentEditDialog.this.setTitle("Update Failed,please check the connection.");
+        }
+        return false;
+    }
+
+    private boolean hasEmpty() {
+        boolean flag = false;
+
+        if (tfStudentId.getText().isEmpty())
+            flag = true;
+        if (tfStudentPassword.getText().isEmpty())
+            flag = true;
+        if (tfSex.getText().isEmpty())
+            flag = true;
+        if (tfIdentityCard.getText().isEmpty())
+            flag = true;
+        if (tfAcademyId.getText().isEmpty())
+            flag = true;
+        if (tfBankCard.getText().isEmpty())
+            flag = true;
+
+        return flag;
+    }
+
     public void readTable() {
 
         updateData();

@@ -48,7 +48,7 @@ public class HTTPJSONHelper {
             jsonObject = URLAccepter.encrypt(jsonObject);
 //            System.out.println(jsonObject);
             HttpClient httpclient = new DefaultHttpClient();
-            HttpPut request = new HttpPut(URL+jsonObject);
+            HttpPut request = new HttpPut(URL + jsonObject);
             HttpResponse response = httpclient.execute(request);
             entity = response.getEntity();
             String result = EntityUtils.toString(entity);
@@ -58,6 +58,7 @@ public class HTTPJSONHelper {
             e.printStackTrace();
         }
     }
+
     public static void post(String URL, Object object) throws ConnectException {
         try {
             HttpEntity entity;
@@ -66,7 +67,7 @@ public class HTTPJSONHelper {
             jsonObject = URLAccepter.encrypt(jsonObject);
             System.out.println(jsonObject);
             HttpClient httpclient = new DefaultHttpClient();
-            HttpPost request = new HttpPost(URL+jsonObject);
+            HttpPost request = new HttpPost(URL + jsonObject);
             HttpResponse response = httpclient.execute(request);
             entity = response.getEntity();
             String result = EntityUtils.toString(entity);
@@ -75,6 +76,7 @@ public class HTTPJSONHelper {
         } catch (Exception e) {
         }
     }
+
     public static JSONObject delete(String URL) throws ConnectException {
         JSONObject jsonObject = null;
         try {

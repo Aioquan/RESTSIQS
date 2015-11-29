@@ -11,6 +11,7 @@ import java.net.ConnectException;
 import java.util.HashMap;
 
 public class TEAddDialog extends JDialog {
+    HashMap<String, Object> map;
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
@@ -53,6 +54,13 @@ public class TEAddDialog extends JDialog {
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
     }
 
+    public static void main(String[] args) {
+        TEAddDialog dialog = new TEAddDialog();
+        dialog.pack();
+        dialog.setVisible(true);
+        System.exit(0);
+    }
+
     private void onOK() {
 // add your code here
         if (!hasEmpty()) {
@@ -71,24 +79,15 @@ public class TEAddDialog extends JDialog {
         dispose();
     }
 
-    public static void main(String[] args) {
-        TEAddDialog dialog = new TEAddDialog();
-        dialog.pack();
-        dialog.setVisible(true);
-        System.exit(0);
-    }
-
-    HashMap<String, Object> map;
-
     public void show(HashMap<String, Object> map) {
         this.map = map;
         //number input limitation
         KeyListener numLimitListener = new NumLimitListener();
         tfScore.addKeyListener(numLimitListener);
 
-        lblSId.setText("studentId:"+map.get("studentId"));
-        lblTId.setText("Tid:"+map.get("Tid"));
-        
+        lblSId.setText("studentId:" + map.get("studentId"));
+        lblTId.setText("Tid:" + map.get("Tid"));
+
         this.pack();
         this.setVisible(true);
     }

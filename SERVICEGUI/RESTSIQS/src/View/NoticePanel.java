@@ -22,6 +22,9 @@ import java.util.HashMap;
  * Created by devouty on 2015/11/4.
  */
 public class NoticePanel {
+    Thread thread;
+    Object[][] data;
+    DefaultTableModel model;
     private JButton noticeButtonAdd;
     private JTable noticeTable;
     private JLabel noticeStatus;
@@ -49,28 +52,28 @@ public class NoticePanel {
                 noticeStatus.setText("Editing:" + noticeTable.getSelectedRow());
                 if (noticeTable.getSelectedColumn() == 0) {
                     int y = noticeTable.getSelectedRow();
-                    HashMap<String,Object> map = new HashMap<String, Object>();
-                    map.put("noticeId",data[y][2]);
-                    map.put("noticeTitle",data[y][3]);
-                    map.put("noticeContext",data[y][4]);
-                    map.put("noticeOperator",data[y][5]);
-                    map.put("academyId",data[y][6]);
+                    HashMap<String, Object> map = new HashMap<String, Object>();
+                    map.put("noticeId", data[y][2]);
+                    map.put("noticeTitle", data[y][3]);
+                    map.put("noticeContext", data[y][4]);
+                    map.put("noticeOperator", data[y][5]);
+                    map.put("academyId", data[y][6]);
                     noticeEditDialog.show(NoticePanel.this.data, map);
                     updateData();
                 }
-                if (noticeTable.getSelectedColumn() == 1){
+                if (noticeTable.getSelectedColumn() == 1) {
                     int y = noticeTable.getSelectedRow();
-                    noticeDeleteDialog.show((String) data[y][2],(String) data[y][3]);
+                    noticeDeleteDialog.show((String) data[y][2], (String) data[y][3]);
                     updateData();
                 }
-                if (e.getClickCount() == 2){
+                if (e.getClickCount() == 2) {
                     int y = noticeTable.getSelectedRow();
-                    HashMap<String,Object> map = new HashMap<String, Object>();
-                    map.put("noticeId",data[y][2]);
-                    map.put("noticeTitle",data[y][3]);
-                    map.put("noticeContext",data[y][4]);
-                    map.put("noticeOperator",data[y][5]);
-                    map.put("academyId",data[y][6]);
+                    HashMap<String, Object> map = new HashMap<String, Object>();
+                    map.put("noticeId", data[y][2]);
+                    map.put("noticeTitle", data[y][3]);
+                    map.put("noticeContext", data[y][4]);
+                    map.put("noticeOperator", data[y][5]);
+                    map.put("academyId", data[y][6]);
                     map.put("dataRow", noticeTable.getSelectedRow());
                     noticeEditDialog.show(NoticePanel.this.data, map);
                     updateData();
@@ -94,10 +97,6 @@ public class NoticePanel {
             }
         });
     }
-
-    Thread thread;
-    Object[][] data;
-    DefaultTableModel model;
 
     private void updateData() {
         if (thread != null)

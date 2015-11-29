@@ -42,6 +42,13 @@ public class StudentAddDialog extends JDialog {
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
     }
 
+    public static void main(String[] args) {
+        StudentAddDialog dialog = new StudentAddDialog();
+        dialog.pack();
+        dialog.setVisible(true);
+        System.exit(0);
+    }
+
     private void onOK() {
 // add your code here
         dispose();
@@ -52,14 +59,7 @@ public class StudentAddDialog extends JDialog {
         dispose();
     }
 
-    public static void main(String[] args) {
-        StudentAddDialog dialog = new StudentAddDialog();
-        dialog.pack();
-        dialog.setVisible(true);
-        System.exit(0);
-    }
-    public void show(Object[][] data, HashMap<String ,Object> map)
-    {
+    public void show(Object[][] data, HashMap<String, Object> map) {
 
     }
 }

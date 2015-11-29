@@ -9,6 +9,26 @@ import java.awt.event.WindowEvent;
  * Created by devouty on 2015/10/28.
  */
 public class MainView {
+    int width;
+    int height;
+    private JTabbedPane tabbedPane1;
+    private JPanel mainPanel;
+    private JPanel coursePanel;
+    private JPanel noticePanel;
+    private JPanel studentPanel;
+    private JPanel teacherPanel;
+    private JPanel technologicalExamPanel;
+    private JPanel academyPanel;
+    private JLabel courseStatus;
+    private JButton courseButtonAdd;
+    private JTable courseTable;
+    private JButton noticeButtonAdd;
+    private JTable noticeTable;
+    private JLabel noticeStatus;
+    private JTable studentTable;
+    private JButton studentBtnAdd;
+    private JLabel studentLblStatus;
+
     public MainView() {
         Dimension screensize = Toolkit.getDefaultToolkit().getScreenSize();
         width = (int) screensize.getWidth();
@@ -34,16 +54,6 @@ public class MainView {
 
     }
 
-    int width;
-    int height;
-    private JTabbedPane tabbedPane1;
-    private JPanel mainPanel;
-    private JPanel coursePanel;
-    private JPanel noticePanel;
-    private JPanel studentPanel;
-    private JPanel teacherPanel;
-    private JPanel technologicalExamPanel;
-
     public int getWidth() {
         return width;
     }
@@ -64,16 +74,6 @@ public class MainView {
         return noticeStatus;
     }
 
-    private JPanel academyPanel;
-    private JLabel courseStatus;
-    private JButton courseButtonAdd;
-    private JTable courseTable;
-    private JButton noticeButtonAdd;
-    private JTable noticeTable;
-    private JLabel noticeStatus;
-    private JTable studentTable;
-    private JButton studentBtnAdd;
-
     public JTable getStudentTable() {
         return studentTable;
     }
@@ -85,8 +85,6 @@ public class MainView {
     public JLabel getStudentLblStatus() {
         return studentLblStatus;
     }
-
-    private JLabel studentLblStatus;
 
     //    private String processURL;
     public JTabbedPane getTabbedPane1() {

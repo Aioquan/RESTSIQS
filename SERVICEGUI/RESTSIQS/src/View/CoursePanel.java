@@ -23,6 +23,10 @@ import java.util.HashMap;
  * Created by devouty on 2015/11/1.
  */
 public class CoursePanel {
+    CourseEditDialog editDialog;
+    CourseDeleteDialog deleteDialog;
+    CourseAddDialog addDialog;
+    Thread thread;
     //    private JPanel coursePanel;
 //    private JComboBox courseComboBox;
 //    private JLabel courseDate;
@@ -34,14 +38,6 @@ public class CoursePanel {
     private EditButtonRenderer courseTableBtnEdit;
     private EditButtonRenderer courseTableBtnDelete;
     private Object[][] data;
-    CourseEditDialog editDialog;
-    CourseDeleteDialog deleteDialog;
-    CourseAddDialog addDialog;
-    Thread thread;
-
-    public Object[][] getData() {
-        return data;
-    }
 
     CoursePanel(MainView mainView) {
         this.courseButtonAdd = mainView.getCourseButtonAdd();
@@ -144,6 +140,10 @@ public class CoursePanel {
             }
         });
 
+    }
+
+    public Object[][] getData() {
+        return data;
     }
 
     private void updateData() {

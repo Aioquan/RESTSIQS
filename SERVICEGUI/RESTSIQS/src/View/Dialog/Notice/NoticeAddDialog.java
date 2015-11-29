@@ -10,6 +10,8 @@ import java.net.ConnectException;
 import java.util.HashMap;
 
 public class NoticeAddDialog extends JDialog {
+    Object[][] data;
+    HashMap<String, Object> map;
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
@@ -53,6 +55,13 @@ public class NoticeAddDialog extends JDialog {
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
     }
 
+    public static void main(String[] args) {
+        NoticeAddDialog dialog = new NoticeAddDialog();
+        dialog.pack();
+        dialog.setVisible(true);
+        System.exit(0);
+    }
+
     private void onOK() {
 // add your code here
         if (hasEmpty()) {
@@ -72,16 +81,6 @@ public class NoticeAddDialog extends JDialog {
         dispose();
     }
 
-    public static void main(String[] args) {
-        NoticeAddDialog dialog = new NoticeAddDialog();
-        dialog.pack();
-        dialog.setVisible(true);
-        System.exit(0);
-    }
-
-    Object[][] data;
-    HashMap<String, Object> map;
-
     public void show(Object[][] data, HashMap<String, Object> map) {
         this.data = data;
         this.map = map;
@@ -98,7 +97,7 @@ public class NoticeAddDialog extends JDialog {
             notice.setNoticeOperator(tfOperator.getText());
             notice.setAcademyId(tfAcademyId.getText());
             notice.setNoticeContext(tfContext.getText());
-            notice.setNoticeId(this.map.get("newId")+"");
+            notice.setNoticeId(this.map.get("newId") + "");
 //            String pojo2json = JSONObject.toJSONString(notice);
             HTTPJSONHelper.post(Constant.NOTICE_URL + "notice/", notice);
         } catch (ConnectException e) {

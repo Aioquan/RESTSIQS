@@ -11,6 +11,7 @@ import java.net.ConnectException;
 import java.util.HashMap;
 
 public class TEEditDialog extends JDialog {
+    HashMap<String, Object> map;
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
@@ -53,14 +54,19 @@ public class TEEditDialog extends JDialog {
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
     }
 
+    public static void main(String[] args) {
+        TEEditDialog dialog = new TEEditDialog();
+        dialog.pack();
+        dialog.setVisible(true);
+        System.exit(0);
+    }
+
     private void onOK() {
 // add your code here
-        if(!hasEmpty())
-        {
+        if (!hasEmpty()) {
             updateTE();
             dispose();
-        }else
-        {
+        } else {
             TEEditDialog.this.setTitle("Input is not legal(has empty textfield)");
         }
     }
@@ -70,34 +76,24 @@ public class TEEditDialog extends JDialog {
         dispose();
     }
 
-    public static void main(String[] args) {
-        TEEditDialog dialog = new TEEditDialog();
-        dialog.pack();
-        dialog.setVisible(true);
-        System.exit(0);
-    }
-
-
-    HashMap<String, Object> map;
-
     public void show(HashMap<String, Object> map) {
 
         this.map = map;
 
-        lblSId.setText("studentId:"+map.get("studentId"));
-        lblTId.setText("Tid:"+map.get("Tid"));
-        tfDate.setText(map.get("tDate")+"");
-        tfName.setText(map.get("tName")+"");
-        tfScore.setText(map.get("tSorce")+"");
-        this.setLocation(150,250);
+        lblSId.setText("studentId:" + map.get("studentId"));
+        lblTId.setText("Tid:" + map.get("Tid"));
+        tfDate.setText(map.get("tDate") + "");
+        tfName.setText(map.get("tName") + "");
+        tfScore.setText(map.get("tSorce") + "");
+        this.setLocation(150, 250);
         this.pack();
         this.setVisible(true);
 
         KeyListener numLimitListener = new NumLimitListener();
         tfScore.addKeyListener(numLimitListener);
     }
-    private void updateTE()
-    {
+
+    private void updateTE() {
         try {
             String tId = (String) map.get("Tid");
             String studentId = (String) map.get("studentId");
@@ -109,12 +105,11 @@ public class TEEditDialog extends JDialog {
             technologicalexam.setTsorce(Double.parseDouble(tfScore.getText()));
 //            String pojo2json = JSONObject.toJSONString(technologicalexam);
             HTTPJSONHelper.put(Constant.TECNOLOGICALEXAM_URL + "technologicalexam/", technologicalexam);
-        }
-        catch (ConnectException e)
-        {
+        } catch (ConnectException e) {
             e.printStackTrace();
         }
     }
+
     public boolean hasEmpty() {
         boolean flag = false;
 

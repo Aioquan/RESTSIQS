@@ -10,6 +10,8 @@ import java.net.ConnectException;
 import java.util.HashMap;
 
 public class NoticeEditDialog extends JDialog {
+    Object[][] data;
+    HashMap<String, Object> map;
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
@@ -55,6 +57,13 @@ public class NoticeEditDialog extends JDialog {
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
     }
 
+    public static void main(String[] args) {
+        NoticeEditDialog dialog = new NoticeEditDialog();
+        dialog.pack();
+        dialog.setVisible(true);
+        System.exit(0);
+    }
+
     private void onOK() {
 // add your code here
         updateNotice();
@@ -65,16 +74,6 @@ public class NoticeEditDialog extends JDialog {
 // add your code here if necessary
         dispose();
     }
-
-    public static void main(String[] args) {
-        NoticeEditDialog dialog = new NoticeEditDialog();
-        dialog.pack();
-        dialog.setVisible(true);
-        System.exit(0);
-    }
-
-    Object[][] data;
-    HashMap<String, Object> map;
 
     public void show(Object[][] data, HashMap<String, Object> map) {
         this.data = data;

@@ -12,6 +12,7 @@ public class EditButtonRenderer extends JButton implements TableCellRenderer {
     public EditButtonRenderer() {
         setOpaque(true);
     }
+
     public EditButtonRenderer(String name) {
 
         this.setText(name);

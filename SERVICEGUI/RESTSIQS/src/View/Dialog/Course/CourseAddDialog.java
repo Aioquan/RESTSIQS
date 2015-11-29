@@ -10,6 +10,21 @@ import java.net.ConnectException;
 import java.util.HashMap;
 
 public class CourseAddDialog extends JDialog {
+    //number input limitation
+    KeyListener NumLimitListener = new KeyListener() {
+        public void keyTyped(KeyEvent e) {
+            if (e.getKeyChar() < '0' || e.getKeyChar() > '9') {
+                e.consume();
+                return;
+            }
+        }
+
+        public void keyPressed(KeyEvent e) {
+        }
+
+        public void keyReleased(KeyEvent e) {
+        }
+    };
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
@@ -52,6 +67,8 @@ public class CourseAddDialog extends JDialog {
     private JLabel lblCourseTime;
     private JLabel lblCourseDate;
     private JLabel courseDate;
+    private HashMap<String, Object> map;
+    private Object[][] data;
 
     public CourseAddDialog() {
         setContentPane(contentPane);
@@ -100,6 +117,13 @@ public class CourseAddDialog extends JDialog {
         tfSum.addKeyListener(NumLimitListener);
     }
 
+    public static void main(String[] args) {
+        CourseAddDialog dialog = new CourseAddDialog();
+        dialog.pack();
+        dialog.setVisible(true);
+        System.exit(0);
+    }
+
     private void onOK() {
 // add your code here
         if (hasEmpty()) {
@@ -122,16 +146,6 @@ public class CourseAddDialog extends JDialog {
 // add your code here if necessary
         dispose();
     }
-
-    public static void main(String[] args) {
-        CourseAddDialog dialog = new CourseAddDialog();
-        dialog.pack();
-        dialog.setVisible(true);
-        System.exit(0);
-    }
-
-    private HashMap<String, Object> map;
-    private Object[][] data;
 
     public void show(Object[][] data, HashMap<String, Object> map) {
         this.data = data;
@@ -183,21 +197,6 @@ public class CourseAddDialog extends JDialog {
 
     }
 
-    //number input limitation
-    KeyListener NumLimitListener = new KeyListener() {
-        public void keyTyped(KeyEvent e) {
-            if (e.getKeyChar() < '0' || e.getKeyChar() > '9') {
-                e.consume();
-                return;
-            }
-        }
-
-        public void keyPressed(KeyEvent e) {
-        }
-
-        public void keyReleased(KeyEvent e) {
-        }
-    };
     public boolean hasEmpty() {
         boolean flag = false;
 

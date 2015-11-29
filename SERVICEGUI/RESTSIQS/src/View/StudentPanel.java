@@ -22,16 +22,18 @@ import java.util.HashMap;
  * Created by devouty on 2015/11/13.
  */
 public class StudentPanel {
-    private JTable studentTable;
-    private JButton studentBtnAdd;
-    private JLabel studentLblStatus;
     StudentAddDialog studentAddDialog;
     StudentDeleteDialog studentDeleteDialog;
     StudentEditDialog studentEditDialog;
+    Thread thread;
+    Object[][] data;
+    DefaultTableModel model;
+    private JTable studentTable;
+    private JButton studentBtnAdd;
+    private JLabel studentLblStatus;
     private EditButtonRenderer studentTableBtnEdit;
     private EditButtonRenderer studentTableBtnDelete;
-    StudentPanel(MainView mainView)
-    {
+    StudentPanel(MainView mainView) {
         this.studentBtnAdd = mainView.getStudentBtnAdd();
         this.studentLblStatus = mainView.getStudentLblStatus();
         this.studentTable = mainView.getStudentTable();
@@ -96,10 +98,6 @@ public class StudentPanel {
             }
         });
     }
-
-    Thread thread;
-    Object[][] data;
-    DefaultTableModel model;
 
     private void updateData() {
         if (thread != null)

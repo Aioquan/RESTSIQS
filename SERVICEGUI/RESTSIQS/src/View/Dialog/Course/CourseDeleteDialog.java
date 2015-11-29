@@ -8,6 +8,7 @@ import java.awt.event.*;
 import java.net.ConnectException;
 
 public class CourseDeleteDialog extends JDialog {
+    String id;
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
@@ -48,23 +49,6 @@ public class CourseDeleteDialog extends JDialog {
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
     }
 
-    private void onOK() {
-// add your code here
-        try {
-            HTTPJSONHelper.delete(Constant.COURSE_URL+this.id);
-        }catch (ConnectException e)
-        {
-            e.printStackTrace();
-        }
-        this.setVisible(false);
-        dispose();
-    }
-
-    private void onCancel() {
-// add your code here if necessary
-        dispose();
-    }
-
     public static void main(String[] args) {
         CourseDeleteDialog dialog = new CourseDeleteDialog();
         dialog.pack();
@@ -72,13 +56,26 @@ public class CourseDeleteDialog extends JDialog {
         System.exit(0);
     }
 
-    String id;
-    public void show(String courseName,String id)
-    {
+    private void onOK() {
+// add your code here
+        try {
+            HTTPJSONHelper.delete(Constant.COURSE_URL + this.id);
+        } catch (ConnectException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    private void onCancel() {
+// add your code here if necessary
+        dispose();
+    }
+
+    public void show(String courseName, String id) {
         this.id = id;
-        this.label.setText("Delete:"+courseName+"?");
+        this.label.setText("Delete:" + courseName + "?");
         this.pack();
-        this.setLocation(130,150);
+        this.setLocation(130, 150);
         this.setVisible(true);
     }
 }

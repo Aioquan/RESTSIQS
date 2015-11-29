@@ -13,6 +13,7 @@ public class NoticeDeleteDialog extends JDialog {
     private JButton buttonCancel;
     private JPanel lblPanel;
     private JLabel label;
+    private String id;
 
     public NoticeDeleteDialog() {
         setContentPane(contentPane);
@@ -47,12 +48,18 @@ public class NoticeDeleteDialog extends JDialog {
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
     }
 
+    public static void main(String[] args) {
+        NoticeDeleteDialog dialog = new NoticeDeleteDialog();
+        dialog.pack();
+        dialog.setVisible(true);
+        System.exit(0);
+    }
+
     private void onOK() {
 // add your code here
         try {
             HTTPJSONHelper.delete(Constant.NOTICE_URL + this.id);
-        }catch (ConnectException e)
-        {
+        } catch (ConnectException e) {
             e.printStackTrace();
         }
         dispose();
@@ -63,19 +70,11 @@ public class NoticeDeleteDialog extends JDialog {
         dispose();
     }
 
-    public static void main(String[] args) {
-        NoticeDeleteDialog dialog = new NoticeDeleteDialog();
-        dialog.pack();
-        dialog.setVisible(true);
-        System.exit(0);
-    }
-    private String id;
-    public void show(String id,String noticeName)
-    {
+    public void show(String id, String noticeName) {
         this.id = id;
-        this.label.setText("Delete:"+noticeName+"?");
+        this.label.setText("Delete:" + noticeName + "?");
         this.pack();
-        this.setLocation(130,150);
+        this.setLocation(130, 150);
         this.setVisible(true);
     }
 }

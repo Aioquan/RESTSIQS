@@ -13,6 +13,8 @@ import java.net.ConnectException;
 import java.util.HashMap;
 
 public class CourseEditDialog extends JDialog {
+    //number input limitation
+    KeyListener numLimitListener = new NumLimitListener();
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
@@ -101,6 +103,12 @@ public class CourseEditDialog extends JDialog {
 
     }
 
+    public static void main(String[] args) {
+        CourseEditDialog dialog = new CourseEditDialog();
+
+        System.exit(0);
+    }
+
     private void onOK() {
 // add your code here
         if (hasEmpty()) {
@@ -116,12 +124,6 @@ public class CourseEditDialog extends JDialog {
 // add your code here if necessary
         this.setVisible(false);
         dispose();
-    }
-
-    public static void main(String[] args) {
-        CourseEditDialog dialog = new CourseEditDialog();
-
-        System.exit(0);
     }
 
     public void show(Object[][] data, HashMap<String, Object> map) {
@@ -192,9 +194,6 @@ public class CourseEditDialog extends JDialog {
             connectException.printStackTrace();
         }
     }
-
-    //number input limitation
-    KeyListener numLimitListener = new NumLimitListener();
 
     public boolean hasEmpty() {
         boolean flag = false;

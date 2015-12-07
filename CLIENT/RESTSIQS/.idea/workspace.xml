@@ -33,13 +33,100 @@
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CUSTOM_FILTER" value="devouty" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.restsiqs.RESTSIQS" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd5ce455-f0da-47bd-bab7-ad1bccb17a2c" name="Default" comment="Finish welcome page interface.After 2.5s the activity will jump to next Activity.">
       <change type="DELETED" beforePath="E:\workspace\RESTSIQS\README.md.bak" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity.java" afterPath="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../DOC/sql.txt" afterPath="$PROJECT_DIR$/../../DOC/sql.txt" />
+      <change type="DELETED" beforePath="E:\workspace\RESTSIQS\SERVICEGUI\RESTSIQS\target\classes\View\Dialog\Course\CourseEditDialog$5.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseAddDialog$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseAddDialog$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseAddDialog$2.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseAddDialog$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseAddDialog$3.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseAddDialog$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseAddDialog$4.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseAddDialog$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseAddDialog$5.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseAddDialog$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseAddDialog.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseAddDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseDeleteDialog$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseDeleteDialog$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseDeleteDialog$2.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseDeleteDialog$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseDeleteDialog$3.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseDeleteDialog$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseDeleteDialog$4.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseDeleteDialog$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseDeleteDialog.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseDeleteDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity$1.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity_.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity_.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseEditDialog$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseEditDialog$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseEditDialog$2.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseEditDialog$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseEditDialog$3.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseEditDialog$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseEditDialog$4.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseEditDialog$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseEditDialog.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseEditDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/CoursePanel$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/CoursePanel$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/CoursePanel$2.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/CoursePanel$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/CoursePanel.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/CoursePanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/Beans/DeleteButtonRenderer.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/Beans/DeleteButtonRenderer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/Beans/EditButtonRenderer.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/Beans/EditButtonRenderer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/Utils/HTTPJSONHelper.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/Utils/HTTPJSONHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/Main.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/MainView$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/MainView$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/MainView.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/MainView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeAddDialog$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeAddDialog$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeAddDialog$2.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeAddDialog$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeAddDialog$3.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeAddDialog$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeAddDialog$4.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeAddDialog$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeAddDialog.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeAddDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeDeleteDialog$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeDeleteDialog$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeDeleteDialog$2.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeDeleteDialog$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeDeleteDialog$3.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeDeleteDialog$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeDeleteDialog$4.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeDeleteDialog$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeDeleteDialog.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeDeleteDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeEditDialog$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeEditDialog$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeEditDialog$2.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeEditDialog$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeEditDialog$3.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeEditDialog$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeEditDialog$4.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeEditDialog$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeEditDialog.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeEditDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/NoticePanel$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/NoticePanel$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/NoticePanel$2.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/NoticePanel$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/NoticePanel$3$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/NoticePanel$3$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/NoticePanel$3.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/NoticePanel$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/NoticePanel.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/NoticePanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/RESTSIQS.apk" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/RESTSIQS.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/RESTSIQS.unaligned.apk" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/RESTSIQS.unaligned.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentAddDialog.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentAddDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentDeleteDialog$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentDeleteDialog$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentDeleteDialog$2.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentDeleteDialog$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentDeleteDialog$3.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentDeleteDialog$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentDeleteDialog$4.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentDeleteDialog$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentDeleteDialog.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentDeleteDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$2.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$3.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$4.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$5.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$6.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$7.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$8.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/StudentPanel$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/StudentPanel$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/StudentPanel$2.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/StudentPanel$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/StudentPanel$3$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/StudentPanel$3$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/StudentPanel$3.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/StudentPanel$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/StudentPanel.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/StudentPanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$2.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$3.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$4.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$2.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$3.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$4.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$2.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$3.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$4.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/.gitignore" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity_.java" afterPath="$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity_.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/androidannotations.log" afterPath="$PROJECT_DIR$/bin/androidannotations.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/.idea/workspace.xml" />
     </list>
     <ignored path="RESTSIQS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,7 +175,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.090909">
+            <state vertical-scroll-proportion="0.0">
               <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
               <folding />
             </state>
@@ -118,8 +205,8 @@
       <file leaf-file-name="CourseDetailActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8771593">
-              <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.82917464">
+              <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -131,7 +218,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.69697">
+            <state vertical-scroll-proportion="0.0">
               <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
@@ -283,7 +370,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -412,6 +498,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="AndroidView" />
@@ -422,7 +509,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/jackson-mapper-lgpl-1.9.7.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -779,6 +866,7 @@
       <workItem from="1445939527405" duration="8628000" />
       <workItem from="1445962138724" duration="2992000" />
       <workItem from="1445994462113" duration="4369000" />
+      <workItem from="1448865753236" duration="52000" />
     </task>
     <task id="LOCAL-00001" summary="Finish welcome page interface.After 2.5s the activity will jump to next Activity.">
       <created>1445158577390</created>
@@ -796,7 +884,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127278000" />
+    <option name="totallyTimeSpent" value="127330000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -819,7 +907,6 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39900663" sideWeight="0.5030349" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21016692" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32615894" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -839,6 +926,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21016692" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34602648" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1180,7 +1268,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1195,7 +1282,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1234,7 +1320,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.69697">
+        <state vertical-scroll-proportion="0.0">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
@@ -1245,7 +1331,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.090909">
+        <state vertical-scroll-proportion="0.0">
           <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
           <folding />
         </state>
@@ -1285,8 +1371,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8771593">
-          <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.82917464">
+          <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
           <folding />
         </state>
       </provider>

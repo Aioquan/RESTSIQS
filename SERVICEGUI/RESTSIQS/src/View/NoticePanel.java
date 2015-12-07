@@ -108,7 +108,7 @@ public class NoticePanel {
                 try {
                     jsonObject = HTTPJSONHelper.get(Constant.PROSESS_URL + "notice/noticelist");
                 } catch (ConnectException e) {
-                    noticeStatus.setText("Connection is failed!Check your host.");
+                    noticeStatus.setText(Constant.ERROR_CONNECTION_FAILED);
                 }
 
                 JSONArray jsonArray = (JSONArray) jsonObject.get("result");

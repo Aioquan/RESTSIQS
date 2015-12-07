@@ -11,4 +11,8 @@ public class Constant {
     public static final String STUDENT_URL = PROSESS_URL+"student/";
     public static final String TEACHER_URL = PROSESS_URL+"teacher/";
     public static final String TECNOLOGICALEXAM_URL = PROSESS_URL+"technologicalexam/";
+    public static final String ACADEMY_URL = PROSESS_URL+"academy/";
+    public static final String ERROR_CONNECTION_FAILED = "ConnectException,please check your connection";
+    public static final String ERROR_HAS_EMPTY = "ConnectException,please check your connection";
+    public static final String ERROR_NOT_LEGAL = "Input is not legal";
 }

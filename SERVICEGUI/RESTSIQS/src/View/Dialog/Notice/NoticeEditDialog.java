@@ -66,8 +66,14 @@ public class NoticeEditDialog extends JDialog {
 
     private void onOK() {
 // add your code here
+        if(!hasEmpty())
+        {
         updateNotice();
-        dispose();
+        dispose();}
+        else
+        {
+            NoticeEditDialog.this.setTitle(Constant.ERROR_HAS_EMPTY);
+        }
     }
 
     private void onCancel() {
@@ -104,5 +110,19 @@ public class NoticeEditDialog extends JDialog {
         } catch (ConnectException e) {
             e.printStackTrace();
         }
+    }
+
+    private boolean hasEmpty() {
+        boolean flag = false;
+
+        if (tfAcademyId.getText().isEmpty())
+            flag = true;
+        if (tfContext.getText().isEmpty())
+            flag = true;
+        if (tfOperator.getText().isEmpty())
+            flag = true;
+        if (tfTitle.getText().isEmpty())
+            flag = true;
+        return flag;
     }
 }

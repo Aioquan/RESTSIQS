@@ -3,26 +3,125 @@
   <component name="ChangeListManager">
     <list default="true" id="16c83e09-1805-4141-8daa-144fa72461f7" name="Default" comment="">
       <change type="DELETED" beforePath="E:\workspace\RESTSIQS\README.md.bak" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\RESTSIQS\SERVICEGUI\RESTSIQS\target\classes\View\Dialog\Course\CourseEditDialog$5.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Beans/HTTPEntities/Academy.class" afterPath="$PROJECT_DIR$/target/classes/Beans/HTTPEntities/Academy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Utils/Constant.class" afterPath="$PROJECT_DIR$/target/classes/Utils/Constant.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseAddDialog$1.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseAddDialog$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseAddDialog$2.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseAddDialog$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseAddDialog$3.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseAddDialog$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseAddDialog$4.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseAddDialog$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseAddDialog$5.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseAddDialog$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseAddDialog.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseAddDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseDeleteDialog$1.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseDeleteDialog$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseDeleteDialog$2.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseDeleteDialog$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseDeleteDialog$3.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseDeleteDialog$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseDeleteDialog$4.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseDeleteDialog$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseDeleteDialog.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseDeleteDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CLIENT/RESTSIQS/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity$1.class" afterPath="$PROJECT_DIR$/../../CLIENT/RESTSIQS/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CLIENT/RESTSIQS/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity_.class" afterPath="$PROJECT_DIR$/../../CLIENT/RESTSIQS/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity_.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseEditDialog$1.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseEditDialog$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseEditDialog$2.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseEditDialog$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseEditDialog$3.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseEditDialog$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseEditDialog$4.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseEditDialog$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseEditDialog.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseEditDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/CoursePanel$1.class" afterPath="$PROJECT_DIR$/target/classes/View/CoursePanel$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/CoursePanel$2.class" afterPath="$PROJECT_DIR$/target/classes/View/CoursePanel$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/CoursePanel$3$1.class" afterPath="$PROJECT_DIR$/target/classes/View/CoursePanel$3$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/CoursePanel$3.class" afterPath="$PROJECT_DIR$/target/classes/View/CoursePanel$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/CoursePanel.class" afterPath="$PROJECT_DIR$/target/classes/View/CoursePanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Beans/DeleteButtonRenderer.class" afterPath="$PROJECT_DIR$/target/classes/Beans/DeleteButtonRenderer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Beans/EditButtonRenderer.class" afterPath="$PROJECT_DIR$/target/classes/Beans/EditButtonRenderer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Utils/HTTPJSONHelper.class" afterPath="$PROJECT_DIR$/target/classes/Utils/HTTPJSONHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Main.class" afterPath="$PROJECT_DIR$/target/classes/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/MainView$1.class" afterPath="$PROJECT_DIR$/target/classes/View/MainView$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/MainView.class" afterPath="$PROJECT_DIR$/target/classes/View/MainView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeAddDialog$1.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeAddDialog$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeAddDialog$2.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeAddDialog$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeAddDialog$3.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeAddDialog$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeAddDialog$4.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeAddDialog$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeAddDialog.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeAddDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeDeleteDialog$1.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeDeleteDialog$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeDeleteDialog$2.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeDeleteDialog$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeDeleteDialog$3.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeDeleteDialog$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeDeleteDialog$4.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeDeleteDialog$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeDeleteDialog.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeDeleteDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeEditDialog$1.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeEditDialog$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeEditDialog$2.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeEditDialog$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeEditDialog$3.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeEditDialog$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeEditDialog$4.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeEditDialog$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeEditDialog.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeEditDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/NoticePanel$1.class" afterPath="$PROJECT_DIR$/target/classes/View/NoticePanel$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/NoticePanel$2.class" afterPath="$PROJECT_DIR$/target/classes/View/NoticePanel$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/NoticePanel$3$1.class" afterPath="$PROJECT_DIR$/target/classes/View/NoticePanel$3$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/NoticePanel$3.class" afterPath="$PROJECT_DIR$/target/classes/View/NoticePanel$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/NoticePanel.class" afterPath="$PROJECT_DIR$/target/classes/View/NoticePanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CLIENT/RESTSIQS/out/production/RESTSIQS/RESTSIQS.apk" afterPath="$PROJECT_DIR$/../../CLIENT/RESTSIQS/out/production/RESTSIQS/RESTSIQS.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CLIENT/RESTSIQS/out/production/RESTSIQS/RESTSIQS.unaligned.apk" afterPath="$PROJECT_DIR$/../../CLIENT/RESTSIQS/out/production/RESTSIQS/RESTSIQS.unaligned.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentAddDialog$1.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentAddDialog$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentAddDialog$2.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentAddDialog$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentAddDialog$3.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentAddDialog$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentAddDialog$4.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentAddDialog$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentAddDialog.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentAddDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentDeleteDialog$1.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentDeleteDialog$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentDeleteDialog$2.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentDeleteDialog$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentDeleteDialog$3.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentDeleteDialog$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentDeleteDialog$4.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentDeleteDialog$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentDeleteDialog.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentDeleteDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$1.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$2.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$3.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$4.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$5.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$6.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$7.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$8.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/StudentPanel$1.class" afterPath="$PROJECT_DIR$/target/classes/View/StudentPanel$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/StudentPanel$2.class" afterPath="$PROJECT_DIR$/target/classes/View/StudentPanel$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/StudentPanel$3$1.class" afterPath="$PROJECT_DIR$/target/classes/View/StudentPanel$3$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/StudentPanel$3.class" afterPath="$PROJECT_DIR$/target/classes/View/StudentPanel$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/StudentPanel.class" afterPath="$PROJECT_DIR$/target/classes/View/StudentPanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$1.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$2.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$3.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$4.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$1.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$2.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$3.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$4.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$1.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$2.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$3.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$4.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../DOC/note.docx" afterPath="$PROJECT_DIR$/../../DOC/note.docx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/.gitignore" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Beans/HTTPEntities/Academy.java" afterPath="$PROJECT_DIR$/src/Beans/HTTPEntities/Academy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Utils/Constant.java" afterPath="$PROJECT_DIR$/src/Utils/Constant.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Dialog/Course/CourseAddDialog.java" afterPath="$PROJECT_DIR$/src/View/Dialog/Course/CourseAddDialog.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Dialog/Course/CourseDeleteDialog.java" afterPath="$PROJECT_DIR$/src/View/Dialog/Course/CourseDeleteDialog.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CLIENT/RESTSIQS/generated/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity_.java" afterPath="$PROJECT_DIR$/../../CLIENT/RESTSIQS/generated/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity_.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Dialog/Course/CourseEditDialog.java" afterPath="$PROJECT_DIR$/src/View/Dialog/Course/CourseEditDialog.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/CoursePanel.java" afterPath="$PROJECT_DIR$/src/View/CoursePanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Beans/DeleteButtonRenderer.java" afterPath="$PROJECT_DIR$/src/Beans/DeleteButtonRenderer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Beans/EditButtonRenderer.java" afterPath="$PROJECT_DIR$/src/Beans/EditButtonRenderer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Utils/HTTPJSONHelper.java" afterPath="$PROJECT_DIR$/src/Utils/HTTPJSONHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/MainView.form" afterPath="$PROJECT_DIR$/src/View/MainView.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/MainView.java" afterPath="$PROJECT_DIR$/src/View/MainView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Dialog/Notice/NoticeAddDialog.java" afterPath="$PROJECT_DIR$/src/View/Dialog/Notice/NoticeAddDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Dialog/Notice/NoticeDeleteDialog.java" afterPath="$PROJECT_DIR$/src/View/Dialog/Notice/NoticeDeleteDialog.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Dialog/Notice/NoticeEditDialog.java" afterPath="$PROJECT_DIR$/src/View/Dialog/Notice/NoticeEditDialog.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/NoticePanel.java" afterPath="$PROJECT_DIR$/src/View/NoticePanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Dialog/Student/StudentAddDialog.form" afterPath="$PROJECT_DIR$/src/View/Dialog/Student/StudentAddDialog.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Dialog/Student/StudentAddDialog.java" afterPath="$PROJECT_DIR$/src/View/Dialog/Student/StudentAddDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Dialog/Student/StudentDeleteDialog.java" afterPath="$PROJECT_DIR$/src/View/Dialog/Student/StudentDeleteDialog.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Dialog/Student/StudentEditDialog.java" afterPath="$PROJECT_DIR$/src/View/Dialog/Student/StudentEditDialog.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/StudentPanel.java" afterPath="$PROJECT_DIR$/src/View/StudentPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEAddDialog.java" afterPath="$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEAddDialog.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEDeleteDialog.form" afterPath="$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEDeleteDialog.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEDeleteDialog.java" afterPath="$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEDeleteDialog.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEEditDialog.java" afterPath="$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEEditDialog.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CLIENT/RESTSIQS/bin/androidannotations.log" afterPath="$PROJECT_DIR$/../../CLIENT/RESTSIQS/bin/androidannotations.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CLIENT/RESTSIQS/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../CLIENT/RESTSIQS/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RESTSIQS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,67 +151,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="StudentDeleteDialog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View/Dialog/Student/StudentDeleteDialog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="63" column="18" selection-start-line="58" selection-start-column="8" selection-end-line="63" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="TEEditDialog.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEEditDialog.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="83" column="48" selection-start-line="0" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+              <caret line="69" column="63" selection-start-line="69" selection-start-column="63" selection-end-line="69" selection-end-column="63" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CoursePanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/CoursePanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="146" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="278" selection-end-column="0" />
-              <folding>
-                <element signature="e#5966#5967#0" expanded="true" />
-                <element signature="e#5993#5994#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NoticePanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/NoticePanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/StudentPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/MainView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentEditDialog.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/View/Dialog/Student/StudentEditDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.034965035">
-              <caret line="48" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="412" selection-end-column="0" />
-              <folding>
-                <element signature="e#2978#2994#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -121,7 +175,7 @@
         <entry file="file://$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEAddDialog.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="89" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+              <caret line="105" column="62" selection-start-line="105" selection-start-column="62" selection-end-line="105" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -131,17 +185,60 @@
         <entry file="file://$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEDeleteDialog.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="63" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+              <caret line="72" column="21" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AcademyPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View/AcademyPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
-                <element signature="e#428#555#0" expanded="true" />
-                <element signature="e#554#555#0" expanded="true" />
-                <element signature="e#598#729#0" expanded="true" />
-                <element signature="e#728#729#0" expanded="true" />
-                <element signature="e#855#983#0" expanded="true" />
-                <element signature="e#982#983#0" expanded="true" />
-                <element signature="e#1059#1190#0" expanded="true" />
-                <element signature="e#1189#1190#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainView.form" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/View/MainView.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CourseDeleteDialog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View/Dialog/Course/CourseDeleteDialog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+              <folding>
+                <element signature="e#1018#1146#0" expanded="true" />
+                <element signature="e#1145#1146#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TEDeleteDialog.form" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEDeleteDialog.form">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentEditDialog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View/Dialog/Student/StudentEditDialog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="313" column="76" selection-start-line="313" selection-start-column="76" selection-end-line="313" selection-end-column="76" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -150,17 +247,7 @@
         <entry file="file://$PROJECT_DIR$/src/View/Dialog/Student/StudentAddDialog.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="62" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentDeleteDialog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/Dialog/Student/StudentDeleteDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+              <caret line="88" column="67" selection-start-line="88" selection-start-column="67" selection-end-line="88" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -186,10 +273,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/Beans/ButtonRenderer.java" />
         <option value="$PROJECT_DIR$/src/Beans/DeleteButtonRender.java" />
-        <option value="$PROJECT_DIR$/src/View/AcademyPanel.java" />
         <option value="$PROJECT_DIR$/src/View/CoursePanel.form" />
         <option value="$PROJECT_DIR$/src/Utils/HTTPJSONGetter.java" />
         <option value="$PROJECT_DIR$/src/Beans/HTTPEntities/Notice.java" />
@@ -210,32 +294,36 @@
         <option value="$PROJECT_DIR$/src/View/Dialog/NoticeAddDialog.java" />
         <option value="$PROJECT_DIR$/src/View/Dialog/Course/CourseEditDialog.form" />
         <option value="$PROJECT_DIR$/src/View/Dialog/Student/StudentDeleteDialog.form" />
-        <option value="$PROJECT_DIR$/src/Utils/Constant.java" />
         <option value="$PROJECT_DIR$/src/View/Dialog/Student/StudentEditDialog.form" />
         <option value="$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEEditDialog.form" />
-        <option value="$PROJECT_DIR$/src/View/MainView.form" />
         <option value="$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEAddDialog.form" />
         <option value="$PROJECT_DIR$/src/Beans/NumLimitListener.java" />
-        <option value="$PROJECT_DIR$/src/View/Dialog/Student/StudentEditDialog.java" />
-        <option value="$PROJECT_DIR$/src/View/Dialog/Course/CourseEditDialog.java" />
         <option value="$PROJECT_DIR$/src/Beans/DeleteButtonRenderer.java" />
         <option value="$PROJECT_DIR$/src/Beans/EditButtonRenderer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/Utils/HTTPJSONHelper.java" />
-        <option value="$PROJECT_DIR$/src/View/Dialog/Course/CourseAddDialog.java" />
-        <option value="$PROJECT_DIR$/src/View/Dialog/Course/CourseDeleteDialog.java" />
-        <option value="$PROJECT_DIR$/src/View/Dialog/Notice/NoticeAddDialog.java" />
         <option value="$PROJECT_DIR$/src/View/Dialog/Notice/NoticeDeleteDialog.java" />
-        <option value="$PROJECT_DIR$/src/View/Dialog/Notice/NoticeEditDialog.java" />
-        <option value="$PROJECT_DIR$/src/View/Dialog/Student/StudentAddDialog.java" />
         <option value="$PROJECT_DIR$/src/View/Dialog/Student/StudentDeleteDialog.java" />
-        <option value="$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEAddDialog.java" />
-        <option value="$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEDeleteDialog.java" />
+        <option value="$PROJECT_DIR$/src/View/Dialog/Student/StudentAddDialog.form" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/Beans/HTTPEntities/Academy.java" />
+        <option value="$PROJECT_DIR$/src/View/MainView.form" />
+        <option value="$PROJECT_DIR$/src/View/AcademyPanel.java" />
         <option value="$PROJECT_DIR$/src/View/CoursePanel.java" />
-        <option value="$PROJECT_DIR$/src/View/MainView.java" />
-        <option value="$PROJECT_DIR$/src/View/StudentPanel.java" />
         <option value="$PROJECT_DIR$/src/View/NoticePanel.java" />
+        <option value="$PROJECT_DIR$/src/View/StudentPanel.java" />
+        <option value="$PROJECT_DIR$/src/View/MainView.java" />
+        <option value="$PROJECT_DIR$/src/View/Dialog/Course/CourseAddDialog.java" />
+        <option value="$PROJECT_DIR$/src/View/Dialog/Course/CourseEditDialog.java" />
+        <option value="$PROJECT_DIR$/src/View/Dialog/Notice/NoticeAddDialog.java" />
+        <option value="$PROJECT_DIR$/src/View/Dialog/Notice/NoticeEditDialog.java" />
+        <option value="$PROJECT_DIR$/src/Utils/Constant.java" />
+        <option value="$PROJECT_DIR$/src/View/Dialog/Student/StudentAddDialog.java" />
+        <option value="$PROJECT_DIR$/src/View/Dialog/Student/StudentEditDialog.java" />
+        <option value="$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEAddDialog.java" />
         <option value="$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEEditDialog.java" />
+        <option value="$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEDeleteDialog.form" />
+        <option value="$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEDeleteDialog.java" />
+        <option value="$PROJECT_DIR$/src/View/Dialog/Course/CourseDeleteDialog.java" />
       </list>
     </option>
   </component>
@@ -830,9 +918,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -843,7 +931,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/fastjson-1.2.6.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../CLIENT/RESTSIQS" />
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
@@ -1214,11 +1302,26 @@
       <workItem from="1448624050646" duration="5801000" />
       <workItem from="1448632498474" duration="1296000" />
       <workItem from="1448776892036" duration="10418000" />
+      <workItem from="1448849173565" duration="570000" />
+      <workItem from="1448859118407" duration="2789000" />
+      <workItem from="1448865807297" duration="898000" />
+      <workItem from="1448870731238" duration="637000" />
+      <workItem from="1448936236388" duration="2259000" />
+      <workItem from="1449021634863" duration="4128000" />
+      <workItem from="1449055129980" duration="1535000" />
+      <workItem from="1449148899090" duration="593000" />
+      <workItem from="1449196499868" duration="591000" />
+      <workItem from="1449226820017" duration="4301000" />
+      <workItem from="1449331543874" duration="456000" />
+      <workItem from="1449371524710" duration="1196000" />
+      <workItem from="1449453093971" duration="12325000" />
+      <workItem from="1449474374604" duration="599000" />
+      <workItem from="1449487358330" duration="1896000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210401000" />
+    <option name="totallyTimeSpent" value="245174000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1226,28 +1329,28 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36754966" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3294702" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24279211" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21471927" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30273142" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40231788" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36754966" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40231788" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1263,7 +1366,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="72" />
+      <option name="time" value="85" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1272,13 +1375,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Utils/HTTPJSONHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1363,13 +1459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Beans/HTTPEntities/Academy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2700297">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Beans/HTTPEntities/Course.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.068249">
@@ -1378,142 +1467,99 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Dialog/Course/CourseDeleteDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Course/CourseAddDialog.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Course/CourseAddDialog.form">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.034965035">
           <caret line="1" column="103" selection-start-line="1" selection-start-column="103" selection-end-line="1" selection-end-column="103" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Notice/NoticeDeleteDialog.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Notice/NoticeDeleteDialog.form">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Dialog/Notice/NoticeEditDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Dialog/Notice/NoticeAddDialog.form">
+      <provider editor-type-id="ui-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="ui-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Dialog/Course/CourseEditDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Student/StudentAddDialog.form">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="ui-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Dialog/Student/StudentDeleteDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEDeleteDialog.form">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="ui-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEEditDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEAddDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/MainView.form">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Student/StudentEditDialog.form">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Beans/DeleteButtonRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1521,39 +1567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Beans/NumLimitListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utils/Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="51" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utils/HTTPJSONHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1561,14 +1574,132 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="40" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Beans/NumLimitListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Student/StudentEditDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Student/StudentAddDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.536193">
+          <caret line="14" column="91" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utils/HTTPJSONHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Beans/HTTPEntities/Academy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.852941">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding>
+            <element signature="e#1146#1147#0" expanded="false" />
+            <element signature="e#1176#1177#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/CoursePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="165" column="73" selection-start-line="165" selection-start-column="73" selection-end-line="165" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/NoticePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="110" column="73" selection-start-line="110" selection-start-column="73" selection-end-line="110" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/StudentPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="111" column="77" selection-start-line="111" selection-start-column="77" selection-end-line="111" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/MainView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="35.151516">
+          <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+          <folding>
+            <element signature="e#1755#1756#0" expanded="true" />
+            <element signature="e#1791#1792#0" expanded="true" />
+            <element signature="e#2026#2027#0" expanded="true" />
+            <element signature="e#2060#2061#0" expanded="true" />
+            <element signature="e#2512#2513#0" expanded="true" />
+            <element signature="e#2546#2547#0" expanded="true" />
+            <element signature="e#2585#2586#0" expanded="true" />
+            <element signature="e#2620#2621#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Course/CourseAddDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="129" column="50" selection-start-line="129" selection-start-column="50" selection-end-line="129" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Course/CourseEditDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="117" column="35" selection-start-line="117" selection-start-column="35" selection-end-line="117" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Notice/NoticeEditDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="67" selection-start-line="74" selection-start-column="67" selection-end-line="74" selection-end-column="67" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Dialog/Notice/NoticeDeleteDialog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utils/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="69" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
           <folding />
         </state>
       </provider>
@@ -1576,74 +1707,50 @@
     <entry file="file://$PROJECT_DIR$/src/View/Dialog/Notice/NoticeAddDialog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="101" column="65" selection-start-line="0" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-          <folding>
-            <element signature="e#798#925#0" expanded="true" />
-            <element signature="e#924#925#0" expanded="true" />
-            <element signature="e#968#1099#0" expanded="true" />
-            <element signature="e#1098#1099#0" expanded="true" />
-            <element signature="e#1225#1353#0" expanded="true" />
-            <element signature="e#1352#1353#0" expanded="true" />
-            <element signature="e#1429#1560#0" expanded="true" />
-            <element signature="e#1559#1560#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Course/CourseEditDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="199" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
+          <caret line="67" column="66" selection-start-line="67" selection-start-column="66" selection-end-line="67" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Course/CourseDeleteDialog.java">
+    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Student/StudentEditDialog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <caret line="313" column="76" selection-start-line="313" selection-start-column="76" selection-end-line="313" selection-end-column="76" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Course/CourseAddDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="149" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="238" selection-end-column="0" />
-          <folding>
-            <element signature="e#2219#2346#0" expanded="true" />
-            <element signature="e#2345#2346#0" expanded="true" />
-            <element signature="e#2389#2520#0" expanded="true" />
-            <element signature="e#2519#2520#0" expanded="true" />
-            <element signature="e#2646#2774#0" expanded="true" />
-            <element signature="e#2773#2774#0" expanded="true" />
-            <element signature="e#2850#2981#0" expanded="true" />
-            <element signature="e#2980#2981#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Notice/NoticeEditDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="100" column="65" selection-start-line="0" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-          <folding>
-            <element signature="e#866#993#0" expanded="true" />
-            <element signature="e#992#993#0" expanded="true" />
-            <element signature="e#1036#1167#0" expanded="true" />
-            <element signature="e#1166#1167#0" expanded="true" />
-            <element signature="e#1293#1421#0" expanded="true" />
-            <element signature="e#1420#1421#0" expanded="true" />
-            <element signature="e#1497#1628#0" expanded="true" />
-            <element signature="e#1627#1628#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Dialog/Student/StudentAddDialog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="62" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <caret line="88" column="67" selection-start-line="88" selection-start-column="67" selection-end-line="88" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEAddDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="105" column="62" selection-start-line="105" selection-start-column="62" selection-end-line="105" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEEditDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="63" selection-start-line="69" selection-start-column="63" selection-end-line="69" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEDeleteDialog.form">
+      <provider editor-type-id="ui-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1651,50 +1758,7 @@
     <entry file="file://$PROJECT_DIR$/src/View/Dialog/Student/StudentDeleteDialog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/MainView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/StudentPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/NoticePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/CoursePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="146" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="278" selection-end-column="0" />
-          <folding>
-            <element signature="e#5966#5967#0" expanded="true" />
-            <element signature="e#5993#5994#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEEditDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="83" column="48" selection-start-line="0" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+          <caret line="63" column="18" selection-start-line="58" selection-start-column="8" selection-end-line="63" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -1702,35 +1766,40 @@
     <entry file="file://$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEDeleteDialog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="63" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding>
-            <element signature="e#428#555#0" expanded="true" />
-            <element signature="e#554#555#0" expanded="true" />
-            <element signature="e#598#729#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#855#983#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1059#1190#0" expanded="true" />
-            <element signature="e#1189#1190#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEAddDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="89" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+          <caret line="72" column="21" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Student/StudentEditDialog.java">
+    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Course/CourseDeleteDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.034965035">
-          <caret line="48" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="412" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
           <folding>
-            <element signature="e#2978#2994#0" expanded="true" />
+            <element signature="e#1018#1146#0" expanded="true" />
+            <element signature="e#1145#1146#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/AcademyPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/MainView.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

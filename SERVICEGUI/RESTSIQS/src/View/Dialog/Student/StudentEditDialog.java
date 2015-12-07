@@ -79,11 +79,6 @@ public class StudentEditDialog extends JDialog {
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
         btnAddTecnologicalExam.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-
-            }
-        });
-        btnAddCourse.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
                 HashMap<String, Object> map = new HashMap<String, Object>();
                 map.put("studentId", StudentEditDialog.this.map.get("studentId"));
                 int newId = 0;
@@ -97,6 +92,11 @@ public class StudentEditDialog extends JDialog {
                 teAddDialog.show(map);
             }
         });
+        btnAddCourse.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
     }
 
     public static void main(String[] args) {
@@ -108,7 +108,29 @@ public class StudentEditDialog extends JDialog {
 
     private void onOK() {
 // add your code here
-        dispose();
+        if(!hasEmpty())
+        {
+            Student student = new Student();
+            student.setStudentPassword(tfStudentPassword.getText());
+            student.setSex(tfSex.getText());
+            student.setAcademyId(tfAcademyId.getText());
+            student.setIdentityCard(tfIdentityCard.getText());
+            student.setBankCard(tfBankCard.getText());
+            student.setStudentId(tfStudentId.getText());
+            try
+            {
+                HTTPJSONHelper.put(Constant.STUDENT_URL+"student/",student);
+                dispose();
+            }catch (ConnectException e)
+            {
+                e.printStackTrace();
+            }
+
+        }else
+        {
+            StudentEditDialog.this.setTitle(Constant.ERROR_HAS_EMPTY);
+        }
+
     }
 
     private void onCancel() {
@@ -156,7 +178,7 @@ public class StudentEditDialog extends JDialog {
             return true;
         } catch (ConnectException e) {
             e.printStackTrace();
-            StudentEditDialog.this.setTitle("Update Failed,please check the connection.");
+            StudentEditDialog.this.setTitle(Constant.ERROR_CONNECTION_FAILED);
         }
         return false;
     }
@@ -289,7 +311,7 @@ public class StudentEditDialog extends JDialog {
             courseJSONObject = HTTPJSONHelper.get(Constant.COURSE_URL + "student/" + this.map.get("studentId"));
             TEJSONObject = HTTPJSONHelper.get(Constant.TECNOLOGICALEXAM_URL + "student/" + this.map.get("studentId"));
         } catch (ConnectException e) {
-            StudentEditDialog.this.setTitle("ConnectException,please check your connection");
+            StudentEditDialog.this.setTitle(Constant.ERROR_CONNECTION_FAILED);
         }
         JSONArray jsonArray = (JSONArray) courseJSONObject.get("result");
         int length = jsonArray.size();
@@ -377,10 +399,10 @@ public class StudentEditDialog extends JDialog {
             data2[i][0] = "edit";
             data2[i][1] = "delete";
 
-            data2[i][2] = obj.getDouble("tId");
-            data2[i][3] = obj.getString("tName");
-            data2[i][4] = obj.getString("tDate");
-            data2[i][5] = obj.getString("tSorce");
+            data2[i][2] = obj.getDouble("tid").intValue();
+            data2[i][3] = obj.getString("tname");
+            data2[i][4] = obj.getString("tdate");
+            data2[i][5] = obj.getString("tsorce");
             data2[i][6] = obj.getDouble("studentId").intValue();
         }
         Object[] tNames = {
@@ -393,13 +415,13 @@ public class StudentEditDialog extends JDialog {
                 "tSorce",
                 "studentId"};
 
-        model = new DefaultTableModel(data2, tNames) {
+        DefaultTableModel model2 = new DefaultTableModel(data2, tNames) {
             public boolean isCellEditable(int row, int column) {
                 return false;
             }
         };
         try {
-            studentTETable.setModel(model);
+            studentTETable.setModel(model2);
         } catch (ArrayIndexOutOfBoundsException e) {
             StudentEditDialog.this.setTitle("");
         }

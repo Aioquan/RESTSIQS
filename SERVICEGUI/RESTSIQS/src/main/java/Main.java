@@ -1,5 +1,7 @@
 import View.MainView;
 
+import javax.swing.*;
+
 /**
  * Created by devouty on 2015/10/28.
  */
@@ -9,6 +11,14 @@ public class Main {
     }
 
     private static void startGUI() {
-        new MainView();
+        try {
+            UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+            new MainView();
+        } catch (ClassNotFoundException classNotFoundException) {
+            classNotFoundException.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 }

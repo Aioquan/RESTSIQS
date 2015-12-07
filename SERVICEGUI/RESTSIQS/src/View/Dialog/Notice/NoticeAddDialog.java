@@ -65,7 +65,7 @@ public class NoticeAddDialog extends JDialog {
     private void onOK() {
 // add your code here
         if (hasEmpty()) {
-            NoticeAddDialog.this.setTitle("Input error,something is empty!");
+            NoticeAddDialog.this.setTitle(Constant.ERROR_HAS_EMPTY);
         } else {
             addNotice();
             tfTitle.setText("");

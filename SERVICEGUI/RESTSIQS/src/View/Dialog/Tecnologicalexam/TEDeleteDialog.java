@@ -1,13 +1,18 @@
 package View.Dialog.Tecnologicalexam;
 
+import Utils.Constant;
+import Utils.HTTPJSONHelper;
+
 import javax.swing.*;
 import java.awt.event.*;
+import java.net.ConnectException;
 
 public class TEDeleteDialog extends JDialog {
     String id, name;
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
+    private JLabel label;
 
     public TEDeleteDialog() {
         setContentPane(contentPane);
@@ -51,6 +56,11 @@ public class TEDeleteDialog extends JDialog {
 
     private void onOK() {
 // add your code here
+        try {
+            HTTPJSONHelper.delete(Constant.TECNOLOGICALEXAM_URL + this.id);
+        } catch (ConnectException e) {
+            e.printStackTrace();
+        }
         dispose();
     }
 
@@ -62,6 +72,9 @@ public class TEDeleteDialog extends JDialog {
     public void show(String id, String name) {
         this.id = id;
         this.name = name;
-
+        this.pack();
+        this.label.setText("Delete:" + name + "?");
+        this.setLocation(230, 150);
+        this.setVisible(true);
     }
 }

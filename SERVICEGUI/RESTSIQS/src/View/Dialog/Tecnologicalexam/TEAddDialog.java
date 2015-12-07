@@ -70,7 +70,7 @@ public class TEAddDialog extends JDialog {
             tfScore.setText("");
             dispose();
         } else {
-            TEAddDialog.this.setTitle("Input is not legal(has empty textfield)");
+            TEAddDialog.this.setTitle(Constant.ERROR_HAS_EMPTY);
         }
     }
 
@@ -87,7 +87,7 @@ public class TEAddDialog extends JDialog {
 
         lblSId.setText("studentId:" + map.get("studentId"));
         lblTId.setText("Tid:" + map.get("Tid"));
-
+        this.setLocation(150, 250);
         this.pack();
         this.setVisible(true);
     }
@@ -103,7 +103,7 @@ public class TEAddDialog extends JDialog {
             HTTPJSONHelper.post(Constant.TECNOLOGICALEXAM_URL + "technologicalexam/", technologicalexam);
         } catch (ConnectException e) {
             e.printStackTrace();
-            TEAddDialog.this.setTitle("Input is not legal");
+            TEAddDialog.this.setTitle(Constant.ERROR_NOT_LEGAL);
         }
     }
 

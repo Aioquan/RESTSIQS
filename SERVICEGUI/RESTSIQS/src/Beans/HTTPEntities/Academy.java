@@ -56,4 +56,8 @@ public class Academy implements java.io.Serializable {
 		this.academyAddress = academyAddress;
 	}
 
+	public String toString()
+	{
+		return this.academyName;
+	}
 }

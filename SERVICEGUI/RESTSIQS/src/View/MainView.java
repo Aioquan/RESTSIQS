@@ -27,14 +27,17 @@ public class MainView {
     private JLabel noticeStatus;
     private JTable studentTable;
     private JButton studentBtnAdd;
-    private JLabel studentLblStatus;
+    private JLabel studentStatus;
+    private JTree academyTree;
+    private JTable teacherTable;
+    private JLabel academyStatus;
 
     public MainView() {
         Dimension screensize = Toolkit.getDefaultToolkit().getScreenSize();
         width = (int) screensize.getWidth();
         height = (int) screensize.getHeight();
 
-        JFrame frame = new JFrame("MainView");
+        JFrame frame = new JFrame("RESTSIQS");
         frame.setContentPane(this.mainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
@@ -51,7 +54,11 @@ public class MainView {
         new CoursePanel(MainView.this);
         new NoticePanel(MainView.this);
         new StudentPanel(MainView.this);
+        new AcademyPanel(MainView.this);
+    }
 
+    public JLabel getAcademyStatus() {
+        return academyStatus;
     }
 
     public int getWidth() {
@@ -82,13 +89,21 @@ public class MainView {
         return studentBtnAdd;
     }
 
-    public JLabel getStudentLblStatus() {
-        return studentLblStatus;
+    public JLabel getStudentStatus() {
+        return studentStatus;
     }
 
     //    private String processURL;
     public JTabbedPane getTabbedPane1() {
         return tabbedPane1;
+    }
+
+    public JTree getAcademyTree() {
+        return academyTree;
+    }
+
+    public JTable getTeacherTable() {
+        return teacherTable;
     }
 
     public JPanel getCoursePanel() {

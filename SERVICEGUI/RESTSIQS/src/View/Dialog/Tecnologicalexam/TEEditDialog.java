@@ -67,7 +67,7 @@ public class TEEditDialog extends JDialog {
             updateTE();
             dispose();
         } else {
-            TEEditDialog.this.setTitle("Input is not legal(has empty textfield)");
+            TEEditDialog.this.setTitle(Constant.ERROR_HAS_EMPTY);
         }
     }
 
@@ -96,7 +96,7 @@ public class TEEditDialog extends JDialog {
     private void updateTE() {
         try {
             String tId = (String) map.get("Tid");
-            String studentId = (String) map.get("studentId");
+            String studentId =  map.get("studentId")+"";
             Technologicalexam technologicalexam = new Technologicalexam();
             technologicalexam.setStudentId(studentId);
             technologicalexam.setTid(tId);

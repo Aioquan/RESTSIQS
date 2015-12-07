@@ -35,7 +35,7 @@ public class StudentPanel {
     private EditButtonRenderer studentTableBtnDelete;
     StudentPanel(MainView mainView) {
         this.studentBtnAdd = mainView.getStudentBtnAdd();
-        this.studentLblStatus = mainView.getStudentLblStatus();
+        this.studentLblStatus = mainView.getStudentStatus();
         this.studentTable = mainView.getStudentTable();
         studentAddDialog = new StudentAddDialog();
         studentDeleteDialog = new StudentDeleteDialog();
@@ -109,7 +109,7 @@ public class StudentPanel {
                 try {
                     jsonObject = HTTPJSONHelper.get(Constant.PROSESS_URL + "student/studentlist");
                 } catch (ConnectException e) {
-                    studentLblStatus.setText("Connection is failed!Check your host.");
+                    studentLblStatus.setText(Constant.ERROR_CONNECTION_FAILED);
                 }
 
                 JSONArray jsonArray = (JSONArray) jsonObject.get("result");

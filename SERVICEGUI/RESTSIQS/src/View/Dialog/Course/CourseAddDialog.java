@@ -127,7 +127,7 @@ public class CourseAddDialog extends JDialog {
     private void onOK() {
 // add your code here
         if (hasEmpty()) {
-            this.setTitle("Input error,something is empty!");
+            this.setTitle(Constant.ERROR_HAS_EMPTY);
         } else {
             addCourse();
             tfCourseDate.setText("");

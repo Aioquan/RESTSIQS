@@ -12,6 +12,7 @@ import com.alibaba.fastjson.JSONObject;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumnModel;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -27,7 +28,7 @@ public class CoursePanel {
     CourseDeleteDialog deleteDialog;
     CourseAddDialog addDialog;
     Thread thread;
-    //    private JPanel coursePanel;
+//    private JPanel coursePanel;
 //    private JComboBox courseComboBox;
 //    private JLabel courseDate;
 //    private JButton courseButtonSearch;
@@ -63,6 +64,7 @@ public class CoursePanel {
         updateData();
 
         courseTable.getTableHeader().setReorderingAllowed(false);
+        courseTable.getTableHeader().setBackground(Color.GREEN);
         courseTable.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -161,16 +163,13 @@ public class CoursePanel {
                 try {
                     jsonObject = HTTPJSONHelper.get(Constant.PROSESS_URL + "course/courselist");
                 } catch (ConnectException e) {
-                    courseStatus.setText("Connection is failed!Check your host.");
+                    courseStatus.setText(Constant.ERROR_CONNECTION_FAILED);
                 }
 
 //                System.out.println(jsonObject.toJSONString());
 //                System.out.println(((JSONArray)jsonObject.get("result")).toJSONString());
 
                 JSONArray jsonArray = (JSONArray) jsonObject.get("result");
-
-                //new data for table
-
 
                 //insert data into data[][]
                 int length = jsonArray.size();
@@ -232,23 +231,15 @@ public class CoursePanel {
                         return false;
                     }
                 };
-                try
-
-                {
+                try {
                     courseTable.setModel(model);
-                } catch (
-                        ArrayIndexOutOfBoundsException e
-                        )
-
-                {
+                } catch (ArrayIndexOutOfBoundsException e) {
                     courseStatus.setText("");
                 }
 
                 courseTable.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
                 courseTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-                courseTable.getColumn("edit").
-
-                        setCellRenderer(courseTableBtnEdit);
+                courseTable.getColumn("edit").setCellRenderer(courseTableBtnEdit);
 
                 courseTable.getColumn("delete").
 
@@ -258,21 +249,10 @@ public class CoursePanel {
 //                courseTable.setCellSelectionEnabled(false);
 
             }
-        }
-
-        ;
-        try
-
-        {
+        };
+        try {
             thread.start();
-        } catch (
-                ArrayIndexOutOfBoundsException e
-                )
-
-        {
-
+        } catch (ArrayIndexOutOfBoundsException e) {
         }
-
     }
-
 }

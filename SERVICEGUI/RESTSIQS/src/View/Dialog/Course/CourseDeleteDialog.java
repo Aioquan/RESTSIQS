@@ -60,6 +60,7 @@ public class CourseDeleteDialog extends JDialog {
 // add your code here
         try {
             HTTPJSONHelper.delete(Constant.COURSE_URL + this.id);
+            dispose();
         } catch (ConnectException e) {
             e.printStackTrace();
         }

@@ -112,7 +112,7 @@ public class CourseEditDialog extends JDialog {
     private void onOK() {
 // add your code here
         if (hasEmpty()) {
-            this.setTitle("Input is not legal(has empty textfield)");
+            this.setTitle(Constant.ERROR_HAS_EMPTY);
         } else {
             updateCourse();
             this.setVisible(false);

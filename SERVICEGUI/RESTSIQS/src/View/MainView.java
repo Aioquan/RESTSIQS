@@ -2,6 +2,7 @@ package View;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
@@ -50,11 +51,12 @@ public class MainView {
             }
         });
 
-
         new CoursePanel(MainView.this);
         new NoticePanel(MainView.this);
         new StudentPanel(MainView.this);
         new AcademyPanel(MainView.this);
+        academyTree.addMouseListener(new MouseAdapter() {
+        });
     }
 
     public JLabel getAcademyStatus() {

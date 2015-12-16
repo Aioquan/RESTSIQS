@@ -2,6 +2,8 @@ package com.restsiqs.Resources;
 
 import java.util.List;
 
+import javax.ws.rs.QueryParam;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +30,7 @@ import com.restsiqs.Utils.URLAccepter;
  * 		Update:               |PUT /teacher/teacher
  * 		FindAll:              |GET /teacher/teacherlist
  * 		Find by primary key:  |GET /teacher/{id}
- * 		
+ * 		FInd by academy:      |GET /teacher/?academyid={id}
  * Created by devouty on 2015/10/13.
  * 
  */
@@ -117,4 +119,12 @@ public class TeacherResource {
 		return obj.toJSONString();
 	}
 
+	// Find by academy id
+	@RequestMapping(value = "/teacher/", method = RequestMethod.GET)
+	@ResponseBody
+	public String getByAcademyId(@QueryParam("academyid") final String academyid) {
+		List<Teacher> list = teacherService.findAll();
+		System.out.println(academyid);
+		return new JsonUtils(list).getJsonObject().toJSONString();
+	}
 }

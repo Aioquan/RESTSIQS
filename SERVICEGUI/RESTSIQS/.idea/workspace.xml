@@ -3,124 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="16c83e09-1805-4141-8daa-144fa72461f7" name="Default" comment="">
       <change type="DELETED" beforePath="E:\workspace\RESTSIQS\README.md.bak" afterPath="" />
-      <change type="DELETED" beforePath="E:\workspace\RESTSIQS\SERVICEGUI\RESTSIQS\target\classes\View\Dialog\Course\CourseEditDialog$5.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Beans/HTTPEntities/Academy.class" afterPath="$PROJECT_DIR$/target/classes/Beans/HTTPEntities/Academy.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Utils/Constant.class" afterPath="$PROJECT_DIR$/target/classes/Utils/Constant.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseAddDialog$1.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseAddDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseAddDialog$2.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseAddDialog$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseAddDialog$3.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseAddDialog$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseAddDialog$4.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseAddDialog$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseAddDialog$5.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseAddDialog$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseAddDialog.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseAddDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseDeleteDialog$1.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseDeleteDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseDeleteDialog$2.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseDeleteDialog$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseDeleteDialog$3.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseDeleteDialog$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseDeleteDialog$4.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseDeleteDialog$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/AcademyPanel.class" afterPath="$PROJECT_DIR$/target/classes/View/AcademyPanel.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseDeleteDialog.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseDeleteDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CLIENT/RESTSIQS/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity$1.class" afterPath="$PROJECT_DIR$/../../CLIENT/RESTSIQS/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CLIENT/RESTSIQS/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity_.class" afterPath="$PROJECT_DIR$/../../CLIENT/RESTSIQS/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity_.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseEditDialog$1.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseEditDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseEditDialog$2.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseEditDialog$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseEditDialog$3.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseEditDialog$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseEditDialog$4.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseEditDialog$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseEditDialog.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Course/CourseEditDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/CoursePanel$1.class" afterPath="$PROJECT_DIR$/target/classes/View/CoursePanel$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/CoursePanel$2.class" afterPath="$PROJECT_DIR$/target/classes/View/CoursePanel$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/CoursePanel$3$1.class" afterPath="$PROJECT_DIR$/target/classes/View/CoursePanel$3$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/CoursePanel$3.class" afterPath="$PROJECT_DIR$/target/classes/View/CoursePanel$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/CoursePanel.class" afterPath="$PROJECT_DIR$/target/classes/View/CoursePanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Beans/DeleteButtonRenderer.class" afterPath="$PROJECT_DIR$/target/classes/Beans/DeleteButtonRenderer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Beans/EditButtonRenderer.class" afterPath="$PROJECT_DIR$/target/classes/Beans/EditButtonRenderer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Utils/HTTPJSONHelper.class" afterPath="$PROJECT_DIR$/target/classes/Utils/HTTPJSONHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Main.class" afterPath="$PROJECT_DIR$/target/classes/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/MainView$1.class" afterPath="$PROJECT_DIR$/target/classes/View/MainView$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/MainView.class" afterPath="$PROJECT_DIR$/target/classes/View/MainView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeAddDialog$1.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeAddDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeAddDialog$2.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeAddDialog$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeAddDialog$3.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeAddDialog$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeAddDialog$4.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeAddDialog$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeAddDialog.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeAddDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeDeleteDialog$1.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeDeleteDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeDeleteDialog$2.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeDeleteDialog$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeDeleteDialog$3.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeDeleteDialog$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeDeleteDialog$4.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeDeleteDialog$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeDeleteDialog.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeDeleteDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeEditDialog$1.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeEditDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeEditDialog$2.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeEditDialog$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeEditDialog$3.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeEditDialog$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeEditDialog$4.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeEditDialog$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeEditDialog.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Notice/NoticeEditDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/NoticePanel$1.class" afterPath="$PROJECT_DIR$/target/classes/View/NoticePanel$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/NoticePanel$2.class" afterPath="$PROJECT_DIR$/target/classes/View/NoticePanel$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/NoticePanel$3$1.class" afterPath="$PROJECT_DIR$/target/classes/View/NoticePanel$3$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/NoticePanel$3.class" afterPath="$PROJECT_DIR$/target/classes/View/NoticePanel$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/NoticePanel.class" afterPath="$PROJECT_DIR$/target/classes/View/NoticePanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CLIENT/RESTSIQS/out/production/RESTSIQS/RESTSIQS.apk" afterPath="$PROJECT_DIR$/../../CLIENT/RESTSIQS/out/production/RESTSIQS/RESTSIQS.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CLIENT/RESTSIQS/out/production/RESTSIQS/RESTSIQS.unaligned.apk" afterPath="$PROJECT_DIR$/../../CLIENT/RESTSIQS/out/production/RESTSIQS/RESTSIQS.unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentAddDialog$1.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentAddDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentAddDialog$2.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentAddDialog$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentAddDialog$3.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentAddDialog$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentAddDialog$4.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentAddDialog$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentAddDialog.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentAddDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentDeleteDialog$1.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentDeleteDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentDeleteDialog$2.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentDeleteDialog$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentDeleteDialog$3.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentDeleteDialog$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentDeleteDialog$4.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentDeleteDialog$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentDeleteDialog.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentDeleteDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$1.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$2.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$3.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$4.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$5.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$6.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$7.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$8.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Student/StudentEditDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/StudentPanel$1.class" afterPath="$PROJECT_DIR$/target/classes/View/StudentPanel$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/StudentPanel$2.class" afterPath="$PROJECT_DIR$/target/classes/View/StudentPanel$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/StudentPanel$3$1.class" afterPath="$PROJECT_DIR$/target/classes/View/StudentPanel$3$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/StudentPanel$3.class" afterPath="$PROJECT_DIR$/target/classes/View/StudentPanel$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/StudentPanel.class" afterPath="$PROJECT_DIR$/target/classes/View/StudentPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$1.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$2.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$3.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$4.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$1.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$2.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$3.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$4.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$1.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$2.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$3.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$4.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog.class" afterPath="$PROJECT_DIR$/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../DOC/note.docx" afterPath="$PROJECT_DIR$/../../DOC/note.docx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/.gitignore" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Beans/HTTPEntities/Academy.java" afterPath="$PROJECT_DIR$/src/Beans/HTTPEntities/Academy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/AcademyPanel.java" afterPath="$PROJECT_DIR$/src/View/AcademyPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Utils/Constant.java" afterPath="$PROJECT_DIR$/src/Utils/Constant.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Dialog/Course/CourseAddDialog.java" afterPath="$PROJECT_DIR$/src/View/Dialog/Course/CourseAddDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Dialog/Course/CourseDeleteDialog.java" afterPath="$PROJECT_DIR$/src/View/Dialog/Course/CourseDeleteDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CLIENT/RESTSIQS/generated/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity_.java" afterPath="$PROJECT_DIR$/../../CLIENT/RESTSIQS/generated/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity_.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Dialog/Course/CourseEditDialog.java" afterPath="$PROJECT_DIR$/src/View/Dialog/Course/CourseEditDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/CoursePanel.java" afterPath="$PROJECT_DIR$/src/View/CoursePanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/MainView.form" afterPath="$PROJECT_DIR$/src/View/MainView.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/MainView.java" afterPath="$PROJECT_DIR$/src/View/MainView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Dialog/Notice/NoticeAddDialog.java" afterPath="$PROJECT_DIR$/src/View/Dialog/Notice/NoticeAddDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Dialog/Notice/NoticeEditDialog.java" afterPath="$PROJECT_DIR$/src/View/Dialog/Notice/NoticeEditDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/NoticePanel.java" afterPath="$PROJECT_DIR$/src/View/NoticePanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Dialog/Student/StudentAddDialog.form" afterPath="$PROJECT_DIR$/src/View/Dialog/Student/StudentAddDialog.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Dialog/Student/StudentAddDialog.java" afterPath="$PROJECT_DIR$/src/View/Dialog/Student/StudentAddDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Dialog/Student/StudentEditDialog.java" afterPath="$PROJECT_DIR$/src/View/Dialog/Student/StudentEditDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/StudentPanel.java" afterPath="$PROJECT_DIR$/src/View/StudentPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEAddDialog.java" afterPath="$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEAddDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEDeleteDialog.form" afterPath="$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEDeleteDialog.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEDeleteDialog.java" afterPath="$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEDeleteDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEEditDialog.java" afterPath="$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEEditDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CLIENT/RESTSIQS/bin/androidannotations.log" afterPath="$PROJECT_DIR$/../../CLIENT/RESTSIQS/bin/androidannotations.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../CLIENT/RESTSIQS/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../CLIENT/RESTSIQS/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Resources/TeacherResource.java" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/src/com/restsiqs/Resources/TeacherResource.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RESTSIQS.iws" />
@@ -151,51 +44,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="StudentDeleteDialog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/Dialog/Student/StudentDeleteDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="63" column="18" selection-start-line="58" selection-start-column="8" selection-end-line="63" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TEEditDialog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEEditDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="69" column="63" selection-start-line="69" selection-start-column="63" selection-end-line="69" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TEAddDialog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEAddDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="105" column="62" selection-start-line="105" selection-start-column="62" selection-end-line="105" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TEDeleteDialog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEDeleteDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="72" column="21" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AcademyPanel.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AcademyPanel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/View/AcademyPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.96590906">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -203,32 +56,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainView.form" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/View/MainView.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CourseDeleteDialog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/Dialog/Course/CourseDeleteDialog.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
-                <element signature="e#1018#1146#0" expanded="true" />
-                <element signature="e#1145#1146#0" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#160#161#0" expanded="false" />
+                <element signature="e#186#187#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TEDeleteDialog.form" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEDeleteDialog.form">
+      <file leaf-file-name="MainView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View/MainView.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <caret line="149" column="1" selection-start-line="149" selection-start-column="1" selection-end-line="149" selection-end-column="1" />
+              <folding>
+                <element signature="e#1860#1861#0" expanded="true" />
+                <element signature="e#1896#1897#0" expanded="true" />
+                <element signature="e#2763#2764#0" expanded="true" />
+                <element signature="e#2797#2798#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CoursePanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View/CoursePanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="206" column="29" selection-start-line="206" selection-start-column="25" selection-end-line="206" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#6046#6047#0" expanded="false" />
+                <element signature="e#6073#6074#0" expanded="false" />
+                <element signature="e#9203#9204#0" expanded="false" />
+                <element signature="e#9263#9264#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -237,17 +105,73 @@
         <entry file="file://$PROJECT_DIR$/src/View/Dialog/Student/StudentEditDialog.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="313" column="76" selection-start-line="313" selection-start-column="76" selection-end-line="313" selection-end-column="76" />
+              <caret line="378" column="9" selection-start-line="378" selection-start-column="9" selection-end-line="378" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StudentAddDialog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/Dialog/Student/StudentAddDialog.java">
+      <file leaf-file-name="NoticePanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View/NoticePanel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="88" column="67" selection-start-line="88" selection-start-column="67" selection-end-line="88" selection-end-column="67" />
+              <caret line="136" column="29" selection-start-line="136" selection-start-column="25" selection-end-line="136" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1689#3406#0" expanded="false" />
+                <element signature="e#2045#2061#0" expanded="false" />
+                <element signature="e#2890#2906#0" expanded="false" />
+                <element signature="e#3405#3406#0" expanded="false" />
+                <element signature="e#3452#4078#0" expanded="false" />
+                <element signature="e#3589#3605#0" expanded="false" />
+                <element signature="e#4077#4078#0" expanded="false" />
+                <element signature="e#4192#6641#0" expanded="false" />
+                <element signature="e#5900#5901#0" expanded="false" />
+                <element signature="e#5960#5961#0" expanded="false" />
+                <element signature="e#6640#6641#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View/StudentPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="173" column="27" selection-start-line="173" selection-start-column="27" selection-end-line="173" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1696#3590#0" expanded="false" />
+                <element signature="e#2060#2076#0" expanded="false" />
+                <element signature="e#3025#3041#0" expanded="false" />
+                <element signature="e#3589#3590#0" expanded="false" />
+                <element signature="e#3634#4262#0" expanded="false" />
+                <element signature="e#3771#3787#0" expanded="false" />
+                <element signature="e#4261#4262#0" expanded="false" />
+                <element signature="e#4376#7239#0" expanded="false" />
+                <element signature="e#6549#6550#0" expanded="false" />
+                <element signature="e#6609#6610#0" expanded="false" />
+                <element signature="e#7238#7239#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constant.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Utils/Constant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CourseDeleteDialog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View/Dialog/Course/CourseDeleteDialog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -304,26 +228,26 @@
         <option value="$PROJECT_DIR$/src/View/Dialog/Notice/NoticeDeleteDialog.java" />
         <option value="$PROJECT_DIR$/src/View/Dialog/Student/StudentDeleteDialog.java" />
         <option value="$PROJECT_DIR$/src/View/Dialog/Student/StudentAddDialog.form" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/Beans/HTTPEntities/Academy.java" />
-        <option value="$PROJECT_DIR$/src/View/MainView.form" />
-        <option value="$PROJECT_DIR$/src/View/AcademyPanel.java" />
-        <option value="$PROJECT_DIR$/src/View/CoursePanel.java" />
-        <option value="$PROJECT_DIR$/src/View/NoticePanel.java" />
-        <option value="$PROJECT_DIR$/src/View/StudentPanel.java" />
-        <option value="$PROJECT_DIR$/src/View/MainView.java" />
         <option value="$PROJECT_DIR$/src/View/Dialog/Course/CourseAddDialog.java" />
         <option value="$PROJECT_DIR$/src/View/Dialog/Course/CourseEditDialog.java" />
         <option value="$PROJECT_DIR$/src/View/Dialog/Notice/NoticeAddDialog.java" />
         <option value="$PROJECT_DIR$/src/View/Dialog/Notice/NoticeEditDialog.java" />
-        <option value="$PROJECT_DIR$/src/Utils/Constant.java" />
         <option value="$PROJECT_DIR$/src/View/Dialog/Student/StudentAddDialog.java" />
-        <option value="$PROJECT_DIR$/src/View/Dialog/Student/StudentEditDialog.java" />
         <option value="$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEAddDialog.java" />
         <option value="$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEEditDialog.java" />
         <option value="$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEDeleteDialog.form" />
         <option value="$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEDeleteDialog.java" />
         <option value="$PROJECT_DIR$/src/View/Dialog/Course/CourseDeleteDialog.java" />
+        <option value="$PROJECT_DIR$/src/View/CoursePanel.java" />
+        <option value="$PROJECT_DIR$/src/View/NoticePanel.java" />
+        <option value="$PROJECT_DIR$/src/View/Dialog/Student/StudentEditDialog.java" />
+        <option value="$PROJECT_DIR$/src/View/StudentPanel.java" />
+        <option value="$PROJECT_DIR$/src/Utils/Constant.java" />
+        <option value="$PROJECT_DIR$/src/View/MainView.form" />
+        <option value="$PROJECT_DIR$/src/View/MainView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/View/AcademyPanel.java" />
       </list>
     </option>
   </component>
@@ -457,28 +381,6 @@
               <option name="myItemId" value="View" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MainView" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RESTSIQS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RESTSIQS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -504,70 +406,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Tecnologicalexam" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TEEditDialog" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RESTSIQS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RESTSIQS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dialog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tecnologicalexam" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TEDeleteDialog" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RESTSIQS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RESTSIQS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dialog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tecnologicalexam" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TEAddDialog" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -595,70 +433,6 @@
               <option name="myItemId" value="Student" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StudentEditDialog" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RESTSIQS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RESTSIQS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dialog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Student" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StudentDeleteDialog" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RESTSIQS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RESTSIQS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dialog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Student" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StudentAddDialog" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -685,70 +459,6 @@
               <option name="myItemId" value="Notice" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NoticeEditDialog" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RESTSIQS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RESTSIQS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dialog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Notice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NoticeDeleteDialog" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RESTSIQS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RESTSIQS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dialog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Notice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NoticeAddDialog" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -774,70 +484,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Course" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CourseEditDialog" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RESTSIQS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RESTSIQS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dialog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Course" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CourseDeleteDialog" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RESTSIQS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RESTSIQS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dialog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Course" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CourseAddDialog" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -918,9 +564,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -929,7 +575,7 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../CLIENT/RESTSIQS" />
     <property name="Downloaded.Files.Path.Enabled" value="true" />
@@ -1316,29 +962,48 @@
       <workItem from="1449371524710" duration="1196000" />
       <workItem from="1449453093971" duration="12325000" />
       <workItem from="1449474374604" duration="599000" />
-      <workItem from="1449487358330" duration="1896000" />
+      <workItem from="1449487358330" duration="5198000" />
+      <workItem from="1449562513723" duration="545000" />
+      <workItem from="1449581885694" duration="2554000" />
+      <workItem from="1449637038740" duration="596000" />
+      <workItem from="1449716085426" duration="156000" />
+      <workItem from="1449741526717" duration="3614000" />
+      <workItem from="1449810655589" duration="1810000" />
+      <workItem from="1449838323142" duration="3680000" />
+      <workItem from="1449996464533" duration="585000" />
+      <workItem from="1450007945312" duration="599000" />
+      <workItem from="1450242098227" duration="1214000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="245174000" />
+    <option name="totallyTimeSpent" value="263829000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36754966" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3294702" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3642384" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21471927" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21016692" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30273142" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1467,93 +1132,93 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Dialog/Course/CourseDeleteDialog.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Course/CourseAddDialog.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Course/CourseAddDialog.form">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.034965035">
           <caret line="1" column="103" selection-start-line="1" selection-start-column="103" selection-end-line="1" selection-end-column="103" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Notice/NoticeDeleteDialog.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Notice/NoticeDeleteDialog.form">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Dialog/Notice/NoticeEditDialog.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Notice/NoticeAddDialog.form">
-      <provider editor-type-id="ui-designer">
+      <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Notice/NoticeAddDialog.form">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Course/CourseEditDialog.form">
-      <provider selected="true" editor-type-id="ui-designer">
+      <provider editor-type-id="ui-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Course/CourseEditDialog.form">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Dialog/Student/StudentDeleteDialog.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEEditDialog.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEAddDialog.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Beans/DeleteButtonRenderer.java">
@@ -1585,37 +1250,29 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Dialog/Student/StudentEditDialog.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Dialog/Student/StudentAddDialog.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.536193">
-          <caret line="14" column="91" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="91" />
-        </state>
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Utils/HTTPJSONHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="28" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1623,48 +1280,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.852941">
           <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding>
-            <element signature="e#1146#1147#0" expanded="false" />
-            <element signature="e#1176#1177#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/CoursePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="165" column="73" selection-start-line="165" selection-start-column="73" selection-end-line="165" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/NoticePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="110" column="73" selection-start-line="110" selection-start-column="73" selection-end-line="110" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/StudentPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="111" column="77" selection-start-line="111" selection-start-column="77" selection-end-line="111" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/MainView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="35.151516">
-          <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
-          <folding>
-            <element signature="e#1755#1756#0" expanded="true" />
-            <element signature="e#1791#1792#0" expanded="true" />
-            <element signature="e#2026#2027#0" expanded="true" />
-            <element signature="e#2060#2061#0" expanded="true" />
-            <element signature="e#2512#2513#0" expanded="true" />
-            <element signature="e#2546#2547#0" expanded="true" />
-            <element signature="e#2585#2586#0" expanded="true" />
-            <element signature="e#2620#2621#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1696,27 +1311,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utils/Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="69" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Dialog/Notice/NoticeAddDialog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="67" column="66" selection-start-line="67" selection-start-column="66" selection-end-line="67" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Student/StudentEditDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="313" column="76" selection-start-line="313" selection-start-column="76" selection-end-line="313" selection-end-column="76" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1724,7 +1322,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="88" column="67" selection-start-line="88" selection-start-column="67" selection-end-line="88" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1732,7 +1329,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="105" column="62" selection-start-line="105" selection-start-column="62" selection-end-line="105" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1740,26 +1336,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="69" column="63" selection-start-line="69" selection-start-column="63" selection-end-line="69" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Dialog/Tecnologicalexam/TEDeleteDialog.form">
-      <provider editor-type-id="ui-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="ui-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Dialog/Student/StudentDeleteDialog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="63" column="18" selection-start-line="58" selection-start-column="8" selection-end-line="63" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1767,7 +1360,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="72" column="21" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1775,31 +1367,124 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/CoursePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="206" column="29" selection-start-line="206" selection-start-column="25" selection-end-line="206" selection-end-column="29" />
           <folding>
-            <element signature="e#1018#1146#0" expanded="true" />
-            <element signature="e#1145#1146#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#6046#6047#0" expanded="false" />
+            <element signature="e#6073#6074#0" expanded="false" />
+            <element signature="e#9203#9204#0" expanded="false" />
+            <element signature="e#9263#9264#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/AcademyPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/View/NoticePanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <caret line="136" column="29" selection-start-line="136" selection-start-column="25" selection-end-line="136" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1689#3406#0" expanded="false" />
+            <element signature="e#2045#2061#0" expanded="false" />
+            <element signature="e#2890#2906#0" expanded="false" />
+            <element signature="e#3405#3406#0" expanded="false" />
+            <element signature="e#3452#4078#0" expanded="false" />
+            <element signature="e#3589#3605#0" expanded="false" />
+            <element signature="e#4077#4078#0" expanded="false" />
+            <element signature="e#4192#6641#0" expanded="false" />
+            <element signature="e#5900#5901#0" expanded="false" />
+            <element signature="e#5960#5961#0" expanded="false" />
+            <element signature="e#6640#6641#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Dialog/Student/StudentEditDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="378" column="9" selection-start-line="378" selection-start-column="9" selection-end-line="378" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/StudentPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="173" column="27" selection-start-line="173" selection-start-column="27" selection-end-line="173" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1696#3590#0" expanded="false" />
+            <element signature="e#2060#2076#0" expanded="false" />
+            <element signature="e#3025#3041#0" expanded="false" />
+            <element signature="e#3589#3590#0" expanded="false" />
+            <element signature="e#3634#4262#0" expanded="false" />
+            <element signature="e#3771#3787#0" expanded="false" />
+            <element signature="e#4261#4262#0" expanded="false" />
+            <element signature="e#4376#7239#0" expanded="false" />
+            <element signature="e#6549#6550#0" expanded="false" />
+            <element signature="e#6609#6610#0" expanded="false" />
+            <element signature="e#7238#7239#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/MainView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="149" column="1" selection-start-line="149" selection-start-column="1" selection-end-line="149" selection-end-column="1" />
+          <folding>
+            <element signature="e#1860#1861#0" expanded="true" />
+            <element signature="e#1896#1897#0" expanded="true" />
+            <element signature="e#2763#2764#0" expanded="true" />
+            <element signature="e#2797#2798#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/MainView.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#160#161#0" expanded="false" />
+            <element signature="e#186#187#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utils/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/AcademyPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.96590906">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

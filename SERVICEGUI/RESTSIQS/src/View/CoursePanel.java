@@ -28,7 +28,7 @@ public class CoursePanel {
     CourseDeleteDialog deleteDialog;
     CourseAddDialog addDialog;
     Thread thread;
-//    private JPanel coursePanel;
+    //    private JPanel coursePanel;
 //    private JComboBox courseComboBox;
 //    private JLabel courseDate;
 //    private JButton courseButtonSearch;
@@ -241,9 +241,7 @@ public class CoursePanel {
                 courseTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
                 courseTable.getColumn("edit").setCellRenderer(courseTableBtnEdit);
 
-                courseTable.getColumn("delete").
-
-                        setCellRenderer(courseTableBtnDelete);
+                courseTable.getColumn("delete").setCellRenderer(courseTableBtnDelete);
 
                 courseTable.setDoubleBuffered(false);
 //                courseTable.setCellSelectionEnabled(false);

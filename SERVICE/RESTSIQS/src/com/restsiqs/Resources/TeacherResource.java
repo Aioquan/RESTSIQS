@@ -124,7 +124,7 @@ public class TeacherResource {
 	@ResponseBody
 	public String getByAcademyId(@QueryParam("academyid") final String academyid) {
 		List<Teacher> list = teacherService.findAll();
-		System.out.println(academyid);
+//		System.out.println(academyid);
 		return new JsonUtils(list).getJsonObject().toJSONString();
 	}
 }

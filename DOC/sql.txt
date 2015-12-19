@@ -1,5 +1,7 @@
 insert into academy(academyId,academyName, academyAddress) values("se","se","scau");
 
+insert into academy(academyId,academyName, academyAddress) values("math","math","scau");
+
 insert into student(studentId,studentPassword,sex,identityCard,bankCard,academyId) values("1","1","男","44000000000000000000","00000000000000","se");
 
 insert into teacher(teacherId,teacherName,teacherDepartment,teacherStatus,academyId) values("20121204","梁共产","哲学学院","哲学教师","se");

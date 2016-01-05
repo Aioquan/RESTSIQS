@@ -65,7 +65,7 @@ public class HTTPJSONHelper {
             entity = null;
             String jsonObject = JSONObject.toJSONString(object);
             jsonObject = URLAccepter.encrypt(jsonObject);
-            System.out.println(jsonObject);
+//            System.out.println(jsonObject);
             HttpClient httpclient = new DefaultHttpClient();
             HttpPost request = new HttpPost(URL + jsonObject);
             HttpResponse response = httpclient.execute(request);

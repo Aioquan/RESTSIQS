@@ -1,8 +1,9 @@
 package View;
 
+import Utils.Constant;
+
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.MouseAdapter;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
@@ -17,8 +18,6 @@ public class MainView {
     private JPanel coursePanel;
     private JPanel noticePanel;
     private JPanel studentPanel;
-    private JPanel teacherPanel;
-    private JPanel technologicalExamPanel;
     private JPanel academyPanel;
     private JLabel courseStatus;
     private JButton courseButtonAdd;
@@ -32,13 +31,15 @@ public class MainView {
     private JTree academyTree;
     private JTable teacherTable;
     private JLabel academyStatus;
+    private JButton academyButtonAddAcademy;
+    private JButton academyButtonAddTeacher;
 
     public MainView() {
         Dimension screensize = Toolkit.getDefaultToolkit().getScreenSize();
         width = (int) screensize.getWidth();
         height = (int) screensize.getHeight();
-
-        JFrame frame = new JFrame("RESTSIQS");
+        tabbedPane1.setBackground(Color.GRAY);
+        JFrame frame = new JFrame(Constant.APPLICATION_NAME);
         frame.setContentPane(this.mainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
@@ -55,8 +56,15 @@ public class MainView {
         new NoticePanel(MainView.this);
         new StudentPanel(MainView.this);
         new AcademyPanel(MainView.this);
-        academyTree.addMouseListener(new MouseAdapter() {
-        });
+
+    }
+
+    public JButton getAcademyButtonAddAcademy() {
+        return academyButtonAddAcademy;
+    }
+
+    public JButton getAcademyButtonAddTeacher() {
+        return academyButtonAddTeacher;
     }
 
     public JLabel getAcademyStatus() {
@@ -124,14 +132,6 @@ public class MainView {
         return studentPanel;
     }
 
-    public JPanel getTeacherPanel() {
-        return teacherPanel;
-    }
-
-    public JPanel getTechnologicalExamPanel() {
-        return technologicalExamPanel;
-    }
-
     public JPanel getAcademyPanel() {
         return academyPanel;
     }
@@ -147,4 +147,6 @@ public class MainView {
     public JTable getCourseTable() {
         return courseTable;
     }
+
+
 }

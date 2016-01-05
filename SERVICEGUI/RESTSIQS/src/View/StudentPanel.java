@@ -3,9 +3,9 @@ package View;
 import Beans.EditButtonRenderer;
 import Utils.Constant;
 import Utils.HTTPJSONHelper;
-import View.Dialog.Student.StudentAddDialog;
-import View.Dialog.Student.StudentDeleteDialog;
-import View.Dialog.Student.StudentEditDialog;
+import View.Dialogs.Student.StudentAddDialog;
+import View.Dialogs.Student.StudentDeleteDialog;
+import View.Dialogs.Student.StudentEditDialog;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 
@@ -40,8 +40,8 @@ public class StudentPanel {
         studentAddDialog = new StudentAddDialog();
         studentDeleteDialog = new StudentDeleteDialog();
         studentEditDialog = new StudentEditDialog();
-        studentTableBtnEdit = new EditButtonRenderer("edit");
-        studentTableBtnDelete = new EditButtonRenderer("delete");
+        studentTableBtnEdit = new EditButtonRenderer(Constant.TABLE_BUTTUN_EDIT);
+        studentTableBtnDelete = new EditButtonRenderer(Constant.TABLE_BUTTUN_DELETE);
         updateData();
         studentTable.getTableHeader().setReorderingAllowed(false);
         studentTable.addMouseListener(new MouseAdapter() {
@@ -131,8 +131,8 @@ public class StudentPanel {
                 data = new Object[length][8];
                 for (int i = 0; i < length; i++) {
                     obj = (JSONObject) jsonArray.get(i);
-                    data[i][0] = "edit";
-                    data[i][1] = "delete";
+                    data[i][0] = Constant.TABLE_BUTTUN_EDIT;
+                    data[i][1] = Constant.TABLE_BUTTUN_DELETE;
                     data[i][2] = obj.getString("studentId");
                     data[i][3] = obj.getString("studentPassword");
                     data[i][4] = obj.getString("sex");
@@ -142,8 +142,8 @@ public class StudentPanel {
                 }
 
                 Object[] names = {
-                        "edit",
-                        "delete",
+                        Constant.TABLE_BUTTUN_EDIT,
+                        Constant.TABLE_BUTTUN_DELETE,
 
                         "studentId",
                         "studentPassword",
@@ -161,12 +161,12 @@ public class StudentPanel {
                 try {
                     studentTable.setModel(model);
                 } catch (ArrayIndexOutOfBoundsException e) {
-                    studentLblStatus.setText("");
+                    studentLblStatus.setText(Constant.STATUS_NULL);
                 }
                 studentTable.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
                 studentTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-                studentTable.getColumn("edit").setCellRenderer(studentTableBtnEdit);
-                studentTable.getColumn("delete").setCellRenderer(studentTableBtnDelete);
+                studentTable.getColumn(Constant.TABLE_BUTTUN_EDIT).setCellRenderer(studentTableBtnEdit);
+                studentTable.getColumn(Constant.TABLE_BUTTUN_DELETE).setCellRenderer(studentTableBtnDelete);
                 studentTable.setDoubleBuffered(false);
             }
         };

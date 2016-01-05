@@ -4,16 +4,18 @@ import Beans.EditButtonRenderer;
 import Beans.HTTPEntities.Academy;
 import Utils.Constant;
 import Utils.HTTPJSONHelper;
+import View.Dialogs.Teacher.TeacherAddDialog;
+import View.Dialogs.Teacher.TeacherDeleteDialog;
+import View.Dialogs.Teacher.TeacherEditDialog;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 
 import javax.swing.*;
-import javax.swing.event.TreeSelectionEvent;
-import javax.swing.event.TreeSelectionListener;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
-import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.net.ConnectException;
@@ -31,49 +33,39 @@ public class AcademyPanel {
     DefaultTableModel model;
     Object[][] data;
     String treeSelectionId;
+    TeacherEditDialog editDialog;
+    TeacherDeleteDialog deleteDialog;
+    TeacherAddDialog teacherAddDialog;
+    JButton academyButtonAddAcademy, academyButtonAddTeacher;
+    JPopupMenu popMenu;
+    JMenuItem delItem, editItem;
     private EditButtonRenderer teacherTableBtnEdit, teacherTableBtnDelete;
 
-
     AcademyPanel(MainView mainView) {
+        this.academyButtonAddAcademy = mainView.getAcademyButtonAddAcademy();
+        this.academyButtonAddTeacher = mainView.getAcademyButtonAddTeacher();
         this.academyTree = mainView.getAcademyTree();
         this.teacherTable = mainView.getTeacherTable();
         this.academyStatus = mainView.getAcademyStatus();
+        editDialog = new TeacherEditDialog();
+        deleteDialog = new TeacherDeleteDialog();
+        teacherAddDialog = new TeacherAddDialog();
         updateTree();
-        JSONObject jsonObject = null;
-        try {
-            jsonObject = HTTPJSONHelper.get(Constant.TEACHER_URL + "teacherlist");
-//            System.out.println(jsonObject);
-        } catch (ConnectException e) {
-            this.academyStatus.setText(Constant.ERROR_CONNECTION_FAILED);
-        }
-        teacherArray = (JSONArray) jsonObject.get("result");
 
-        updateTree();
-        this.academyTree.addTreeSelectionListener(new TreeSelectionListener() {
-            public void valueChanged(TreeSelectionEvent e) {
-                AcademyPanel.this.treeSelectionId = ((Academy) ((DefaultMutableTreeNode) (e.getPath().getPathComponent(1))).getUserObject()).getAcademyId();
-                updateTable(treeSelectionId);
-            }
-        });
+//        this.academyTree.addTreeSelectionListener(new TreeSelectionListener() {
+//            public void valueChanged(TreeSelectionEvent e) {
+//                AcademyPanel.this.treeSelectionId = ((Academy) ((DefaultMutableTreeNode) (e.getPath().getPathComponent(1))).getUserObject()).getAcademyId();
+//                updateTable(treeSelectionId);
+//            }
+//        });
         this.academyTree.setSelectionRow(0);
-
         teacherTable.getTableHeader().setReorderingAllowed(false);
-        teacherTable.getTableHeader().setBackground(Color.GREEN);
+//        teacherTable.getTableHeader().setBackground(Color.GREEN);
         teacherTable.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 academyStatus.setText("Editing:" + teacherTable.getSelectedRow());
-                /*
-                create table Teacher
-                (
-                   teacherId            varchar(255) not null,
-                   teacherName          varchar(255) default "无",
-                   teacherDepartment    varchar(255) default "无",
-                   teacherStatus        varchar(255) default "无",
-                   academyId		varchar(255) default "无",
-                   primary key (teacherId)
-                )engine=InnoDB default charset=utf8;
-                 */
+
                 if (teacherTable.getSelectedColumn() == 0) {
 
                     int y = teacherTable.getSelectedRow();
@@ -83,11 +75,11 @@ public class AcademyPanel {
                     map.put("teacherDepartment", data[y][4]);
                     map.put("teacherStatus", data[y][5]);
                     map.put("dataRow", teacherTable.getSelectedRow());
+                    map.put("academyId", AcademyPanel.this.treeSelectionId);
                     editDialog.show(AcademyPanel.this.data, map);
-
                 }
                 if (teacherTable.getSelectedColumn() == 1) {
-                    deleteDialog.show((String) data[courseTable.getSelectedRow()][5], (String) data[courseTable.getSelectedRow()][17]);
+                    deleteDialog.show((String) data[teacherTable.getSelectedRow()][2], (String) data[teacherTable.getSelectedRow()][3]);
                 }
 //                System.out.println(e.getClickCount());
                 if (e.getClickCount() == 2) {
@@ -98,17 +90,68 @@ public class AcademyPanel {
                     map.put("teacherDepartment", data[y][4]);
                     map.put("teacherStatus", data[y][5]);
                     map.put("dataRow", teacherTable.getSelectedRow());
-                    editDialog.show(CoursePanel.this.data, map);
+                    map.put("academyId", AcademyPanel.this.treeSelectionId);
+                    editDialog.show(AcademyPanel.this.data, map);
                 }
                 updateTable(AcademyPanel.this.treeSelectionId);
             }
         });
+        academyButtonAddAcademy.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        academyButtonAddTeacher.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                HashMap<String, Object> map = new HashMap<String, Object>();
+                map.put("academyId", AcademyPanel.this.treeSelectionId);
+                teacherAddDialog.show(map);
+                updateTable(treeSelectionId);
+            }
+        });
+
+        //JTree menu
+        academyTree.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e) {
+                super.mousePressed(e);
+                if(e.getButton() == 1)
+                {
+                    treeSelectionId = ((Academy)((DefaultMutableTreeNode)academyTree.getSelectionPath().getPathComponent(1)).getUserObject()).getAcademyId();
+                    updateTable(treeSelectionId);
+                }
+                else if (e.getButton() == 3) {
+                    popMenu.show(academyTree, e.getX(), e.getY());
+                    updateTable(treeSelectionId);
+                }
+            }
+        });
+        ActionListener treeMenuListener = new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                if (e.getSource() == delItem) {
+
+                } else if (e.getSource() == editItem) {
+
+                }
+            }
+        };
+
+        popMenu = new JPopupMenu();
+
+        delItem = new JMenuItem(Constant.TREE_BUTTUN_DELETE);
+        delItem.addActionListener(treeMenuListener);
+        editItem = new JMenuItem(Constant.TREE_BUTTUN_EDIT);
+        editItem.addActionListener(treeMenuListener);
+        popMenu.add(editItem);
+        popMenu.add(delItem);
+        treeSelectionId = academyTree.getSelectionPath().getPathComponent(1).toString();
+        updateTable(treeSelectionId);
     }
 
     private void updateTree() {
         JSONObject jsonObject = null;
         try {
-            jsonObject = HTTPJSONHelper.get(Constant.ACADEMY_URL + "academylist/");
+            jsonObject = HTTPJSONHelper.get(Constant.ACADEMY_URL + "academylist");
 //            System.out.println(jsonObject);
         } catch (ConnectException e) {
             this.academyStatus.setText(Constant.ERROR_CONNECTION_FAILED);
@@ -133,12 +176,21 @@ public class AcademyPanel {
     }
 
     private void updateTable(String academyId) {
-        System.out.println(teacherArray);
+//        System.out.println(teacherArray);
+        JSONObject jsonObject = null;
+        try {
+            jsonObject = HTTPJSONHelper.get(Constant.TEACHER_URL + "teacherlist");
+//            System.out.println(jsonObject);
+        } catch (ConnectException e) {
+            this.academyStatus.setText(Constant.ERROR_CONNECTION_FAILED);
+        }
+        teacherArray = (JSONArray) jsonObject.get("result");
+
         int length = teacherArray.size();
         JSONObject obj;
         Object[] names = {
-                "edit",
-                "delete",
+                Constant.TABLE_BUTTUN_EDIT,
+                Constant.TABLE_BUTTUN_DELETE,
                 "teacherId",
                 "teacherName",
                 "teacherDepartment",
@@ -152,18 +204,18 @@ public class AcademyPanel {
                 l++;
             }
         }
+        int j = 0;
         data = new Object[l][6];
         for (int i = 0; i < length; i++) {
             obj = (JSONObject) teacherArray.get(i);
             if (obj.get("academyId").equals(academyId)) {
-                l++;
-
-                data[i][0] = "edit";
-                data[i][1] = "delete";
-                data[i][2] = obj.get("teacherId");
-                data[i][2] = obj.get("teacherName");
-                data[i][2] = obj.get("teacherStatus");
-                data[i][2] = obj.get("teacherDepartment");
+                data[j][0] = Constant.TABLE_BUTTUN_EDIT;
+                data[j][1] = Constant.TABLE_BUTTUN_DELETE;
+                data[j][2] = obj.get("teacherId");
+                data[j][3] = obj.get("teacherName");
+                data[j][4] = obj.get("teacherStatus");
+                data[j][5] = obj.get("teacherDepartment");
+                j++;
             }
         }
         model = new DefaultTableModel(data, names) {
@@ -174,13 +226,13 @@ public class AcademyPanel {
         try {
             teacherTable.setModel(model);
         } catch (ArrayIndexOutOfBoundsException e) {
-            academyStatus.setText("");
+            academyStatus.setText(Constant.STATUS_NULL);
         }
         teacherTable.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
         teacherTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        teacherTable.getColumn("edit").setCellRenderer(teacherTableBtnEdit);
+        teacherTable.getColumn(Constant.TABLE_BUTTUN_EDIT).setCellRenderer(teacherTableBtnEdit);
 
-        teacherTable.getColumn("delete").setCellRenderer(teacherTableBtnDelete);
+        teacherTable.getColumn(Constant.TABLE_BUTTUN_DELETE).setCellRenderer(teacherTableBtnDelete);
 
         teacherTable.setDoubleBuffered(false);
     }

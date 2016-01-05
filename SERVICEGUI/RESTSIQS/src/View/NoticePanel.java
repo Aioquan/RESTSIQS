@@ -3,9 +3,9 @@ package View;
 import Beans.EditButtonRenderer;
 import Utils.Constant;
 import Utils.HTTPJSONHelper;
-import View.Dialog.Notice.NoticeAddDialog;
-import View.Dialog.Notice.NoticeDeleteDialog;
-import View.Dialog.Notice.NoticeEditDialog;
+import View.Dialogs.Notice.NoticeAddDialog;
+import View.Dialogs.Notice.NoticeDeleteDialog;
+import View.Dialogs.Notice.NoticeEditDialog;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 
@@ -41,8 +41,8 @@ public class NoticePanel {
         noticeAddDialog = new NoticeAddDialog();
         noticeDeleteDialog = new NoticeDeleteDialog();
         noticeEditDialog = new NoticeEditDialog();
-        noticeTableBtnEdit = new EditButtonRenderer("edit");
-        noticeTableBtnDelete = new EditButtonRenderer("delete");
+        noticeTableBtnEdit = new EditButtonRenderer(Constant.TABLE_BUTTUN_EDIT);
+        noticeTableBtnDelete = new EditButtonRenderer(Constant.TABLE_BUTTUN_DELETE);
         updateData();
 
         noticeTable.getTableHeader().setReorderingAllowed(false);
@@ -123,8 +123,8 @@ public class NoticePanel {
                 data = new Object[length][7];
                 for (int i = 0; i < length; i++) {
                     obj = (JSONObject) jsonArray.get(i);
-                    data[i][0] = "edit";
-                    data[i][1] = "delete";
+                    data[i][0] = Constant.TABLE_BUTTUN_EDIT;
+                    data[i][1] = Constant.TABLE_BUTTUN_DELETE;
                     data[i][2] = obj.getString("noticeId");
                     data[i][3] = obj.getString("noticeTitle");
                     data[i][4] = obj.getString("noticeContext");
@@ -134,8 +134,8 @@ public class NoticePanel {
 
 //                courseTable.getColumn(0);
                 Object[] names = {
-                        "edit",
-                        "delete",
+                        Constant.TABLE_BUTTUN_EDIT,
+                        Constant.TABLE_BUTTUN_DELETE,
 
                         "noticeId",
                         "noticeTitle",
@@ -152,12 +152,12 @@ public class NoticePanel {
                 try {
                     noticeTable.setModel(model);
                 } catch (ArrayIndexOutOfBoundsException e) {
-                    noticeStatus.setText("");
+                    noticeStatus.setText(Constant.STATUS_NULL);
                 }
                 noticeTable.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
                 noticeTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-                noticeTable.getColumn("edit").setCellRenderer(noticeTableBtnEdit);
-                noticeTable.getColumn("delete").setCellRenderer(noticeTableBtnDelete);
+                noticeTable.getColumn(Constant.TABLE_BUTTUN_EDIT).setCellRenderer(noticeTableBtnEdit);
+                noticeTable.getColumn(Constant.TABLE_BUTTUN_DELETE).setCellRenderer(noticeTableBtnDelete);
                 noticeTable.setDoubleBuffered(false);
 //                courseTable.setCellSelectionEnabled(false);
 

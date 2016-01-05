@@ -25,7 +25,7 @@ create table Academy
    academyName          varchar(255) default "无",
    academyAddress       varchar(255) default "无",
    primary key (academyId)
-)engine=InnoDB default charset=utf8;
+)engine=InnoDB default charset=gbk;
 
 /*==============================================================*/
 /* Table: course                                                */
@@ -51,7 +51,7 @@ create table Course
    dailyMark            double default 0,
    sum                  double default 0,
    primary key (courseId)
-)engine=InnoDB default charset=utf8;
+)engine=InnoDB default charset=gbk;
 
 /*==============================================================*/
 /* Table: notice                                                */
@@ -64,7 +64,7 @@ create table Notice
    noticeOperator       varchar(255) default "无",
    academyId		varchar(255) default "无",
    primary key (noticeId)
-)engine=InnoDB default charset=utf8;
+)engine=InnoDB default charset=gbk;
 
 /*==============================================================*/
 /* Table: student                                               */
@@ -78,7 +78,7 @@ create table Student
    bankCard             varchar(255) default "无",
    academyId		varchar(255) default "无",
    primary key (studentId)
-)engine=InnoDB default charset=utf8;
+)engine=InnoDB default charset=gbk;
 
 /*==============================================================*/
 /* Table: teacher                                               */
@@ -91,7 +91,7 @@ create table Teacher
    teacherStatus        varchar(255) default "无",
    academyId		varchar(255) default "无",
    primary key (teacherId)
-)engine=InnoDB default charset=utf8;
+)engine=InnoDB default charset=gbk;
 
 /*==============================================================*/
 /* Table: technologicalExam                                     */
@@ -104,4 +104,4 @@ create table TechnologicalExam
    tSorce               double default 0,
    studentId		varchar(255) default "无",
    primary key (tId)
-)engine=InnoDB default charset=utf8;
+)engine=InnoDB default charset=gbk;

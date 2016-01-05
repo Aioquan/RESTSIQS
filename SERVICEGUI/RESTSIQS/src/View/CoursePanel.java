@@ -3,16 +3,15 @@ package View;
 import Beans.EditButtonRenderer;
 import Utils.Constant;
 import Utils.HTTPJSONHelper;
-import View.Dialog.Course.CourseAddDialog;
-import View.Dialog.Course.CourseDeleteDialog;
-import View.Dialog.Course.CourseEditDialog;
+import View.Dialogs.Course.CourseAddDialog;
+import View.Dialogs.Course.CourseDeleteDialog;
+import View.Dialogs.Course.CourseEditDialog;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumnModel;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -53,8 +52,8 @@ public class CoursePanel {
         deleteDialog = new CourseDeleteDialog();
         addDialog = new CourseAddDialog();
 
-        courseTableBtnEdit = new EditButtonRenderer("edit");
-        courseTableBtnDelete = new EditButtonRenderer("delete");
+        courseTableBtnEdit = new EditButtonRenderer(Constant.TABLE_BUTTUN_EDIT);
+        courseTableBtnDelete = new EditButtonRenderer(Constant.TABLE_BUTTUN_DELETE);
 //        JPanel editPanel = new JPanel();
 //        courseTable.getTableHeader().setFont(new Font("宋体", Font.BOLD, 18));
 //        courseTable.setFont(new Font("宋体", 0, 20));
@@ -64,7 +63,7 @@ public class CoursePanel {
         updateData();
 
         courseTable.getTableHeader().setReorderingAllowed(false);
-        courseTable.getTableHeader().setBackground(Color.GREEN);
+//        courseTable.getTableHeader().setBackground(Color.GREEN);
         courseTable.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -178,7 +177,7 @@ public class CoursePanel {
                 data = new Object[length][18];
                 for (int i = 0; i < length; i++) {
                     obj = (JSONObject) jsonArray.get(i);
-                    data[i][0] = "edit";
+                    data[i][0] = Constant.TABLE_BUTTUN_EDIT;
 
                     data[i][2] = obj.getDouble("credit");
                     data[i][3] = obj.getString("teacherId");
@@ -199,13 +198,13 @@ public class CoursePanel {
                     data[i][16] = obj.getDouble("exercises5");
 
                     data[i][17] = obj.getString("courseId");
-                    data[i][1] = "delete";
+                    data[i][1] = Constant.TABLE_BUTTUN_DELETE;
                 }
 
 //                courseTable.getColumn(0);
                 Object[] names = {
-                        "edit",
-                        "delete",
+                        Constant.TABLE_BUTTUN_EDIT,
+                        Constant.TABLE_BUTTUN_DELETE,
 
                         "credit",
                         "teacherId",
@@ -234,14 +233,14 @@ public class CoursePanel {
                 try {
                     courseTable.setModel(model);
                 } catch (ArrayIndexOutOfBoundsException e) {
-                    courseStatus.setText("");
+                    courseStatus.setText(Constant.STATUS_NULL);
                 }
 
                 courseTable.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
                 courseTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-                courseTable.getColumn("edit").setCellRenderer(courseTableBtnEdit);
+                courseTable.getColumn(Constant.TABLE_BUTTUN_EDIT).setCellRenderer(courseTableBtnEdit);
 
-                courseTable.getColumn("delete").setCellRenderer(courseTableBtnDelete);
+                courseTable.getColumn(Constant.TABLE_BUTTUN_DELETE).setCellRenderer(courseTableBtnDelete);
 
                 courseTable.setDoubleBuffered(false);
 //                courseTable.setCellSelectionEnabled(false);

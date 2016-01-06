@@ -76,7 +76,7 @@ public class CourseDeleteDialog extends JDialog {
         this.id = id;
         this.label.setText("Delete:" + courseName + "?");
         this.pack();
-        this.setLocation(130, 150);
+        this.setLocation(330, 250);
         this.setVisible(true);
     }
 }

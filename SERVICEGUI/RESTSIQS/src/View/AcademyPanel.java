@@ -4,6 +4,9 @@ import Beans.EditButtonRenderer;
 import Beans.HTTPEntities.Academy;
 import Utils.Constant;
 import Utils.HTTPJSONHelper;
+import View.Dialogs.Academy.AcademyAddDialog;
+import View.Dialogs.Academy.AcademyDeleteDialog;
+import View.Dialogs.Academy.AcademyEditDialog;
 import View.Dialogs.Teacher.TeacherAddDialog;
 import View.Dialogs.Teacher.TeacherDeleteDialog;
 import View.Dialogs.Teacher.TeacherEditDialog;
@@ -33,9 +36,12 @@ public class AcademyPanel {
     DefaultTableModel model;
     Object[][] data;
     String treeSelectionId;
-    TeacherEditDialog editDialog;
-    TeacherDeleteDialog deleteDialog;
+    TeacherEditDialog teacherEditDialog;
+    TeacherDeleteDialog teacherDeleteDialog;
     TeacherAddDialog teacherAddDialog;
+    AcademyAddDialog academyAddDialog;
+    AcademyDeleteDialog academyDeleteDialog;
+    AcademyEditDialog academyEditDialog;
     JButton academyButtonAddAcademy, academyButtonAddTeacher;
     JPopupMenu popMenu;
     JMenuItem delItem, editItem;
@@ -47,9 +53,14 @@ public class AcademyPanel {
         this.academyTree = mainView.getAcademyTree();
         this.teacherTable = mainView.getTeacherTable();
         this.academyStatus = mainView.getAcademyStatus();
-        editDialog = new TeacherEditDialog();
-        deleteDialog = new TeacherDeleteDialog();
+        teacherEditDialog = new TeacherEditDialog();
+        teacherDeleteDialog = new TeacherDeleteDialog();
         teacherAddDialog = new TeacherAddDialog();
+        academyAddDialog = new AcademyAddDialog();
+        academyDeleteDialog = new AcademyDeleteDialog();
+        academyEditDialog = new AcademyEditDialog();
+        teacherTableBtnEdit = new EditButtonRenderer();
+        teacherTableBtnDelete = new EditButtonRenderer();
         updateTree();
 
 //        this.academyTree.addTreeSelectionListener(new TreeSelectionListener() {
@@ -76,10 +87,10 @@ public class AcademyPanel {
                     map.put("teacherStatus", data[y][5]);
                     map.put("dataRow", teacherTable.getSelectedRow());
                     map.put("academyId", AcademyPanel.this.treeSelectionId);
-                    editDialog.show(AcademyPanel.this.data, map);
+                    teacherEditDialog.show(AcademyPanel.this.data, map);
                 }
                 if (teacherTable.getSelectedColumn() == 1) {
-                    deleteDialog.show((String) data[teacherTable.getSelectedRow()][2], (String) data[teacherTable.getSelectedRow()][3]);
+                    teacherDeleteDialog.show((String) data[teacherTable.getSelectedRow()][2], (String) data[teacherTable.getSelectedRow()][3]);
                 }
 //                System.out.println(e.getClickCount());
                 if (e.getClickCount() == 2) {
@@ -91,7 +102,7 @@ public class AcademyPanel {
                     map.put("teacherStatus", data[y][5]);
                     map.put("dataRow", teacherTable.getSelectedRow());
                     map.put("academyId", AcademyPanel.this.treeSelectionId);
-                    editDialog.show(AcademyPanel.this.data, map);
+                    teacherEditDialog.show(AcademyPanel.this.data, map);
                 }
                 updateTable(AcademyPanel.this.treeSelectionId);
             }
@@ -114,13 +125,11 @@ public class AcademyPanel {
         academyTree.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
-                super.mousePressed(e);
-                if(e.getButton() == 1)
-                {
-                    treeSelectionId = ((Academy)((DefaultMutableTreeNode)academyTree.getSelectionPath().getPathComponent(1)).getUserObject()).getAcademyId();
+//                super.mousePressed(e);
+                if (e.getButton() == 1) {
+                    treeSelectionId = ((Academy) ((DefaultMutableTreeNode) academyTree.getSelectionPath().getPathComponent(1)).getUserObject()).getAcademyId();
                     updateTable(treeSelectionId);
-                }
-                else if (e.getButton() == 3) {
+                } else if (e.getButton() == 3) {
                     popMenu.show(academyTree, e.getX(), e.getY());
                     updateTable(treeSelectionId);
                 }
@@ -128,6 +137,7 @@ public class AcademyPanel {
         });
         ActionListener treeMenuListener = new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+                Academy academy = (Academy)((DefaultMutableTreeNode)academyTree.getSelectionPath().getPathComponent(1)).getUserObject();
                 if (e.getSource() == delItem) {
 
                 } else if (e.getSource() == editItem) {

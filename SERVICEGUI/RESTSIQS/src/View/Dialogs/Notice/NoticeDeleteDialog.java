@@ -74,7 +74,7 @@ public class NoticeDeleteDialog extends JDialog {
         this.id = id;
         this.label.setText("Delete:" + noticeName + "?");
         this.pack();
-        this.setLocation(130, 150);
+        this.setLocation(330, 250);
         this.setVisible(true);
     }
 }

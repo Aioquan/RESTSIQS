@@ -2,11 +2,17 @@ package View.Dialogs.Academy;
 
 import javax.swing.*;
 import java.awt.event.*;
+import java.util.HashMap;
 
 public class AcademyAddDialog extends JDialog {
+    Object[][] data;
+    HashMap<String, Object> map;
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
+    private JTextField tfAcademyId;
+    private JTextField tfAcademyName;
+    private JTextField tfAcademyAddress;
 
     public AcademyAddDialog() {
         setContentPane(contentPane);
@@ -41,6 +47,13 @@ public class AcademyAddDialog extends JDialog {
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
     }
 
+    public static void main(String[] args) {
+        AcademyAddDialog dialog = new AcademyAddDialog();
+        dialog.pack();
+        dialog.setVisible(true);
+        System.exit(0);
+    }
+
     private void onOK() {
 // add your code here
         dispose();
@@ -51,10 +64,11 @@ public class AcademyAddDialog extends JDialog {
         dispose();
     }
 
-    public static void main(String[] args) {
-        AcademyAddDialog dialog = new AcademyAddDialog();
-        dialog.pack();
-        dialog.setVisible(true);
-        System.exit(0);
+    public void show(Object[][] data, HashMap<String, Object> map) {
+        this.data = data;
+        this.map = map;
+        this.pack();
+        this.setLocation(330, 150);
+        this.setVisible(true);
     }
 }

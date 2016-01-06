@@ -49,12 +49,13 @@ public class TeacherDeleteDialog extends JDialog {
     private void onOK() {
 // add your code here
         try {
-            HTTPJSONHelper.delete(Constant.TEACHER_URL+ "teacher/" + this.id);
+            HTTPJSONHelper.delete(Constant.TEACHER_URL + this.id);
+            dispose();
         } catch (ConnectException e) {
             TeacherDeleteDialog.this.setTitle(Constant.ERROR_CONNECTION_FAILED);
             e.printStackTrace();
         }
-        dispose();
+
     }
 
     private void onCancel() {
@@ -73,7 +74,7 @@ public class TeacherDeleteDialog extends JDialog {
         this.id = id;
         this.label.setText("Delete:" + teacherName + "?");
         this.pack();
-        this.setLocation(230, 150);
+        this.setLocation(330, 250);
         this.setVisible(true);
     }
 }

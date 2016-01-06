@@ -58,11 +58,12 @@ public class StudentDeleteDialog extends JDialog {
 // add your code here
         try {
             HTTPJSONHelper.delete(Constant.STUDENT_URL + "student/" + this.id);
+            dispose();
         } catch (ConnectException e) {
             StudentDeleteDialog.this.setTitle(Constant.ERROR_CONNECTION_FAILED);
             e.printStackTrace();
         }
-        dispose();
+
     }
 
     private void onCancel() {
@@ -74,7 +75,7 @@ public class StudentDeleteDialog extends JDialog {
         this.id = id;
         this.label.setText("Delete:" + studentName + "?");
         this.pack();
-        this.setLocation(230, 150);
+        this.setLocation(330, 250);
         this.setVisible(true);
     }
 }

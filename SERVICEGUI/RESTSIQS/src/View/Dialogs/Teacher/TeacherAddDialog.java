@@ -97,7 +97,7 @@ public class TeacherAddDialog extends JDialog {
         teacher.setTeacherName(tfTeacherName.getText());
         teacher.setTeacherStatus(tfTeacherStatus.getText());
         try {
-            HTTPJSONHelper.put(Constant.TEACHER_URL + "teacher/", teacher);
+            HTTPJSONHelper.post(Constant.TEACHER_URL + "teacher/", teacher);
             return true;
         } catch (ConnectException e) {
             e.printStackTrace();

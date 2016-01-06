@@ -7,6 +7,7 @@ public class AcademyDeleteDialog extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
+    private JLabel label;
 
     public AcademyDeleteDialog() {
         setContentPane(contentPane);
@@ -56,5 +57,13 @@ public class AcademyDeleteDialog extends JDialog {
         dialog.pack();
         dialog.setVisible(true);
         System.exit(0);
+    }
+    String id;
+    public void show(String id, String academyName) {
+        this.id = id;
+        this.label.setText("Delete:" + academyName + "?");
+        this.pack();
+        this.setLocation(330, 250);
+        this.setVisible(true);
     }
 }

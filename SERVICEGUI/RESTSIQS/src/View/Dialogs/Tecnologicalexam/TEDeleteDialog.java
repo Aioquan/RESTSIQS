@@ -74,7 +74,7 @@ public class TEDeleteDialog extends JDialog {
         this.name = name;
         this.pack();
         this.label.setText("Delete:" + name + "?");
-        this.setLocation(230, 150);
+        this.setLocation(330, 250);
         this.setVisible(true);
     }
 }

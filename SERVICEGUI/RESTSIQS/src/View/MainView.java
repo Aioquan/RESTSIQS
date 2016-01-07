@@ -1,6 +1,7 @@
 package View;
 
 import Utils.Constant;
+import Utils.FitJTableHeaderUtil;
 
 import javax.swing.*;
 import java.awt.*;
@@ -56,6 +57,10 @@ public class MainView {
         new NoticePanel(MainView.this);
         new StudentPanel(MainView.this);
         new AcademyPanel(MainView.this);
+        FitJTableHeaderUtil.fitTableColumns(courseTable);
+        FitJTableHeaderUtil.fitTableColumns(noticeTable);
+        FitJTableHeaderUtil.fitTableColumns(studentTable);
+        FitJTableHeaderUtil.fitTableColumns(teacherTable);
 
     }
 

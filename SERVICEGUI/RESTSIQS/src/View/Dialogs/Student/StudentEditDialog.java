@@ -4,6 +4,7 @@ import Beans.EditButtonRenderer;
 import Beans.HTTPEntities.Student;
 import Beans.NumLimitListener;
 import Utils.Constant;
+import Utils.FitJTableHeaderUtil;
 import Utils.HTTPJSONHelper;
 import View.Dialogs.Course.CourseDeleteDialog;
 import View.Dialogs.Course.CourseEditDialog;
@@ -97,6 +98,8 @@ public class StudentEditDialog extends JDialog {
 
             }
         });
+        FitJTableHeaderUtil.fitTableColumns(studentCourseTable);
+        FitJTableHeaderUtil.fitTableColumns(studentTETable);
     }
 
     public static void main(String[] args) {
@@ -108,8 +111,7 @@ public class StudentEditDialog extends JDialog {
 
     private void onOK() {
 // add your code here
-        if(!hasEmpty())
-        {
+        if (!hasEmpty()) {
             Student student = new Student();
             student.setStudentPassword(tfStudentPassword.getText());
             student.setSex(tfSex.getText());
@@ -117,17 +119,14 @@ public class StudentEditDialog extends JDialog {
             student.setIdentityCard(tfIdentityCard.getText());
             student.setBankCard(tfBankCard.getText());
             student.setStudentId(tfStudentId.getText());
-            try
-            {
-                HTTPJSONHelper.put(Constant.STUDENT_URL+"student/",student);
+            try {
+                HTTPJSONHelper.put(Constant.STUDENT_URL + "student/", student);
                 dispose();
-            }catch (ConnectException e)
-            {
+            } catch (ConnectException e) {
                 e.printStackTrace();
             }
 
-        }else
-        {
+        } else {
             StudentEditDialog.this.setTitle(Constant.ERROR_HAS_EMPTY);
         }
 

@@ -1,9 +1,14 @@
 package View.Dialogs.Academy;
 
+import Utils.Constant;
+import Utils.HTTPJSONHelper;
+
 import javax.swing.*;
 import java.awt.event.*;
+import java.net.ConnectException;
 
 public class AcademyDeleteDialog extends JDialog {
+    String id;
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
@@ -42,9 +47,22 @@ public class AcademyDeleteDialog extends JDialog {
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
     }
 
+    public static void main(String[] args) {
+        AcademyDeleteDialog dialog = new AcademyDeleteDialog();
+        dialog.pack();
+        dialog.setVisible(true);
+        System.exit(0);
+    }
+
     private void onOK() {
 // add your code here
-        dispose();
+        try {
+            HTTPJSONHelper.delete(Constant.ACADEMY_URL + this.id);
+            dispose();
+        } catch (ConnectException e) {
+            AcademyDeleteDialog.this.setTitle(Constant.ERROR_CONNECTION_FAILED);
+            e.printStackTrace();
+        }
     }
 
     private void onCancel() {
@@ -52,13 +70,6 @@ public class AcademyDeleteDialog extends JDialog {
         dispose();
     }
 
-    public static void main(String[] args) {
-        AcademyDeleteDialog dialog = new AcademyDeleteDialog();
-        dialog.pack();
-        dialog.setVisible(true);
-        System.exit(0);
-    }
-    String id;
     public void show(String id, String academyName) {
         this.id = id;
         this.label.setText("Delete:" + academyName + "?");

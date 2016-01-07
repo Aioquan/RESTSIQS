@@ -109,7 +109,8 @@ public class AcademyPanel {
         });
         academyButtonAddAcademy.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-
+                academyAddDialog.show();
+                updateTree();
             }
         });
         academyButtonAddTeacher.addActionListener(new ActionListener() {
@@ -137,12 +138,18 @@ public class AcademyPanel {
         });
         ActionListener treeMenuListener = new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                Academy academy = (Academy)((DefaultMutableTreeNode)academyTree.getSelectionPath().getPathComponent(1)).getUserObject();
                 if (e.getSource() == delItem) {
-
+                    Academy academy = (Academy) ((DefaultMutableTreeNode) academyTree.getSelectionPath().getPathComponent(1)).getUserObject();
+                    academyDeleteDialog.show(academy.getAcademyId(), academy.getAcademyName());
                 } else if (e.getSource() == editItem) {
-
+                    Academy academy = (Academy) ((DefaultMutableTreeNode) academyTree.getSelectionPath().getPathComponent(1)).getUserObject();
+                    HashMap<String, Object> map = new HashMap<String, Object>();
+                    map.put("academyId", academy.getAcademyId());
+                    map.put("academyName", academy.getAcademyName());
+                    map.put("academyAddress", academy.getAcademyAddress());
+                    academyEditDialog.show(map);
                 }
+                updateTree();
             }
         };
 

@@ -1,12 +1,15 @@
 package View.Dialogs.Academy;
 
+import Beans.HTTPEntities.Academy;
+import Utils.Constant;
+import Utils.HTTPJSONHelper;
+
 import javax.swing.*;
 import java.awt.event.*;
-import java.util.HashMap;
+import java.net.ConnectException;
 
 public class AcademyAddDialog extends JDialog {
-    Object[][] data;
-    HashMap<String, Object> map;
+
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
@@ -56,7 +59,15 @@ public class AcademyAddDialog extends JDialog {
 
     private void onOK() {
 // add your code here
-        dispose();
+        if (!hasEmpty()) {
+            if (saveAcademy()) {
+                dispose();
+            } else {
+                AcademyAddDialog.this.setTitle(Constant.ERROR_CONNECTION_FAILED);
+            }
+        } else {
+            AcademyAddDialog.this.setTitle(Constant.ERROR_HAS_EMPTY);
+        }
     }
 
     private void onCancel() {
@@ -64,11 +75,40 @@ public class AcademyAddDialog extends JDialog {
         dispose();
     }
 
-    public void show(Object[][] data, HashMap<String, Object> map) {
-        this.data = data;
-        this.map = map;
+    public void show() {
         this.pack();
         this.setLocation(330, 150);
         this.setVisible(true);
+    }
+
+    private boolean saveAcademy() {
+        Academy academy = new Academy();
+        academy.setAcademyId(tfAcademyId.getText());
+        academy.setAcademyName(tfAcademyName.getText());
+        academy.setAcademyAddress(tfAcademyAddress.getText());
+        tfAcademyId.setText("");
+        tfAcademyName.setText("");
+        tfAcademyAddress.setText("");
+        try {
+            HTTPJSONHelper.post(Constant.ACADEMY_URL + "academy/", academy);
+            return true;
+        } catch (ConnectException e) {
+            e.printStackTrace();
+            AcademyAddDialog.this.setTitle(Constant.ERROR_CONNECTION_FAILED);
+        }
+        return false;
+    }
+
+    public boolean hasEmpty() {
+        boolean flag = false;
+
+        if (tfAcademyAddress.getText().isEmpty())
+            flag = true;
+        if (tfAcademyName.getText().isEmpty())
+            flag = true;
+        if (tfAcademyId.getText().isEmpty())
+            flag = true;
+
+        return flag;
     }
 }

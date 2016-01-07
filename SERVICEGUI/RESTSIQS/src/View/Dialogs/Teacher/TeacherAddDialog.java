@@ -62,7 +62,7 @@ public class TeacherAddDialog extends JDialog {
     private void onOK() {
 // add your code here
         if (!hasEmpty()) {
-            if (updateTeacher()) {
+            if (saveTeacher()) {
                 dispose();
             } else {
                 TeacherAddDialog.this.setTitle(Constant.ERROR_CONNECTION_FAILED);
@@ -89,7 +89,7 @@ public class TeacherAddDialog extends JDialog {
         this.setVisible(true);
     }
 
-    private boolean updateTeacher() {
+    private boolean saveTeacher() {
         Teacher teacher = new Teacher();
         teacher.setAcademyId((String) this.map.get("academyId"));
         teacher.setTeacherDepartment(tfTeacherDepartment.getText());

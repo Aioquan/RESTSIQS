@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="16c83e09-1805-4141-8daa-144fa72461f7" name="Default" comment="">
       <change type="DELETED" beforePath="E:\workspace\RESTSIQS\README.md.bak" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Utils/FitJTableHeaderUtil.java" afterPath="$PROJECT_DIR$/src/Utils/FitJTableHeaderUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Dialogs/Student/StudentEditDialog.form" afterPath="$PROJECT_DIR$/src/View/Dialogs/Student/StudentEditDialog.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RESTSIQS.iws" />
@@ -33,42 +35,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TeacherAddDialog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/Dialogs/Teacher/TeacherAddDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="71" column="9" selection-start-line="63" selection-start-column="8" selection-end-line="71" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#820#821#0" expanded="false" />
-                <element signature="e#858#859#0" expanded="false" />
-                <element signature="e#990#991#0" expanded="false" />
-                <element signature="e#1032#1033#0" expanded="false" />
-                <element signature="e#1244#1245#0" expanded="false" />
-                <element signature="e#1286#1287#0" expanded="false" />
-                <element signature="e#1451#1452#0" expanded="false" />
-                <element signature="e#1493#1494#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AcademyEditDialog.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/Dialogs/Academy/AcademyEditDialog.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#780#781#0" expanded="false" />
-                <element signature="e#818#819#0" expanded="false" />
-                <element signature="e#950#951#0" expanded="false" />
-                <element signature="e#992#993#0" expanded="false" />
-                <element signature="e#1204#1205#0" expanded="false" />
-                <element signature="e#1246#1247#0" expanded="false" />
-                <element signature="e#1411#1412#0" expanded="false" />
-                <element signature="e#1453#1454#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,17 +50,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#719#720#0" expanded="false" />
-                <element signature="e#757#758#0" expanded="false" />
-                <element signature="e#889#890#0" expanded="false" />
-                <element signature="e#931#932#0" expanded="false" />
-                <element signature="e#1143#1144#0" expanded="false" />
-                <element signature="e#1185#1186#0" expanded="false" />
-                <element signature="e#1350#1351#0" expanded="false" />
-                <element signature="e#1392#1393#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -98,11 +60,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#10451#10452#0" expanded="false" />
-                <element signature="e#10495#10496#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -111,17 +69,24 @@
         <entry file="file://$PROJECT_DIR$/src/Utils/FitJTableHeaderUtil.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="36" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="36" />
+              <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HTTPJSONHelper.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StudentEditDialog.form" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/View/Dialogs/Student/StudentEditDialog.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HTTPJSONHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Utils/HTTPJSONHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30769232">
-              <caret line="84" column="23" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="88" column="42" selection-start-line="88" selection-start-column="42" selection-end-line="88" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -159,17 +124,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="72" column="50" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#537#664#0" expanded="false" />
-                <element signature="e#663#664#0" expanded="false" />
-                <element signature="e#707#838#0" expanded="false" />
-                <element signature="e#837#838#0" expanded="false" />
-                <element signature="e#964#1092#0" expanded="false" />
-                <element signature="e#1091#1092#0" expanded="false" />
-                <element signature="e#1168#1299#0" expanded="false" />
-                <element signature="e#1298#1299#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -194,7 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/View/Dialog/NoticeAddDialog.java" />
         <option value="$PROJECT_DIR$/src/View/Dialog/Course/CourseEditDialog.form" />
         <option value="$PROJECT_DIR$/src/View/Dialog/Student/StudentDeleteDialog.form" />
         <option value="$PROJECT_DIR$/src/View/Dialog/Student/StudentEditDialog.form" />
@@ -242,9 +196,10 @@
         <option value="$PROJECT_DIR$/src/View/Dialogs/Academy/AcademyAddDialog.java" />
         <option value="$PROJECT_DIR$/src/View/Dialogs/Academy/AcademyEditDialog.java" />
         <option value="$PROJECT_DIR$/src/View/AcademyPanel.java" />
-        <option value="$PROJECT_DIR$/src/Utils/FitJTableHeaderUtil.java" />
         <option value="$PROJECT_DIR$/src/View/MainView.java" />
         <option value="$PROJECT_DIR$/src/View/Dialogs/Student/StudentEditDialog.java" />
+        <option value="$PROJECT_DIR$/src/Utils/FitJTableHeaderUtil.java" />
+        <option value="$PROJECT_DIR$/src/View/Dialogs/Student/StudentEditDialog.form" />
       </list>
     </option>
   </component>
@@ -343,8 +298,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -515,6 +468,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -941,11 +896,12 @@
       <workItem from="1452060716189" duration="9200000" />
       <workItem from="1452156295676" duration="6803000" />
       <workItem from="1452227083272" duration="1654000" />
+      <workItem from="1452321795972" duration="1640000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="330356000" />
+    <option name="totallyTimeSpent" value="331996000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -958,32 +914,32 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36754966" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33774835" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2336874" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2336874" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30273142" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4668874" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36754966" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33774835" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4668874" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1102,16 +1058,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Dialogs/Student/StudentEditDialog.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1383,17 +1329,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="71" column="9" selection-start-line="63" selection-start-column="8" selection-end-line="71" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#820#821#0" expanded="false" />
-            <element signature="e#858#859#0" expanded="false" />
-            <element signature="e#990#991#0" expanded="false" />
-            <element signature="e#1032#1033#0" expanded="false" />
-            <element signature="e#1244#1245#0" expanded="false" />
-            <element signature="e#1286#1287#0" expanded="false" />
-            <element signature="e#1451#1452#0" expanded="false" />
-            <element signature="e#1493#1494#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1401,17 +1337,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#719#720#0" expanded="false" />
-            <element signature="e#757#758#0" expanded="false" />
-            <element signature="e#889#890#0" expanded="false" />
-            <element signature="e#931#932#0" expanded="false" />
-            <element signature="e#1143#1144#0" expanded="false" />
-            <element signature="e#1185#1186#0" expanded="false" />
-            <element signature="e#1350#1351#0" expanded="false" />
-            <element signature="e#1392#1393#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1419,17 +1345,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="72" column="50" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#537#664#0" expanded="false" />
-            <element signature="e#663#664#0" expanded="false" />
-            <element signature="e#707#838#0" expanded="false" />
-            <element signature="e#837#838#0" expanded="false" />
-            <element signature="e#964#1092#0" expanded="false" />
-            <element signature="e#1091#1092#0" expanded="false" />
-            <element signature="e#1168#1299#0" expanded="false" />
-            <element signature="e#1298#1299#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1437,17 +1353,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#780#781#0" expanded="false" />
-            <element signature="e#818#819#0" expanded="false" />
-            <element signature="e#950#951#0" expanded="false" />
-            <element signature="e#992#993#0" expanded="false" />
-            <element signature="e#1204#1205#0" expanded="false" />
-            <element signature="e#1246#1247#0" expanded="false" />
-            <element signature="e#1411#1412#0" expanded="false" />
-            <element signature="e#1453#1454#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1455,11 +1361,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#10451#10452#0" expanded="false" />
-            <element signature="e#10495#10496#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1489,19 +1391,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utils/FitJTableHeaderUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/Utils/HTTPJSONHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="36" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="36" />
+          <caret line="88" column="42" selection-start-line="88" selection-start-column="42" selection-end-line="88" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utils/HTTPJSONHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/Utils/FitJTableHeaderUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30769232">
-          <caret line="84" column="23" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Dialogs/Student/StudentEditDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>

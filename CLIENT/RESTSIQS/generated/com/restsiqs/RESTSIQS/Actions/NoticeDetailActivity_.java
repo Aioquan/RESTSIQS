@@ -67,8 +67,8 @@ public final class NoticeDetailActivity_
 
     @Override
     public void onViewChanged(HasViews hasViews) {
-        noticeDetailTitle = ((TextView) hasViews.findViewById(id.notice_detail_title));
         noticeDetailContext = ((TextView) hasViews.findViewById(id.notice_detail_context));
+        noticeDetailTitle = ((TextView) hasViews.findViewById(id.notice_detail_title));
     }
 
     public static class IntentBuilder_ {

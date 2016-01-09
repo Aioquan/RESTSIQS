@@ -11,52 +11,59 @@ import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.*;
+import android.widget.AdapterView;
+import android.widget.ListView;
+import android.widget.SimpleCursorAdapter;
+import android.widget.Toast;
 import com.alibaba.fastjson.JSONObject;
 import com.restsiqs.RESTSIQS.R;
 import com.restsiqs.RESTSIQS.Utils.Constant;
 import com.restsiqs.RESTSIQS.Utils.DatabaseUtil;
 import com.restsiqs.RESTSIQS.Utils.HTTPJSONGetter;
-import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 
 /**
  * Created by devouty on 2015/10/20.
  */
-@EActivity(R.layout.course_list)
+@EActivity(R.layout.bottom_tabs_layout)
 public class CourseListActivity extends Activity {
-
-    @ViewById(R.id.btnGetNotice)
-    Button btnGetNotice;
     @ViewById(R.id.courseList)
     ListView listView;
-
+    @ViewById(R.id.tabs_course)
+    View tc;
+    @ViewById(R.id.tabs_notice)
+    View tn;
+    @ViewById(R.id.tabs_te)
+    View te;
     private String account;
     private String processURL;
     private Cursor cursor;
     private SimpleCursorAdapter simpleCursorAdapter;
     private DatabaseUtil databaseUtil;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.setTitle("Course List");
+        this.setTitle("课程列表");
         account = getIntent().getStringExtra("account");
         processURL = "http://" + Constant.IP + ":8080/RESTSIQS/course/student/" + account;
-        Toast.makeText(this, "Welcome back! " + account, Toast.LENGTH_LONG).show();
-//        new Thread(networkTask).start();
+        Toast.makeText(this, "欢迎回来! ", Toast.LENGTH_LONG).show();
         databaseUtil = new DatabaseUtil(CourseListActivity.this);
         SQLiteDatabase readableDatabase = databaseUtil.getReadableDatabase();
         cursor = readableDatabase.query("course", null, null, null, null, null, null);
-//        startManagingCursor(cursor);
-//        Log.i("devouty_cl_cur","cursor's count:"+cursor.getCount());
+
+        View.OnClickListener listener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                view.getId();
+            }
+        };
+
         if (cursor.getCount() == 0) {
             new Thread(networkTask).start();
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-//                    Log.i("devouty_cl_cur_f","cursor's count:"+cursor.getCount());
                     simpleCursorAdapter = new SimpleCursorAdapter(CourseListActivity.this, R.layout.course_item, cursor, new String[]{"courseName"}, new int[]{R.id.course_item_title});
                     listView.setAdapter(simpleCursorAdapter);
                     listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -94,7 +101,6 @@ public class CourseListActivity extends Activity {
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-//                    Log.i("devouty_cl_cur_f","cursor's count:"+cursor.getCount());
                     simpleCursorAdapter = new SimpleCursorAdapter(CourseListActivity.this, R.layout.course_item, cursor, new String[]{"courseName"}, new int[]{R.id.course_item_title});
                     listView.setAdapter(simpleCursorAdapter);
                     listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -129,72 +135,20 @@ public class CourseListActivity extends Activity {
                 }
             }, 500);
         }
-
-//        readableDatabase.close();
-//        SimpleCursorAdapter simpleCursorAdapter = new SimpleCursorAdapter(CourseListActivity.this, R.layout.course_item, cursor, new String[]{"courseName"}, new int[]{R.id.course_item_title});
-//        listView.setAdapter(simpleCursorAdapter);
-
-//        setContentView(R.layout.course_list);
-//        listView = (ListView) CourseListActivity.this.findViewById(R.id.courseList);
-//        listView.setAdapter(simpleCursorAdapter);
-
     }
-
     Runnable networkTask = new Runnable() {
         @Override
         public void run() {
             try {
                 JSONObject jsonObject = HTTPJSONGetter.get(processURL);
-//                Log.i("devouty_course_list",jsonObject.toJSONString());
-//                Log.i("devouty_course_array",jsonObject.getJSONArray("result").toJSONString());
-//                new DatabaseUtil(CourseListActivity.this).saveCourse(CourseListActivity.this, jsonObject);
                 databaseUtil.saveCourse(jsonObject);
                 cursor = databaseUtil.getReadableDatabase().query("course", null, null, null, null, null, null);
-//                simpleCursorAdapter.changeCursorAndColumns(cursor,new String[]{"courseName"},new int[]{R.id.course_item_title});
-//                databaseUtil.close();
-//                SimpleCursorAdapter simpleCursorAdapter  = new SimpleCursorAdapter(CourseListActivity.this, R.layout.course_item,cursor,new String[]{"courseName"},new int[]{R.id.course_item_title});
-//                listView.setAdapter(simpleCursorAdapter);
             } catch (Exception e) {
                 Log.i("devouty_course_update", e.getMessage());
                 throw e;
             }
         }
     };
-
-
-//    public void getCourseDetail() {
-//        int i = (int)listView.getSelectedItemId();
-//
-//    }
-
-    @Click(R.id.btnGetNotice)
-    public void getNotice() {
-        Intent intent = new Intent(CourseListActivity.this,NoticeListActivity_.class);
-        startActivity(intent);
-    }
-
-    //    private static boolean isExit = false;
-//    private void exit() {
-//        if (!isExit) {
-//            isExit = true;
-//            Toast.makeText(getApplicationContext(), "再按一次退出程序",
-//                    Toast.LENGTH_SHORT).show();
-//            // 利用handler延迟发送更改状态信息
-//            handler.sendEmptyMessageDelayed(0, 2000);
-//        } else {
-//            finish();
-//            System.exit(0);
-//        }
-//    }
-//    Handler handler = new Handler() {
-//
-//        @Override
-//        public void handleMessage(Message msg) {
-//            super.handleMessage(msg);
-//            isExit = false;
-//        }
-//    };
-
     //double click
     private long exitTime = 0;
     @Override
@@ -208,7 +162,7 @@ public class CourseListActivity extends Activity {
 
     public void exit() {
         if ((System.currentTimeMillis() - exitTime) > 2000) {
-            Toast.makeText(getApplicationContext(), "Exit with double click!",
+            Toast.makeText(getApplicationContext(), "双击退出!",
                     Toast.LENGTH_SHORT).show();
             exitTime = System.currentTimeMillis();
         } else {
@@ -223,9 +177,9 @@ public class CourseListActivity extends Activity {
     private static final int ITEM_3 = Menu.FIRST + 2;
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        menu.add(0, ITEM_1, 0, "Logout");
-        menu.add(0, ITEM_2, 0, "Update lessons");
-        menu.add(0, ITEM_3, 0, "Exit");
+        menu.add(0, ITEM_1, 0, "注销");
+        menu.add(0, ITEM_2, 0, "更新课程");
+        menu.add(0, ITEM_3, 0, "退出程序");
         return super.onCreateOptionsMenu(menu);
     }
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -238,15 +192,11 @@ public class CourseListActivity extends Activity {
             case ITEM_2:
                 new Thread(networkTask).start();
                 new Handler().postDelayed(new Runnable() {
-
                     @Override
                     public void run() {
                         Cursor cursor = databaseUtil.getReadableDatabase().query("course", null, null, null, null, null, null);
-//                        Log.i("devouty_refrash",cursor.getCount()+"");
-//                        simpleCursorAdapter.changeCursorAndColumns(cursor, new String[]{"courseName"}, new int[]{R.id.course_item_title});
                         simpleCursorAdapter.changeCursor(cursor);
                         simpleCursorAdapter.notifyDataSetChanged();
-//                        cursor.close();
                     }
                 }, 500);
                 break;

@@ -11,9 +11,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
-import android.widget.Button;
 import android.widget.ListView;
 import com.restsiqs.RESTSIQS.R.id;
 import com.restsiqs.RESTSIQS.R.layout;
@@ -34,7 +32,7 @@ public final class CourseListActivity_
         init_(savedInstanceState);
         super.onCreate(savedInstanceState);
         OnViewChangedNotifier.replaceNotifier(previousNotifier);
-        setContentView(layout.course_list);
+        setContentView(layout.bottom_tabs_layout);
     }
 
     private void init_(Bundle savedInstanceState) {
@@ -69,23 +67,7 @@ public final class CourseListActivity_
 
     @Override
     public void onViewChanged(HasViews hasViews) {
-        btnGetNotice = ((Button) hasViews.findViewById(id.btnGetNotice));
         listView = ((ListView) hasViews.findViewById(id.courseList));
-        {
-            View view = hasViews.findViewById(id.btnGetNotice);
-            if (view!= null) {
-                view.setOnClickListener(new OnClickListener() {
-
-
-                    @Override
-                    public void onClick(View view) {
-                        CourseListActivity_.this.getNotice();
-                    }
-
-                }
-                );
-            }
-        }
     }
 
     public static class IntentBuilder_ {

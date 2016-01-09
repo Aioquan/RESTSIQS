@@ -33,14 +33,44 @@ public class LoginActivity extends Activity {
 
     @ViewById(R.id.password)
     EditText etPassword;
+    @ViewById
+    Button btnLogin;
     private View loginLoading;
     private AnimationDrawable loadingAnimation;
     private String account;
     private String password;
     private JSONObject jsonObject;
-
-    @ViewById
-    Button btnLogin;
+    Runnable networkTask = new Runnable() {
+        @Override
+        public void run() {
+            String restURL;
+            String processURL = "http://" + Constant.IP + ":8080/RESTSIQS/student/";
+            restURL = processURL + account;
+            jsonObject = HTTPJSONGetter.get(restURL);
+        }
+    };
+    //    private static boolean isExit = false;
+//    private void exit() {
+//        if (!isExit) {
+//            isExit = true;
+//            Toast.makeText(getApplicationContext(), "再按一次退出程序",
+//                    Toast.LENGTH_SHORT).show();
+//            // 利用handler延迟发送更改状态信息
+//            handler.sendEmptyMessageDelayed(0, 2000);
+//        } else {
+//            finish();
+//            System.exit(0);
+//        }
+//    }
+//    Handler handler = new Handler() {
+//
+//        @Override
+//        public void handleMessage(Message msg) {
+//            super.handleMessage(msg);
+//            isExit = false;
+//        }
+//    };
+    private long exitTime = 0;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -52,16 +82,6 @@ public class LoginActivity extends Activity {
         writableDatabase.close();
         databaseUtil.close();
     }
-
-    Runnable networkTask = new Runnable() {
-        @Override
-        public void run() {
-            String restURL;
-            String processURL = "http://" + Constant.IP + ":8080/RESTSIQS/student/";
-            restURL = processURL + account;
-            jsonObject = HTTPJSONGetter.get(restURL);
-        }
-    };
 
     @Click(R.id.btnLogin)
     public void login() {
@@ -77,7 +97,7 @@ public class LoginActivity extends Activity {
                 btnLogin.setClickable(false);
                 Toast toast = new Toast(LoginActivity.this);
 
-                toast.makeText(LoginActivity.this,"Loading",Toast.LENGTH_SHORT).show();
+                toast.makeText(LoginActivity.this, "Loading", Toast.LENGTH_SHORT).show();
 
                 new Thread(networkTask).start();
                 new Handler().postDelayed(new Runnable() {
@@ -86,9 +106,10 @@ public class LoginActivity extends Activity {
                         if (jsonObject.getJSONArray("result").toJSONString().equals("[null]")) {
 //                            toast.setText("Account|password error!");
                             toast.cancel();
-                            Toast.makeText(LoginActivity.this,"Account|password error!",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LoginActivity.this, "Account|password error!", Toast.LENGTH_SHORT).show();
                             etAccount.setText("");
                             etPassword.setText("");
+                            btnLogin.setFocusable(true);
                             btnLogin.setClickable(true);
                         } else if (((JSONObject) jsonObject.getJSONArray("result").get(0)).getString("studentPassword").equals(password)) {
 //                  get account & password into database
@@ -113,7 +134,7 @@ public class LoginActivity extends Activity {
                             LoginActivity.this.finish();
                         }
                     }
-                },2000);
+                }, 2000);
 
             } catch (Exception e) {
                 Toast.makeText(LoginActivity.this, "Account|password error!", Toast.LENGTH_SHORT).show();
@@ -121,31 +142,9 @@ public class LoginActivity extends Activity {
                 etPassword.setText("");
             }
             btnLogin.setFocusable(true);
+            btnLogin.setClickable(true);
         }
     }
-
-    //    private static boolean isExit = false;
-//    private void exit() {
-//        if (!isExit) {
-//            isExit = true;
-//            Toast.makeText(getApplicationContext(), "再按一次退出程序",
-//                    Toast.LENGTH_SHORT).show();
-//            // 利用handler延迟发送更改状态信息
-//            handler.sendEmptyMessageDelayed(0, 2000);
-//        } else {
-//            finish();
-//            System.exit(0);
-//        }
-//    }
-//    Handler handler = new Handler() {
-//
-//        @Override
-//        public void handleMessage(Message msg) {
-//            super.handleMessage(msg);
-//            isExit = false;
-//        }
-//    };
-    private long exitTime = 0;
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {

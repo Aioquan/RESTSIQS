@@ -11,10 +11,7 @@ import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ListView;
-import android.widget.SimpleCursorAdapter;
-import android.widget.Toast;
+import android.widget.*;
 import com.alibaba.fastjson.JSONObject;
 import com.restsiqs.RESTSIQS.R;
 import com.restsiqs.RESTSIQS.Utils.Constant;
@@ -28,23 +25,44 @@ import org.androidannotations.annotations.ViewById;
  */
 @EActivity(R.layout.bottom_tabs_layout)
 public class CourseListActivity extends Activity {
+    //menu
+    private static final int ITEM_1 = Menu.FIRST;
+    private static final int ITEM_2 = Menu.FIRST + 1;
+    private static final int ITEM_3 = Menu.FIRST + 2;
     @ViewById(R.id.courseList)
     ListView listView;
-    @ViewById(R.id.tabs_course)
-    View tc;
-    @ViewById(R.id.tabs_notice)
-    View tn;
-    @ViewById(R.id.tabs_te)
-    View te;
+    @ViewById(R.id.im_course)
+    View ic;
+    @ViewById(R.id.im_notice)
+    View in;
+    @ViewById(R.id.im_te)
+    View it;
     private String account;
     private String processURL;
     private Cursor cursor;
     private SimpleCursorAdapter simpleCursorAdapter;
     private DatabaseUtil databaseUtil;
+    Runnable networkTask = new Runnable() {
+        @Override
+        public void run() {
+            try {
+                JSONObject jsonObject = HTTPJSONGetter.get(processURL);
+                databaseUtil.saveCourse(jsonObject);
+                cursor = databaseUtil.getReadableDatabase().query("course", null, null, null, null, null, null);
+            } catch (Exception e) {
+                Log.i("devouty_course_update", e.getMessage());
+                throw e;
+            }
+        }
+    };
+    //double click
+    private long exitTime = 0;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.setTitle("课程列表");
+
         account = getIntent().getStringExtra("account");
         processURL = "http://" + Constant.IP + ":8080/RESTSIQS/course/student/" + account;
         Toast.makeText(this, "欢迎回来! ", Toast.LENGTH_LONG).show();
@@ -55,9 +73,14 @@ public class CourseListActivity extends Activity {
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                view.getId();
+
+                Toast.makeText(CourseListActivity.this, view.getId() + "", Toast.LENGTH_LONG).show();
             }
         };
+
+//        ic.setOnClickListener(listener);
+//        it.setOnClickListener(listener);
+//        in.setOnClickListener(listener);
 
         if (cursor.getCount() == 0) {
             new Thread(networkTask).start();
@@ -136,21 +159,7 @@ public class CourseListActivity extends Activity {
             }, 500);
         }
     }
-    Runnable networkTask = new Runnable() {
-        @Override
-        public void run() {
-            try {
-                JSONObject jsonObject = HTTPJSONGetter.get(processURL);
-                databaseUtil.saveCourse(jsonObject);
-                cursor = databaseUtil.getReadableDatabase().query("course", null, null, null, null, null, null);
-            } catch (Exception e) {
-                Log.i("devouty_course_update", e.getMessage());
-                throw e;
-            }
-        }
-    };
-    //double click
-    private long exitTime = 0;
+
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
@@ -171,10 +180,6 @@ public class CourseListActivity extends Activity {
         }
     }
 
-    //menu
-    private static final int ITEM_1 = Menu.FIRST;
-    private static final int ITEM_2 = Menu.FIRST + 1;
-    private static final int ITEM_3 = Menu.FIRST + 2;
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         menu.add(0, ITEM_1, 0, "注销");
@@ -182,6 +187,7 @@ public class CourseListActivity extends Activity {
         menu.add(0, ITEM_3, 0, "退出程序");
         return super.onCreateOptionsMenu(menu);
     }
+
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case ITEM_1:

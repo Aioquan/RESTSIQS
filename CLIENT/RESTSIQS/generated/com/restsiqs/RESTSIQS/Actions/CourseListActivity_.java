@@ -68,6 +68,9 @@ public final class CourseListActivity_
     @Override
     public void onViewChanged(HasViews hasViews) {
         listView = ((ListView) hasViews.findViewById(id.courseList));
+        in = ((View) hasViews.findViewById(id.im_notice));
+        ic = ((View) hasViews.findViewById(id.im_course));
+        it = ((View) hasViews.findViewById(id.im_te));
     }
 
     public static class IntentBuilder_ {

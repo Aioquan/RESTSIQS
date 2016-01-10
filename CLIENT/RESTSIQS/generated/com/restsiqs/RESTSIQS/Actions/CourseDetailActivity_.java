@@ -67,21 +67,21 @@ public final class CourseDetailActivity_
 
     @Override
     public void onViewChanged(HasViews hasViews) {
-        finalTest = ((TextView) hasViews.findViewById(id.finalTest));
-        exercises5 = ((TextView) hasViews.findViewById(id.exercises5));
-        exercises3 = ((TextView) hasViews.findViewById(id.exercises3));
-        courseCredit = ((TextView) hasViews.findViewById(id.courseCredit));
-        courseTime = ((TextView) hasViews.findViewById(id.courseTime));
-        test1 = ((TextView) hasViews.findViewById(id.test1));
-        courseDate = ((TextView) hasViews.findViewById(id.courseDate));
-        test2 = ((TextView) hasViews.findViewById(id.test2));
+        courseName = ((TextView) hasViews.findViewById(id.courseName));
         dailyMark = ((TextView) hasViews.findViewById(id.dailyMark));
+        courseTime = ((TextView) hasViews.findViewById(id.courseTime));
+        test2 = ((TextView) hasViews.findViewById(id.test2));
         exercises4 = ((TextView) hasViews.findViewById(id.exercises4));
         test3 = ((TextView) hasViews.findViewById(id.test3));
-        exercises2 = ((TextView) hasViews.findViewById(id.exercises2));
+        exercises5 = ((TextView) hasViews.findViewById(id.exercises5));
         sum = ((TextView) hasViews.findViewById(id.sum));
-        courseName = ((TextView) hasViews.findViewById(id.courseName));
+        exercises3 = ((TextView) hasViews.findViewById(id.exercises3));
+        exercises2 = ((TextView) hasViews.findViewById(id.exercises2));
+        courseDate = ((TextView) hasViews.findViewById(id.courseDate));
+        courseCredit = ((TextView) hasViews.findViewById(id.courseCredit));
+        test1 = ((TextView) hasViews.findViewById(id.test1));
         exercises1 = ((TextView) hasViews.findViewById(id.exercises1));
+        finalTest = ((TextView) hasViews.findViewById(id.finalTest));
     }
 
     public static class IntentBuilder_ {

@@ -24,6 +24,11 @@
       </config>
     </shared>
     <layouts>
+      <layout url="file://$PROJECT_DIR$/res/layout/bottom_tabs_layout.xml">
+        <config>
+          <theme>@android:style/Theme.Holo</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/res/layout/main.xml">
         <config>
           <theme>@android:style/Theme.Light</theme>
@@ -33,100 +38,56 @@
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CUSTOM_FILTER" value="devouty" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd5ce455-f0da-47bd-bab7-ad1bccb17a2c" name="Default" comment="Finish welcome page interface.After 2.5s the activity will jump to next Activity.">
-      <change type="DELETED" beforePath="E:\workspace\RESTSIQS\README.md.bak" afterPath="" />
-      <change type="DELETED" beforePath="E:\workspace\RESTSIQS\SERVICEGUI\RESTSIQS\target\classes\View\Dialog\Course\CourseEditDialog$5.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseAddDialog$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseAddDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseAddDialog$2.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseAddDialog$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseAddDialog$3.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseAddDialog$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseAddDialog$4.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseAddDialog$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseAddDialog$5.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseAddDialog$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseAddDialog.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseAddDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseDeleteDialog$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseDeleteDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseDeleteDialog$2.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseDeleteDialog$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseDeleteDialog$3.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseDeleteDialog$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseDeleteDialog$4.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseDeleteDialog$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseDeleteDialog.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseDeleteDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity$1.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/image_course.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/image_course.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/image_course_selected.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/image_course_selected.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/image_notice.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/image_notice.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/image_notice_selected.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/image_notice_selected.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/image_te.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/image_te.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/image_te_selected.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/image_te_selected.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/bottom_tabs_layout.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/devouty.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity_.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity_.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseEditDialog$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseEditDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseEditDialog$2.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseEditDialog$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseEditDialog$3.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseEditDialog$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseEditDialog$4.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseEditDialog$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseEditDialog.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Course/CourseEditDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/CoursePanel$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/CoursePanel$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/CoursePanel$2.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/CoursePanel$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/CoursePanel.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/CoursePanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/Beans/DeleteButtonRenderer.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/Beans/DeleteButtonRenderer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/Beans/EditButtonRenderer.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/Beans/EditButtonRenderer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/Utils/HTTPJSONHelper.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/Utils/HTTPJSONHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/Main.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/MainView$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/MainView$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/MainView.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/MainView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeAddDialog$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeAddDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeAddDialog$2.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeAddDialog$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeAddDialog$3.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeAddDialog$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeAddDialog$4.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeAddDialog$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeAddDialog.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeAddDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeDeleteDialog$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeDeleteDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeDeleteDialog$2.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeDeleteDialog$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeDeleteDialog$3.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeDeleteDialog$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeDeleteDialog$4.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeDeleteDialog$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeDeleteDialog.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeDeleteDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeEditDialog$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeEditDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeEditDialog$2.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeEditDialog$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeEditDialog$3.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeEditDialog$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeEditDialog$4.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeEditDialog$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeEditDialog.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Notice/NoticeEditDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/NoticePanel$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/NoticePanel$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/NoticePanel$2.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/NoticePanel$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/NoticePanel$3$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/NoticePanel$3$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/NoticePanel$3.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/NoticePanel$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/NoticePanel.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/NoticePanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseListActivity$1.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseListActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseListActivity$2.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseListActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseListActivity.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseListActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseListActivity_.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/CourseListActivity_.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/LoginActivity.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/LoginActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/LoginActivity_.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/LoginActivity_.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/MainActivity.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/MainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/MainActivity_.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/MainActivity_.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/NoticeDetailActivity.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/NoticeDetailActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/NoticeDetailActivity_.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/NoticeDetailActivity_.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/NoticeListActivity$1.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/NoticeListActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/NoticeListActivity.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/NoticeListActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/NoticeListActivity_.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/Actions/NoticeListActivity_.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/R$drawable.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/R$id.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/R$layout.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/R$string.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/R.class" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/com/restsiqs/RESTSIQS/R.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/RESTSIQS.apk" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/RESTSIQS.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSIQS/RESTSIQS.unaligned.apk" afterPath="$PROJECT_DIR$/out/production/RESTSIQS/RESTSIQS.unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentAddDialog.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentAddDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentDeleteDialog$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentDeleteDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentDeleteDialog$2.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentDeleteDialog$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentDeleteDialog$3.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentDeleteDialog$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentDeleteDialog$4.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentDeleteDialog$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentDeleteDialog.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentDeleteDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$2.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$3.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$4.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$5.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$6.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$7.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$8.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Student/StudentEditDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/StudentPanel$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/StudentPanel$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/StudentPanel$2.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/StudentPanel$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/StudentPanel$3$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/StudentPanel$3$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/StudentPanel$3.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/StudentPanel$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/StudentPanel.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/StudentPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$2.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$3.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$4.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEAddDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$2.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$3.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$4.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEDeleteDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$1.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$2.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$3.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$4.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog.class" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/target/classes/View/Dialog/Tecnologicalexam/TEEditDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/.gitignore" afterPath="$PROJECT_DIR$/../../SERVICE/RESTSIQS/WebRoot/WEB-INF/classes/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/restsiqs/RESTSIQS/BuildConfig.java" afterPath="$PROJECT_DIR$/gen/com/restsiqs/RESTSIQS/BuildConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity_.java" afterPath="$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity_.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseListActivity.java" afterPath="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseListActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/Actions/CourseListActivity_.java" afterPath="$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/Actions/CourseListActivity_.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/Actions/LoginActivity_.java" afterPath="$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/Actions/LoginActivity_.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RESTSIQS.iml" afterPath="$PROJECT_DIR$/RESTSIQS.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/androidannotations.log" afterPath="$PROJECT_DIR$/bin/androidannotations.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../SERVICEGUI/RESTSIQS/.idea/workspace.xml" />
     </list>
     <ignored path="RESTSIQS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -154,7 +115,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="102" column="9" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#569#570#0" expanded="false" />
+                <element signature="e#623#624#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,7 +129,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -187,7 +154,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -196,17 +165,46 @@
         <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="61" column="53" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="53" />
+              <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CourseDetailActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="61" column="38" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CourseDetailActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity.java">
+      <file leaf-file-name="bottom_tabs_layout.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/bottom_tabs_layout.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.82917464">
-              <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+            <state vertical-scroll-proportion="8.833333">
+              <caret line="56" column="23" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
+              <folding>
+                <element signature="e#1855#1875#0" expanded="true" />
+                <element signature="e#2621#2641#0" expanded="true" />
+                <element signature="e#3350#3370#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.178572">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -225,11 +223,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CourseListActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CourseListActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseListActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="185" column="29" selection-start-line="185" selection-start-column="29" selection-end-line="185" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.22099447">
+              <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -292,13 +290,15 @@
         <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/HTTPJSONGetter.java" />
         <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/LoginActivity.java" />
         <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/NoticeDetailActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseListActivity.java" />
         <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/NoticeListActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/notice_item.xml" />
         <option value="$PROJECT_DIR$/res/layout/course_item.xml" />
         <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/DatabaseUtil.java" />
         <option value="$PROJECT_DIR$/res/layout/notice_detail.xml" />
         <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity.java" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/res/layout/bottom_tabs_layout.xml" />
+        <option value="$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseListActivity.java" />
       </list>
     </option>
   </component>
@@ -370,6 +370,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -463,6 +465,24 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RESTSIQS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RESTSIQS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -478,7 +498,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
+              <option name="myItemId" value="drawable-mdpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RESTSIQS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RESTSIQS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -498,9 +536,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -511,12 +547,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="192.168.56.101:5555" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="ba7ada4c" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="321" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.WIDTH" value="226" />
     <property name="show.migrate.to.gradle.popup" value="false" />
@@ -526,11 +562,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\workspace\RESTSIQS\CLIENT\RESTSIQS\res\drawable-hdpi" />
-      <recent name="E:\workspace\RESTSIQS\CLIENT\RESTSIQS\res" />
       <recent name="E:\workspace\RESTSIQS\CLIENT\RESTSIQS\res\drawable" />
-      <recent name="E:\workspace\RESTSIQS\CLIENT\RESTSIQS\libs" />
-      <recent name="E:\workspace\RESTSIQS\CLIENT\RESTSIQS\src\com\restsiqs\RESTSIQS\Actions" />
+      <recent name="E:\workspace\RESTSIQS\CLIENT\RESTSIQS\res\drawable-mdpi" />
+      <recent name="E:\workspace\RESTSIQS\CLIENT\RESTSIQS\res\layout" />
+      <recent name="E:\workspace\RESTSIQS\CLIENT\RESTSIQS\res" />
+      <recent name="E:\workspace\RESTSIQS\CLIENT\RESTSIQS\res\drawable-hdpi" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.restsiqs.RESTSIQS" />
@@ -539,22 +575,23 @@
   <component name="RunManager" selected="Android Application.RESTSIQS">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
       <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -564,27 +601,17 @@
       <option name="METHOD_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
       <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -602,74 +629,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
-      <option name="BCName" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="" />
-      <option name="overriddenMainClass" value="" />
-      <option name="overriddenOutputFileName" value="" />
-      <option name="overrideMainClass" value="false" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
-      <method />
-    </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -684,16 +643,6 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <module name="" />
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="depsClasspath" value="false" />
-      <setting name="passParentEnv" value="true" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <setting name="launchBrowser" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -722,21 +671,12 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -767,39 +707,25 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <pass-parent-envs>true</pass-parent-envs>
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
-      <method />
-    </configuration>
-    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
-      <method />
-    </configuration>
     <configuration default="false" name="RESTSIQS" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="RESTSIQS" />
-      <option name="ACTIVITY_CLASS" value="com.restsiqs.RESTSIQS.MainActivity" />
-      <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="true" />
       <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="true" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="com.restsiqs.RESTSIQS.MainActivity" />
       <method />
     </configuration>
     <list size="1">
@@ -899,36 +825,41 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17715232" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17576791" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39900663" sideWeight="0.5030349" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33162394" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25642964" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32615894" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.08443709" sideWeight="0.11836115" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20182094" sideWeight="0.4920635" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39900663" sideWeight="0.8816388" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20121029" sideWeight="0.4920635" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34602648" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26176023" sideWeight="0.50793654" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4321192" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21016692" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.08443709" sideWeight="0.11836115" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34602648" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39900663" sideWeight="0.8816388" order="7" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -962,14 +893,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/NoticeListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseListActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1241,13 +1164,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/ic_launcher.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1311,7 +1227,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="102" column="9" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#569#570#0" expanded="false" />
+            <element signature="e#623#624#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1337,19 +1257,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="185" column="29" selection-start-line="185" selection-start-column="29" selection-end-line="185" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/NoticeDetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1357,22 +1271,57 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="53" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="53" />
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.178572">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82917464">
-          <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="61" column="38" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/bottom_tabs_layout.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="8.833333">
+          <caret line="56" column="23" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
+          <folding>
+            <element signature="e#1855#1875#0" expanded="true" />
+            <element signature="e#2621#2641#0" expanded="true" />
+            <element signature="e#3350#3370#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22099447">
+          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
           <folding />
         </state>
       </provider>

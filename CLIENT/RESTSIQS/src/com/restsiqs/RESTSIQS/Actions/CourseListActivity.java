@@ -24,7 +24,7 @@ import org.androidannotations.annotations.ViewById;
 /**
  * Created by devouty on 2015/10/20.
  */
-@EActivity(R.layout.course_list)
+@EActivity(R.layout.bottom_tabs_layout)
 public class CourseListActivity extends Activity {
 
     @ViewById(R.id.btnGetNotice)

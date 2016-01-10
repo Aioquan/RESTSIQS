@@ -34,7 +34,7 @@ public final class CourseListActivity_
         init_(savedInstanceState);
         super.onCreate(savedInstanceState);
         OnViewChangedNotifier.replaceNotifier(previousNotifier);
-        setContentView(layout.course_list);
+        setContentView(layout.bottom_tabs_layout);
     }
 
     private void init_(Bundle savedInstanceState) {
@@ -69,8 +69,8 @@ public final class CourseListActivity_
 
     @Override
     public void onViewChanged(HasViews hasViews) {
-        btnGetNotice = ((Button) hasViews.findViewById(id.btnGetNotice));
         listView = ((ListView) hasViews.findViewById(id.courseList));
+        btnGetNotice = ((Button) hasViews.findViewById(id.btnGetNotice));
         {
             View view = hasViews.findViewById(id.btnGetNotice);
             if (view!= null) {

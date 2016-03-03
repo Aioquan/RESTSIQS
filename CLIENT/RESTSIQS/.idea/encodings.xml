@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
-    <file url="file://$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/Actions/CourseListActivity_.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/generated/com/restsiqs/RESTSIQS/Actions/LoginActivity_.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseDetailActivity.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/CourseListActivity.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/LoginActivity.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/NoticeDetailActivity.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Actions/NoticeListActivity.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/MainActivity.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/Constant.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/DatabaseUtil.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/com/restsiqs/RESTSIQS/Utils/HTTPJSONGetter.java" charset="UTF-8" />
+  <component name="Encoding">
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

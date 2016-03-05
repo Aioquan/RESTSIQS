@@ -22,7 +22,7 @@ public class FitJTableHeaderUtil {
             for (int row = 0; row < rowCount; row++) {
                 int preferedWidth = (int) myTable.getCellRenderer(row, col).getTableCellRendererComponent(myTable,
                         myTable.getValueAt(row, col), false, false, row, col).getPreferredSize().getWidth();
-                width = Math.max(width, preferedWidth)+2;
+                width = Math.max(width, preferedWidth);
             }
             header.setResizingColumn(column); // 此行很重要
             column.setWidth(width + myTable.getIntercellSpacing().width);

@@ -1,4 +1,8 @@
-package com.restsiqs.restsiqs.Actions;
+package com.restsiqs.restsiqs.Views;
+
+/**
+ * Created by devouty on 2016/3/6.
+ */
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,58 +10,63 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.annotation.Nullable;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.widget.SimpleCursorAdapter;
 import android.util.Log;
-import android.view.KeyEvent;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.*;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ListView;
+import android.widget.Toast;
 
 import com.alibaba.fastjson.JSONObject;
+import com.restsiqs.restsiqs.Actions.CourseDetailActivity;
+import com.restsiqs.restsiqs.Actions.TabActivity;
 import com.restsiqs.restsiqs.R;
 import com.restsiqs.restsiqs.Utils.Constant;
 import com.restsiqs.restsiqs.Utils.DatabaseUtil;
 import com.restsiqs.restsiqs.Utils.HTTPJSONGetter;
-//import org.androidannotations.annotations.Click;
-//import org.androidannotations.annotations.EActivity;
-//import org.androidannotations.annotations.ViewById;
+import com.restsiqs.restsiqs.Utils.TabFlag;
+
 
 /**
- * Created by devouty on 2015/10/20.
+ * Created by Administrator on 2015/7/30.
  */
-//@EActivity(R.layout.bottom_tabs_layout)
-public class CourseListActivity extends Activity {
-
-    //    @ViewById(R.id.btnGetNotice)
-    Button btnGetNotice;
-    //    @ViewById(R.id.courseList)
-    ListView listView;
-
+public class TabFragment extends Fragment {
     private String account;
     private String processURL;
     private Cursor cursor;
     private SimpleCursorAdapter simpleCursorAdapter;
+    private Activity parentActivity;
     private DatabaseUtil databaseUtil;
+    private ListView listView;
+
+
+    public static final String ARG_PAGE = "ARG_PAGE";
+    private int mPage;
+
+    public static TabFragment changeFragment(int page) {
+        Bundle args = new Bundle();
+        args.putInt(ARG_PAGE, page);
+//        TabFragment pageFragment = new TabFragment();
+        TabFragment pageFragment = null;
+        pageFragment.setArguments(args);
+        return pageFragment;
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.course_list);
-        this.setTitle("Course List");
-        listView = (ListView) findViewById(R.id.courseList);
-        btnGetNotice = (Button)findViewById(R.id.btnGetNotice);
-        btnGetNotice.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getNotice();
-                getNotice();
-            }
-        });
-        account = getIntent().getStringExtra("account");
+        parentActivity = getActivity();
+        mPage = getArguments().getInt(ARG_PAGE);
+        account = parentActivity.getIntent().getStringExtra("account");
         processURL = "http://" + Constant.IP + ":8080/RESTSIQS/course/student/" + account;
-        Toast.makeText(this, "Welcome back! " + account, Toast.LENGTH_LONG).show();
+        Toast.makeText(parentActivity, "Welcome back! " + account, Toast.LENGTH_LONG).show();
 //        new Thread(networkTask).start();
-        databaseUtil = new DatabaseUtil(CourseListActivity.this);
+        databaseUtil = new DatabaseUtil(parentActivity);
         SQLiteDatabase readableDatabase = databaseUtil.getReadableDatabase();
         cursor = readableDatabase.query("course", null, null, null, null, null, null);
 //        startManagingCursor(cursor);
@@ -68,13 +77,13 @@ public class CourseListActivity extends Activity {
                 //@Override
                 public void run() {
 //                    Log.i("devouty_cl_cur_f","cursor's count:"+cursor.getCount());
-                    simpleCursorAdapter = new SimpleCursorAdapter(CourseListActivity.this, R.layout.course_item, cursor, new String[]{"courseName"}, new int[]{R.id.course_item_title});
+                    simpleCursorAdapter = new SimpleCursorAdapter(parentActivity, R.layout.course_item, cursor, new String[]{"courseName"}, new int[]{R.id.course_item_title});
                     listView.setAdapter(simpleCursorAdapter);
                     listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                         //@Override
                         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                             Cursor cursor = databaseUtil.getReadableDatabase().query("course", null, null, null, null, null, null);
-                            Intent intent = new Intent(CourseListActivity.this, CourseDetailActivity.class);
+                            Intent intent = new Intent(parentActivity, CourseDetailActivity.class);
                             cursor.moveToPosition(i);
 
                             intent.putExtra("courseId", cursor.getString(1));
@@ -106,13 +115,13 @@ public class CourseListActivity extends Activity {
                 //@Override
                 public void run() {
 //                    Log.i("devouty_cl_cur_f","cursor's count:"+cursor.getCount());
-                    simpleCursorAdapter = new SimpleCursorAdapter(CourseListActivity.this, R.layout.course_item, cursor, new String[]{"courseName"}, new int[]{R.id.course_item_title});
+                    simpleCursorAdapter = new SimpleCursorAdapter(parentActivity, R.layout.course_item, cursor, new String[]{"courseName"}, new int[]{R.id.course_item_title});
                     listView.setAdapter(simpleCursorAdapter);
                     listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                         //@Override
                         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                             Cursor cursor = databaseUtil.getReadableDatabase().query("course", null, null, null, null, null, null);
-                            Intent intent = new Intent(CourseListActivity.this, CourseDetailActivity.class);
+                            Intent intent = new Intent(parentActivity, CourseDetailActivity.class);
                             cursor.moveToPosition(i);
 
                             intent.putExtra("courseId", cursor.getString(1));
@@ -173,101 +182,15 @@ public class CourseListActivity extends Activity {
     };
 
 
-//    public void getCourseDetail() {
-//        int i = (int)listView.getSelectedItemId();
-//
-//    }
-
-//    @Click(R.id.btnGetNotice)
-    public void getNotice() {
-        Intent intent = new Intent(CourseListActivity.this, NoticeListActivity.class);
-        startActivity(intent);
-    }
-
-    //    private static boolean isExit = false;
-//    private void exit() {
-//        if (!isExit) {
-//            isExit = true;
-//            Toast.makeText(getApplicationContext(), "再按一次退出程序",
-//                    Toast.LENGTH_SHORT).show();
-//            // 利用handler延迟发送更改状态信息
-//            handler.sendEmptyMessageDelayed(0, 2000);
-//        } else {
-//            finish();
-//            System.exit(0);
-//        }
-//    }
-//    Handler handler = new Handler() {
-//
-//        @Override
-//        public void handleMessage(Message msg) {
-//            super.handleMessage(msg);
-//            isExit = false;
-//        }
-//    };
-
-    //double click
-    private long exitTime = 0;
-
+    @Nullable
     @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK) {
-            exit();
-            return false;
-        }
-        return super.onKeyDown(keyCode, event);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = null;
+
+        view = inflater.inflate(R.layout.notice_list, container, false);
+        listView = (ListView) view.findViewById(R.id.notice_list);
+
+        return view;
     }
 
-    public void exit() {
-        if ((System.currentTimeMillis() - exitTime) > 2000) {
-            Toast.makeText(getApplicationContext(), "Exit with double click!",
-                    Toast.LENGTH_SHORT).show();
-            exitTime = System.currentTimeMillis();
-        } else {
-            finish();
-            System.exit(0);
-        }
-    }
-
-    //menu
-    private static final int ITEM_1 = Menu.FIRST;
-    private static final int ITEM_2 = Menu.FIRST + 1;
-    private static final int ITEM_3 = Menu.FIRST + 2;
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        menu.add(0, ITEM_1, 0, "Logout");
-        menu.add(0, ITEM_2, 0, "Update lessons");
-        menu.add(0, ITEM_3, 0, "Exit");
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case ITEM_1:
-                Intent intent = new Intent(CourseListActivity.this, LoginActivity.class);
-                startActivity(intent);
-                CourseListActivity.this.finish();
-                break;
-            case ITEM_2:
-                new Thread(networkTask).start();
-                new Handler().postDelayed(new Runnable() {
-
-                    //@Override
-                    public void run() {
-                        Cursor cursor = databaseUtil.getReadableDatabase().query("course", null, null, null, null, null, null);
-//                        Log.i("devouty_refrash",cursor.getCount()+"");
-//                        simpleCursorAdapter.changeCursorAndColumns(cursor, new String[]{"courseName"}, new int[]{R.id.course_item_title});
-                        simpleCursorAdapter.changeCursor(cursor);
-                        simpleCursorAdapter.notifyDataSetChanged();
-//                        cursor.close();
-                    }
-                }, 500);
-                break;
-            case ITEM_3:
-                System.exit(0);
-                break;
-        }
-        return true;
-    }
 }

@@ -1,24 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.restsiqs.restsiqs">
 
     <application
         android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true">
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Actions.CourseDetailActivity"></activity>
-        <activity android:name=".Actions.CourseListActivity"></activity>
-        <activity android:name=".Actions.NoticeDetailActivity"></activity>
-        <activity android:name=".Actions.NoticeListActivity"></activity>
+        <activity android:name=".Actions.TabActivity"></activity>
         <activity android:name=".Actions.LoginActivity"></activity>
+        <activity android:name=".Actions.CourseDetailActivity"></activity>
     </application>
 
 </manifest>

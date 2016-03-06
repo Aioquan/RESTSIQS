@@ -117,7 +117,7 @@ public class LoginActivity extends Activity {
                             writableDatabase.insert("account", null, cv);
                             Cursor cursor = writableDatabase.query("account", null, null, null, null, null, null);
 //                  jump to course list
-                            Intent intent = new Intent(LoginActivity.this, CourseListActivity.class);
+                            Intent intent = new Intent(LoginActivity.this, TabActivity.class);
                             intent.putExtra("account", account);
 //                    Log.i("devouty","finish account insert now its' count is:"+writableDatabase.query("account",null,null,null,null,null,null).getCount());
                             writableDatabase.close();

@@ -1,1 +1,54 @@
-package com.restsiqs.restsiqs;import android.app.Activity;import android.content.Intent;import android.database.Cursor;import android.database.sqlite.SQLiteDatabase;import android.os.Bundle;import android.os.Handler;import com.restsiqs.restsiqs.Utils.DatabaseUtil;public class MainActivity extends Activity {    /**     * Called when the activity is first created.     */    boolean loginFlag = false;    @Override    public void onCreate(Bundle savedInstanceState) {        super.onCreate(savedInstanceState);        setContentView(R.layout.main);        /*        Here need a flag to get if the student has been login.         *///        Log.i("devouty", "MainActivity is running");//        Log.i("devouty", "Begin to judge loginFlag");//        get if user has been sign in before this time        DatabaseUtil databaseUtil = new DatabaseUtil(MainActivity.this);        SQLiteDatabase database = null;        database = databaseUtil.getWritableDatabase();//        String sql = "create table if not exists course(_id varchar(255) not null,courseId varchar(255),credit double default -1,teacherId varchar(255),studentId varchar(255),courseName varchar(255),courseTime varchar(255),courseDate varchar(255),test1 double default -1,test2 double default -1,test3 double default -1,exercises1 double default -1,exercises2 double default -1,exercises3 double default -1,exercises4 double default -1,exercises5 double default -1,finalTest double default -1,dailyMark double default -1,sum double default -1);";//        database.execSQL(sql);//        Log.i("devouty", "Begin to read cursor");        final Cursor cursor = database.query("account", null, null, null, null, null, null);//        Log.i("devouty", "Judge cursor");        if (cursor.moveToFirst() == false) {//            Log.i("devouty", "Cursor is null");            loginFlag = false;        } else {            loginFlag = true;        }        database.close();        databaseUtil.close();//        Log.i("devouty", "Cursor's count:" + cursor.getCount());        new Handler().postDelayed(new Runnable() {            //@Override            public void run() {                if (MainActivity.this.loginFlag) {                    //is signed in                    Intent intent = new Intent(MainActivity.this, com.restsiqs.restsiqs.Actions.CourseListActivity.class);                    intent.putExtra("account",cursor.getString(cursor.getColumnIndex("account")));                    startActivity(intent);                    MainActivity.this.finish();                } else {                    //need to sign in                    Intent intent = new Intent(MainActivity.this, com.restsiqs.restsiqs.Actions.LoginActivity.class);                    startActivity(intent);                    MainActivity.this.finish();                }            }        }, 2500);    }}
+package com.restsiqs.restsiqs;
+
+import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.os.Handler;
+import android.support.v7.app.AppCompatActivity;
+
+import com.restsiqs.restsiqs.Actions.LoginActivity;
+import com.restsiqs.restsiqs.Actions.TabActivity;
+import com.restsiqs.restsiqs.Utils.DatabaseUtil;
+
+
+public class MainActivity extends AppCompatActivity {
+    boolean loginFlag = false;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        DatabaseUtil databaseUtil = new DatabaseUtil(MainActivity.this);
+        SQLiteDatabase database = null;
+        database = databaseUtil.getWritableDatabase();
+        final Cursor cursor = database.query("account", null, null, null, null, null, null);
+        if (cursor.moveToFirst() == false) {
+            loginFlag = false;
+        } else {
+            loginFlag = true;
+        }
+        database.close();
+        databaseUtil.close();
+        new Handler().postDelayed(new Runnable() {
+            //@Override
+            public void run() {
+
+                if (MainActivity.this.loginFlag) {
+                    //is signed in
+                    Intent intent = new Intent(MainActivity.this, TabActivity.class);
+                    intent.putExtra("account", cursor.getString(cursor.getColumnIndex("account")));
+                    startActivity(intent);
+                    MainActivity.this.finish();
+                } else {
+                    //need to sign in
+                    Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                    startActivity(intent);
+                    MainActivity.this.finish();
+                }
+            }
+        }, 2500);
+//        Intent intent = new Intent(MainActivity.this, TabActivity.class);
+//        startActivity(intent);
+    }
+}

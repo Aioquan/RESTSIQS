@@ -94,9 +94,9 @@ create table teacher
 )engine=InnoDB default charset=gbk;
 
 /*==============================================================*/
-/* Table: technologicalExam                                     */
+/* Table: technologicalexam                                     */
 /*==============================================================*/
-create table technologicalExam
+create table technologicalexam
 (
    tId                  varchar(255) not null,
    tName                varchar(255) default "нч",

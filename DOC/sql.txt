@@ -13,3 +13,5 @@ insert into course(courseId,credit,teacherId,studentId,courseName,courseTime,cou
 insert into course(courseId,credit,teacherId,studentId,courseName,courseTime,courseDate) values("3",2,"20121204","1","哲学实验2","5","20151");
 
 insert into notice(noticeId,noticeTitle,noticeContext,noticeOperator,academyId)values("1","高新兴科技集团股份有限公司2016届秋季校园招聘","一、高新兴公司简介    公司官网：http://www.gosuncn.com    高新兴科技集团股份有限公司（以下称“高新兴”），成立于1997年，注册资金2.9亿元，总部自有建筑面积达4.2万平方米，2010年成功上市（股票代码300098）。公司为国内优秀的智慧城市建设运营商，目前主要以平安城市、智慧交通、通信监控、金融安防、尚云在线五大核心业务为基础，向“铁路安全”与“数据安全”板块拓展，逐步布局智慧城市。旗下汇聚讯美电子、尚云在线、创联电子、国迈科技、高领投资等优秀企业。","bgszl-djh","se");
+
+insert into technologicalexam(tId,tName,tDate,tSorce,studentId)values("1","四级","2016年1月1日","701","1");

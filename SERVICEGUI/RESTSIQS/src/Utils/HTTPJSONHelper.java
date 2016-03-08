@@ -31,7 +31,7 @@ public class HTTPJSONHelper {
             entity = response.getEntity();
             String result = EntityUtils.toString(entity);
             System.out.println("GET connecting:" + response.getStatusLine() + "----------" + URL);
-            //System.out.println(JSON.parse(result));
+//            System.out.println(JSON.parse(result));
             jsonObject = (com.alibaba.fastjson.JSONObject) JSON.parse(result);
         } catch (ConnectException ce) {
             throw ce;

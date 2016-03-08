@@ -1,104 +1,149 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-                android:layout_height="match_parent" tools:context="devouty.restsiqs.DetailActivity">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="devouty.restsiqs.DetailActivity">
 
     <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
 
         <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="courseName"
-                android:id="@+id/courseName" android:layout_gravity="center_horizontal"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
         <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="sum"
-                android:id="@+id/sum" android:layout_gravity="center_horizontal"/>
+            android:id="@+id/courseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="课程："
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
         <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="courseCredit"
-                android:id="@+id/courseCredit" android:layout_gravity="center_horizontal"/>
+            android:id="@+id/sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="课程总分："
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
         <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="courseTime"
-                android:id="@+id/courseTime" android:layout_gravity="center_horizontal"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
         <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="courseDate"
-                android:id="@+id/courseDate" android:layout_gravity="center_horizontal"/>
+            android:id="@+id/courseCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="课程学分："
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
         <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="test1"
-                android:id="@+id/test1" android:layout_gravity="center_horizontal"/>
+            android:id="@+id/courseTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="上课时间："
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
         <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="test2"
-                android:id="@+id/test2" android:layout_gravity="center_horizontal"/>
+            android:id="@+id/courseDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="学期"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
         <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="test3"
-                android:id="@+id/test3" android:layout_gravity="center_horizontal"/>
+            android:id="@+id/test1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="测试一："
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
         <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="exercises1"
-                android:id="@+id/exercises1" android:layout_gravity="center_horizontal"/>
+            android:id="@+id/test2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="测试二："
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
         <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="exercises2"
-                android:id="@+id/exercises2" android:layout_gravity="center_horizontal"/>
+            android:id="@+id/test3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="测试三："
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
         <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="exercises3"
-                android:id="@+id/exercises3" android:layout_gravity="center_horizontal"/>
+            android:id="@+id/exercises1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="练习一："
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
         <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="exercises4"
-                android:id="@+id/exercises4" android:layout_gravity="center_horizontal"/>
+            android:id="@+id/exercises2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="练习二："
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
         <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="exercises5"
-                android:id="@+id/exercises5" android:layout_gravity="center_horizontal"/>
+            android:id="@+id/exercises3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="练习三："
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
         <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="finalTest"
-                android:id="@+id/finalTest" android:layout_gravity="center_horizontal"/>
+            android:id="@+id/exercises4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="练习四："
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
         <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="dailyMark"
-                android:id="@+id/dailyMark" android:layout_gravity="center_horizontal"/>
+            android:id="@+id/exercises5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="练习五："
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/finalTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="期末考试成绩："
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/dailyMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="平时分："
+            android:textAppearance="?android:attr/textAppearanceMedium" />
 
     </LinearLayout>
 </RelativeLayout>

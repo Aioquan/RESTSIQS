@@ -11,7 +11,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
-import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SimpleCursorAdapter;
 import android.util.Log;
@@ -24,12 +23,10 @@ import android.widget.Toast;
 
 import com.alibaba.fastjson.JSONObject;
 import com.restsiqs.restsiqs.Actions.CourseDetailActivity;
-import com.restsiqs.restsiqs.Actions.TabActivity;
 import com.restsiqs.restsiqs.R;
 import com.restsiqs.restsiqs.Utils.Constant;
 import com.restsiqs.restsiqs.Utils.DatabaseUtil;
 import com.restsiqs.restsiqs.Utils.HTTPJSONGetter;
-import com.restsiqs.restsiqs.Utils.TabFlag;
 
 
 /**
@@ -188,7 +185,7 @@ public class TabFragment extends Fragment {
         View view = null;
 
         view = inflater.inflate(R.layout.notice_list, container, false);
-        listView = (ListView) view.findViewById(R.id.notice_list);
+        listView = (ListView) view.findViewById(R.id.noticeList);
 
         return view;
     }

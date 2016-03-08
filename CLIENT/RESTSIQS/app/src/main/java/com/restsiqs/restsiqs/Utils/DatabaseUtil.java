@@ -31,6 +31,8 @@ public class DatabaseUtil extends SQLiteOpenHelper {
         db.execSQL(sql);
         sql = "create table if not exists notice(_id Integer primary key AUTOINCREMENT,noticeId varchar(255) not null,noticeTitle varchar(255),noticeContext varchar(255),noticeOperator varchar(255),academyId varchar(255));";
         db.execSQL(sql);
+        sql = "create table if not exists technologicalexam(_id Integer primary key AUTOINCREMENT,tId varchar(255) not null,tName varchar(255),tDate varchar(255),tSorce varchar(255),studentId varchar(255));";
+        db.execSQL(sql);
         Log.i("devouty","exe dbhelper oncreate");
     }
 
@@ -80,11 +82,8 @@ public class DatabaseUtil extends SQLiteOpenHelper {
 //        return cursor;
     }
     public void saveNotice(JSONObject jsonObject) {
-//        Cursor cursor = null;
         String sql = "delete from notice;";
-
         JSONArray jsonArray = jsonObject.getJSONArray("result");
-//        Object[] obj = jsonArray.toArray();
         int length = jsonArray.size();
         JSONObject obj;
         ContentValues cv = new ContentValues();
@@ -99,12 +98,26 @@ public class DatabaseUtil extends SQLiteOpenHelper {
             cv.put("academyId",obj.getString("academyId"));
             Object t = database.insert("notice", null, cv);
             Log.i("devouty","insert into notice:"+i+"  Name:"+obj.getString("noticeTitle")+"----"+t);
-//            Log.i("devouty","count:"+database.query("course",null,null,null,null,null,null).getCount());
         }
-//        cursor = database.query("course",null,null,null,null,null,null);
         database.close();
-//        database = DatabaseUtil.this.getReadableDatabase();
-//        cursor = database.query("course",null,null,null,null,null,null);
-//        return cursor;
+    }public void saveTe(JSONObject jsonObject) {
+        String sql = "delete from technologicalexam;";
+        JSONArray jsonArray = jsonObject.getJSONArray("result");
+        int length = jsonArray.size();
+        JSONObject obj;
+        ContentValues cv = new ContentValues();
+        SQLiteDatabase database = DatabaseUtil.this.getWritableDatabase();
+        database.execSQL(sql);
+        for (int i = 0; i < length; i++) {
+            obj = (JSONObject) jsonArray.get(i);
+            cv.put("tId",obj.getString("tid"));
+            cv.put("tName",obj.getString("tname"));
+            cv.put("tDate",obj.getString("tdate"));
+            cv.put("tSorce",obj.getString("tsorce"));
+            cv.put("studentId",obj.getString("studentId"));
+            Object t = database.insert("technologicalexam", null, cv);
+            Log.i("devouty","insert into technologicalexam:"+i+"  Name:"+obj.getString("tName")+"----"+t);
+        }
+        database.close();
     }
 }

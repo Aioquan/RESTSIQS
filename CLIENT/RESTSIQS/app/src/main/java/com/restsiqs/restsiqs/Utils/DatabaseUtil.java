@@ -73,13 +73,8 @@ public class DatabaseUtil extends SQLiteOpenHelper {
             cv.put("sum",obj.getDouble("sum"));
             Object t = database.insert("course", null, cv);
             Log.i("devouty","insert into course:"+i+"  Name:"+obj.getString("courseName")+"----"+t);
-//            Log.i("devouty","count:"+database.query("course",null,null,null,null,null,null).getCount());
         }
-//        cursor = database.query("course",null,null,null,null,null,null);
-        database.close();
-//        database = DatabaseUtil.this.getReadableDatabase();
-//        cursor = database.query("course",null,null,null,null,null,null);
-//        return cursor;
+//        database.close();
     }
     public void saveNotice(JSONObject jsonObject) {
         String sql = "delete from notice;";
@@ -99,7 +94,7 @@ public class DatabaseUtil extends SQLiteOpenHelper {
             Object t = database.insert("notice", null, cv);
             Log.i("devouty","insert into notice:"+i+"  Name:"+obj.getString("noticeTitle")+"----"+t);
         }
-        database.close();
+//        database.close();
     }public void saveTe(JSONObject jsonObject) {
         String sql = "delete from technologicalexam;";
         JSONArray jsonArray = jsonObject.getJSONArray("result");
@@ -118,6 +113,6 @@ public class DatabaseUtil extends SQLiteOpenHelper {
             Object t = database.insert("technologicalexam", null, cv);
             Log.i("devouty","insert into technologicalexam:"+i+"  Name:"+obj.getString("tName")+"----"+t);
         }
-        database.close();
+//        database.close();
     }
 }

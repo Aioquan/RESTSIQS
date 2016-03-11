@@ -97,11 +97,17 @@ public class LoginActivity extends Activity {
                 new Handler().postDelayed(new Runnable() {
                     //@Override
                     public void run() {
-                         if (jsonObject.getJSONArray("result").toJSONString().equals("[null]")) {
+                        if(jsonObject == null)
+                        {
+                            toast.cancel();
+                            toast.makeText(LoginActivity.this, "无法连接服务器", Toast.LENGTH_SHORT).show();
+                            etPassword.setText("");
+                            btnLogin.setClickable(true);
+                        }
+                        else if (jsonObject.getJSONArray("result").toJSONString().equals("[null]")) {
 //                            toast.setText("Account|password error!");
                             toast.cancel();
-                            Toast.makeText(LoginActivity.this, "Account|password error!", Toast.LENGTH_SHORT).show();
-                            etAccount.setText("");
+                            toast.makeText(LoginActivity.this, "账号/密码错误!", Toast.LENGTH_SHORT).show();
                             etPassword.setText("");
                             btnLogin.setClickable(true);
                         } else if (((JSONObject) jsonObject.getJSONArray("result").get(0)).getString("studentPassword").equals(password)) {
@@ -130,7 +136,7 @@ public class LoginActivity extends Activity {
                 }, 2000);
 
             } catch (Exception e) {
-                Toast.makeText(LoginActivity.this, "Account|password error!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(LoginActivity.this, "账号/密码错误!", Toast.LENGTH_SHORT).show();
                 etAccount.setText("");
                 etPassword.setText("");
             }

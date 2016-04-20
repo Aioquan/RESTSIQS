@@ -3,6 +3,7 @@ package View;
 import Beans.EditButtonRenderer;
 import Beans.HTTPEntities.Academy;
 import Utils.Constant;
+import Utils.FitJTableHeaderUtil;
 import Utils.HTTPJSONHelper;
 import View.Dialogs.Academy.AcademyAddDialog;
 import View.Dialogs.Academy.AcademyDeleteDialog;
@@ -252,5 +253,7 @@ public class AcademyPanel {
         teacherTable.getColumn(Constant.TABLE_BUTTUN_DELETE).setCellRenderer(teacherTableBtnDelete);
 
         teacherTable.setDoubleBuffered(false);
+
+        FitJTableHeaderUtil.fitTableColumns(teacherTable);
     }
 }

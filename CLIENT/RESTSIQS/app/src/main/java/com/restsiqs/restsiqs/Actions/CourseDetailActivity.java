@@ -72,7 +72,7 @@ public class CourseDetailActivity extends Activity {
             public void run() {
                 courseName.setText(courseName.getText() + ": " + intent.getStringExtra("courseName"));
                 sum.setText(sum.getText() + ": " + intent.getStringExtra("sum"));
-                courseCredit.setText(courseCredit.getText() + ": " + intent.getStringExtra("courseCredit"));
+                courseCredit.setText(courseCredit.getText() + ": " + intent.getStringExtra("credit"));
                 courseTime.setText(courseTime.getText() + ": " + intent.getStringExtra("courseTime"));
                 courseDate.setText(courseDate.getText() + ": " + intent.getStringExtra("courseDate"));
                 test1.setText(test1.getText() + ": " + intent.getStringExtra("test1"));

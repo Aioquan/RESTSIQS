@@ -14,7 +14,7 @@ drop table if exists student;
 
 drop table if exists teacher;
 
-drop table if exists technologicalExam;
+drop table if exists technologicalexam;
 
 /*==============================================================*/
 /* Table: academy                                               */
@@ -25,7 +25,7 @@ create table academy
    academyName          varchar(255) default "无",
    academyAddress       varchar(255) default "无",
    primary key (academyId)
-)engine=InnoDB default charset=gbk;
+)engine=InnoDB default charset=utf8;
 
 /*==============================================================*/
 /* Table: course                                                */
@@ -51,7 +51,7 @@ create table course
    dailyMark            double default 0,
    sum                  double default 0,
    primary key (courseId)
-)engine=InnoDB default charset=gbk;
+)engine=InnoDB default charset=utf8;
 
 /*==============================================================*/
 /* Table: notice                                                */
@@ -64,7 +64,7 @@ create table notice
    noticeOperator       varchar(255) default "无",
    academyId varchar(255) default "无",
    primary key (noticeId)
-)engine=InnoDB default charset=gbk;
+)engine=InnoDB default charset=utf8;
 
 /*==============================================================*/
 /* Table: student                                               */
@@ -78,7 +78,7 @@ create table student
    bankCard             varchar(255) default "无",
    academyId varchar(255) default "无",
    primary key (studentId)
-)engine=InnoDB default charset=gbk;
+)engine=InnoDB default charset=utf8;
 
 /*==============================================================*/
 /* Table: teacher                                               */
@@ -91,7 +91,7 @@ create table teacher
    teacherStatus        varchar(255) default "无",
    academyId varchar(255) default "无",
    primary key (teacherId)
-)engine=InnoDB default charset=gbk;
+)engine=InnoDB default charset=utf8;
 
 /*==============================================================*/
 /* Table: technologicalexam                                     */
@@ -104,4 +104,4 @@ create table technologicalexam
    tSorce               double default 0,
    studentId varchar(255) default "无",
    primary key (tId)
-)engine=InnoDB default charset=gbk;
+)engine=InnoDB default charset=utf8;

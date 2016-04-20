@@ -29,6 +29,7 @@
 		<filter-name>characterEncoding</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
+	
 	<!-- Spring 编码过滤器 End -->
 
 	<!-- Spring Application Context Listener Start -->

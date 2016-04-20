@@ -1,0 +1,123 @@
+insert into academy(academyId,academyName, academyAddress) values("se","软件学院","scau");
+
+insert into academy(academyId,academyName, academyAddress) values("mi","数学与信息学院","scau");
+
+insert into academy(academyId,academyName, academyAddress) values("wcce","水利与土木工程","scau");
+
+insert into academy(academyId,academyName, academyAddress) values("ls","生命科学学院","scau");
+
+insert into academy(academyId,academyName, academyAddress) values("ensh","园艺学院","scau");
+
+insert into academy(academyId,academyName, academyAddress) values("ac","艺术学院","scau");
+
+insert into academy(academyId,academyName, academyAddress) values("ec","工程学院","scau");
+
+insert into academy(academyId,academyName, academyAddress) values("fls","外国语学院","scau");
+
+insert into academy(academyId,academyName, academyAddress) values("hc","人文学院","scau");
+
+
+
+
+
+insert into student(studentId,studentPassword,sex,identityCard,bankCard,academyId) values("1","1","男","44000000000000000000","00000000000000","se");
+
+insert into student(studentId,studentPassword,sex,identityCard,bankCard,academyId) values("10086","10086","男","44000000000000000000","00000000000000","math");
+
+insert into student(studentId,studentPassword,sex,identityCard,bankCard,academyId) values("10010","10010","男","44000000000000000000","00000000000000","math");
+
+insert into student(studentId,studentPassword,sex,identityCard,bankCard,academyId) values("13800138000","13800138000","男","44000000000000000000","00000000000000","se");
+
+insert into student(studentId,studentPassword,sex,identityCard,bankCard,academyId) values("student","student","男","44000000000000000000","00000000000000","se");
+
+insert into student(studentId,studentPassword,sex,identityCard,bankCard,academyId) values("201231000801","201231000801","男","44000000000000000000","00000000000000","se");
+
+insert into student(studentId,studentPassword,sex,identityCard,bankCard,academyId) values("201231000802","201231000802","男","44000000000000000000","00000000000000","se");
+
+insert into student(studentId,studentPassword,sex,identityCard,bankCard,academyId) values("201231000803","201231000803","女","44000000000000000000","00000000000000","se");
+
+insert into student(studentId,studentPassword,sex,identityCard,bankCard,academyId) values("201231000804","201231000804","男","44000000000000000000","00000000000000","se");
+
+insert into student(studentId,studentPassword,sex,identityCard,bankCard,academyId) values("201231000805","201231000805","男","44000000000000000000","00000000000000","se");
+
+insert into student(studentId,studentPassword,sex,identityCard,bankCard,academyId) values("201231000806","201231000806","男","44000000000000000000","00000000000000","se");
+
+insert into student(studentId,studentPassword,sex,identityCard,bankCard,academyId) values("201231000807","201231000807","男","44000000000000000000","00000000000000","se");
+
+insert into student(studentId,studentPassword,sex,identityCard,bankCard,academyId) values("201231000808","201231000808","男","44000000000000000000","00000000000000","se");
+
+
+
+
+insert into teacher(teacherId,teacherName,teacherDepartment,teacherStatus,academyId) values("20121204","梁共产","软件学院","数据库教师","se");
+
+insert into teacher(teacherId,teacherName,teacherDepartment,teacherStatus,academyId) values("20121205","梁共产","软件学院","数据库教师","se");
+
+insert into teacher(teacherId,teacherName,teacherDepartment,teacherStatus,academyId) values("20121206","梁共产","软件学院","数据库教师","se");
+
+insert into teacher(teacherId,teacherName,teacherDepartment,teacherStatus,academyId) values("20121207","梁共产","软件学院","程序开发教师","se");
+
+insert into teacher(teacherId,teacherName,teacherDepartment,teacherStatus,academyId) values("20121208","梁共产","软件学院","运维教师","se");
+
+insert into teacher(teacherId,teacherName,teacherDepartment,teacherStatus,academyId) values("20121209","梁共产","软件学院","汇编教师","se");
+
+
+
+insert into course(courseId,credit,teacherId,studentId,courseName,courseTime,courseDate) values("4",2,"20121204","10086","高级语言程序设计","周一上午第一二节","2015年第一学期");
+insert into course(courseId,credit,teacherId,studentId,courseName,courseTime,courseDate) values("5",2,"20121204","10086","计算机科学导论","周一下午午第三四节","2015年第一学期");
+insert into course(courseId,credit,teacherId,studentId,courseName,courseTime,courseDate) values("6",2,"20121204","10086","程序设计实验","周二上午第一二节","2015年第一学期");
+insert into course(courseId,credit,teacherId,studentId,courseName,courseTime,courseDate) values("7",2,"20121204","10086","数据结构","周二下午午第三四节","2015年第一学期");
+insert into course(courseId,credit,teacherId,studentId,courseName,courseTime,courseDate) values("8",2,"20121204","10086","面向对象程序设计","周三上午第一二节","2015年第一学期");
+insert into course(courseId,credit,teacherId,studentId,courseName,courseTime,courseDate) values("9",2,"20121204","10086","面向对象程序设计实验","周三下午午第三四节","2015年第一学期");
+insert into course(courseId,credit,teacherId,studentId,courseName,courseTime,courseDate) values("10",2,"20121204","10086","计算机组成原理","周四上午第一二节","2015年第一学期");
+insert into course(courseId,credit,teacherId,studentId,courseName,courseTime,courseDate) values("11",2,"20121204","10086","汇编语言程序设计","周四下午午第三四节","2015年第一学期");
+insert into course(courseId,credit,teacherId,studentId,courseName,courseTime,courseDate) values("12",2,"20121204","10086","计算机组成实验","周五上午第一二节","2015年第一学期");
+insert into course(courseId,credit,teacherId,studentId,courseName,courseTime,courseDate) values("13",2,"20121204","10086","软件工程","周五下午午第三四节","2015年第一学期");
+insert into course(courseId,credit,teacherId,studentId,courseName,courseTime,courseDate) values("14",2,"20121204","10086","软件体系结构","周六上午第一二节","2015年第一学期");
+insert into course(courseId,credit,teacherId,studentId,courseName,courseTime,courseDate) values("15",2,"20121204","10086","算法分析与设计","周六下午午第三四节","2015年第一学期");
+insert into course(courseId,credit,teacherId,studentId,courseName,courseTime,courseDate) values("16",2,"20121204","10086","数据库系统","周日上午第一二节","2015年第一学期");
+insert into course(courseId,credit,teacherId,studentId,courseName,courseTime,courseDate) values("17",2,"20121204","10086","软件工程实验","周日下午午第三四节","2015年第一学期");
+
+
+
+insert into notice(noticeId,noticeTitle,noticeContext,noticeOperator,academyId)values("1","高新兴科技集团股份有限公司2016届秋季校园招聘","一、高新兴公司简介    公司官网：http://www.gosuncn.com    高新兴科技集团股份有限公司（以下称“高新兴”），成立于1997年，注册资金2.9亿元，总部自有建筑面积达4.2万平方米，2010年成功上市（股票代码300098）。公司为国内优秀的智慧城市建设运营商，目前主要以平安城市、智慧交通、通信监控、金融安防、尚云在线五大核心业务为基础，向“铁路安全”与“数据安全”板块拓展，逐步布局智慧城市。旗下汇聚讯美电子、尚云在线、创联电子、国迈科技、高领投资等优秀企业。","bgszl-djh","se");
+
+insert into notice(noticeId,noticeTitle,noticeContext,noticeOperator,academyId)values("2","2016届毕业生综合测评结果公示","2016届毕业生综合测评结果公示http://info.scau.edu.cn/news-1406.html","bgszl-djh","se");
+
+insert into notice(noticeId,noticeTitle,noticeContext,noticeOperator,academyId)values("3","广州幽联信息技术有限公司暨 高乐玩具合资公司精英招聘","http://info.scau.edu.cn/news-1402.html","bgszl-djh","se");
+
+insert into notice(noticeId,noticeTitle,noticeContext,noticeOperator,academyId)values("4","广东省南方名牌农产品推进中心招聘","http://info.scau.edu.cn/news-1401.html","bgszl-djh","se");
+
+insert into notice(noticeId,noticeTitle,noticeContext,noticeOperator,academyId)values("5","大洋集团储备干部招聘","http://info.scau.edu.cn/news-1400.html","bgszl-djh","se");
+
+insert into notice(noticeId,noticeTitle,noticeContext,noticeOperator,academyId)values("6","2016届毕业生综合测评结果公示","2016届毕业生综合测评结果公示http://info.scau.edu.cn/news-1406.html","bgszl-djh","se");
+
+insert into notice(noticeId,noticeTitle,noticeContext,noticeOperator,academyId)values("7","关于核对学历证书电子照片的通知","http://info.scau.edu.cn/news-1399.html，年级还有691名同学未在学信网上确认信息，几乎一大半！上次开班团例会的时候也再三强调了，希望各位再通知一遍。没有核对信息的，到时无法拿到毕业证和学位证，请告知他们认真对待。","bgszl-djh","se");
+
+insert into notice(noticeId,noticeTitle,noticeContext,noticeOperator,academyId)values("8","南京烽火星空2016校园招聘","http://info.scau.edu.cn/news-1391.htm","bgszl-djh","se");
+
+insert into notice(noticeId,noticeTitle,noticeContext,noticeOperator,academyId)values("9","2016年RIB集团校园宣讲会","http://info.scau.edu.cn/news-1258.html","bgszl-djh","se");
+
+insert into notice(noticeId,noticeTitle,noticeContext,noticeOperator,academyId)values("10","关于2016届本科毕业生毕业前重修考试（公共基础课）安排的通知","http://jwc.scau.edu.cn/html/news/2016-3-22/2804.html公共课清考安排，请转告班级同学。","bgszl-djh","se");
+
+insert into notice(noticeId,noticeTitle,noticeContext,noticeOperator,academyId)values("11","年级将于下周二（22号）晚上7点半，在院楼500召开班团例会","通知：年级将于下周二（22号）晚上7点半，在院楼500召开班团例会，会议内容为：各班级汇报班级就业进展情况，提交第二次的就业情况摸查表，讨论年级毕业照拍摄的问题。请各班级负责人务必参加。","bgszl-djh","se");
+
+insert into technologicalexam(tId,tName,tDate,tSorce,studentId)values("1","四级","2016年1月1日","701","1");
+
+insert into technologicalexam(tId,tName,tDate,tSorce,studentId)values("2","四级","2015年6月1日","700","10086");
+
+insert into technologicalexam(tId,tName,tDate,tSorce,studentId)values("3","四级","2014年1月1日","688","10086");
+
+insert into technologicalexam(tId,tName,tDate,tSorce,studentId)values("4","四级","2016年6月1日","600","10086");
+
+insert into technologicalexam(tId,tName,tDate,tSorce,studentId)values("5","四级","2015年1月1日","555","10086");
+
+insert into technologicalexam(tId,tName,tDate,tSorce,studentId)values("6","四级","2014年6月1日","544","10086");
+
+insert into technologicalexam(tId,tName,tDate,tSorce,studentId)values("7","四级","2016年1月1日","557","201231000801");
+
+insert into technologicalexam(tId,tName,tDate,tSorce,studentId)values("8","四级","2016年6月1日","700","201231000801");
+
+insert into technologicalexam(tId,tName,tDate,tSorce,studentId)values("9","四级","2016年1月1日","454","201231000801");
+
+insert into technologicalexam(tId,tName,tDate,tSorce,studentId)values("10","四级","2016年1月1日","545","201231000801");

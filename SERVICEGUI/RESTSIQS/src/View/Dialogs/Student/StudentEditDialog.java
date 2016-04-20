@@ -6,6 +6,7 @@ import Beans.NumLimitListener;
 import Utils.Constant;
 import Utils.FitJTableHeaderUtil;
 import Utils.HTTPJSONHelper;
+import View.Dialogs.Course.CourseAddDialog;
 import View.Dialogs.Course.CourseDeleteDialog;
 import View.Dialogs.Course.CourseEditDialog;
 import View.Dialogs.Tecnologicalexam.TEAddDialog;
@@ -30,6 +31,7 @@ public class StudentEditDialog extends JDialog {
     TEEditDialog teEditDialog;
     TEDeleteDialog teDeleteDialog;
     TEAddDialog teAddDialog;
+    CourseAddDialog addDialog;
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
@@ -48,6 +50,7 @@ public class StudentEditDialog extends JDialog {
     private JButton btnAddTecnologicalExam;
 
     public StudentEditDialog() {
+        addDialog = new CourseAddDialog();
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
@@ -84,8 +87,8 @@ public class StudentEditDialog extends JDialog {
                 map.put("studentId", StudentEditDialog.this.map.get("studentId"));
                 int newId = 0;
                 for (int i = 0; i < data2.length; i++) {
-                    if (((Double) data2[i][2]) > newId) {
-                        newId = ((Double) data2[i][2]).intValue();
+                    if (((Integer) data2[i][2]) > newId) {
+                        newId = ((Integer) data2[i][2]).intValue();
                     }
                 }
                 newId++;
@@ -95,7 +98,17 @@ public class StudentEditDialog extends JDialog {
         });
         btnAddCourse.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-
+                HashMap<String, Object> map = new HashMap<String, Object>();
+                double newId = 0;
+                for (int i = 0; i < data.length; i++) {
+                    if (newId < Double.parseDouble((String) data[i][17])) {
+                        newId = Double.parseDouble((String) data[i][17]);
+                    }
+                }
+                newId++;
+                map.put("newId", (int) newId);
+                addDialog.show(StudentEditDialog.this.data, map);
+                updateData();
             }
         });
         FitJTableHeaderUtil.fitTableColumns(studentCourseTable);
